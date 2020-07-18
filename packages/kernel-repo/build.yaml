@@ -1,0 +1,6 @@
+image: "quay.io/mocaccino/micro:master"
+
+steps:
+- |
+   mkdir -p /etc/luet/repos.conf.d/ && \
+   mv ${PACKAGE_NAME}.yml /etc/luet/repos.conf.d/
