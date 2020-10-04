@@ -19,5 +19,5 @@ repositories:
   cached: true
   priority: 1
   urls:
-  - "https://mocaccino.keybase.pub/repository-index"
+  - "https://get.mocaccino.org/mocaccino-repository-index"
 ```

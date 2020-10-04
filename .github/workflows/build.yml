@@ -63,5 +63,4 @@ jobs:
     - name: Update repository 🚀
       if: github.ref == 'refs/heads/master' && github.event_name == 'push'
       run: |
-        mc cp --recursive $PWD/build/ minio/mocaccino-repository-index
-
+        mc mirror $PWD/build/ minio/mocaccino-repository-index
