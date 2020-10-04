@@ -34,6 +34,16 @@ jobs:
     - name: Login to DockerHub Registry
       if: github.ref == 'refs/heads/master' && github.event_name == 'push'
       run: echo ${{ secrets.DOCKERIO_PASSWORD }} | docker login -u ${{ secrets.DOCKERIO_USERNAME }} --password-stdin
+    - name: Install minio and login
+      env:
+        MINIO_API_URL: ${{ secrets.MINIO_API_URL }}
+        MINIO_ACCESS_KEY: ${{ secrets.MINIO_ACCESS_KEY }}
+        MINIO_SECRET_KEY: ${{ secrets.MINIO_SECRET_KEY }}
+      run: |
+        sudo wget https://dl.min.io/client/mc/release/linux-amd64/mc -O /usr/bin/mc
+        sudo chmod +x /usr/bin/mc
+        mc alias set minio $MINIO_API_URL $MINIO_ACCESS_KEY $MINIO_SECRET_KEY
+
     - name: Set Push options
       if: github.ref == 'refs/heads/master' && github.event_name == 'push'
       run: echo ::set-env name=BUILD_ARGS::--push --image-repository mocaccinoos/rindex-amd64-cache
@@ -50,12 +60,8 @@ jobs:
         rm -rf luet
         curl -LO https://storage.googleapis.com/container-diff/latest/container-diff-linux-amd64 && chmod +x container-diff-linux-amd64 && sudo mv container-diff-linux-amd64 /usr/local/bin/container-diff
         make build-all create-repo
-    - name: Deploy 🚀
+    - name: Update repository 🚀
       if: github.ref == 'refs/heads/master' && github.event_name == 'push'
       run: |
-        curl https://gist.githubusercontent.com/mudler/87a5da08bacae8ea69b8f15497534d8d/raw/26109389ea6eb5f0b8b54c9711509e5ec974b1d2/keybase_cp.sh > keybase_cp.sh
-        bash keybase_cp.sh $PWD/build /keybase/public/mocaccino/repository-index
-      env:
-        KEYBASE_DEVICENAME: ${{ secrets.KEYBASE_DEVICENAME }}
-        KEYBASE_PAPERKEY: ${{ secrets.KEYBASE_PAPERKEY }}
-        KEYBASE_USERNAME: ${{ secrets.KEYBASE_USERNAME }}
+        mc cp --recursive $PWD/build/ minio/mocaccino-repository-index
+
