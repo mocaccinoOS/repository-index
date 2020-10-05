@@ -21,3 +21,18 @@ repositories:
   - "https://raw.githubusercontent.com/mocaccinoOS/repository-index/gh-pages"
   - "https://get.mocaccino.org/mocaccino-repository-index"
 ```
+
+or create this file under luet repositories dir (/etc/luet/repos.conf.d/mocaccino-repository-index.yml):
+
+```yaml
+name: "mocaccino-repository-index"
+description: "MocaccinoOS Repository Index"
+type: "http"
+enable: true
+cached: true
+priority: 1
+urls:
+- "https://raw.githubusercontent.com/mocaccinoOS/repository-index/gh-pages"
+- "https://get.mocaccino.org/mocaccino-repository-index"
+```
+
