@@ -1,0 +1,63 @@
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-micro-repository-20201004.2.package.tar.gz
+dependencies: []
+compilespec:
+  steps:
+  - |-
+    mkdir -p /repo/etc/luet/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+  env: []
+  prelude: []
+  image: quay.io/mocaccino/micro:master
+  seed: quay.io/mocaccino/micro:master
+  package:
+    id: 0
+    name: mocaccino-micro
+    version: "20201004.2"
+    category: repository
+    useflags: []
+    state: ""
+    packagerequires: []
+    packageconflicts: []
+    provides: []
+    hidden: false
+    annotations: {}
+    path: ""
+    description: ""
+    uri: []
+    license: ""
+    buildtimestamp: 2020-10-05 12:47:00.474070733 +0000 UTC m=+89.931232194
+    labels: {}
+  sourceassertion:
+  - package:
+      id: 0
+      name: mocaccino-micro
+      version: "20201004.2"
+      category: repository
+      useflags: []
+      state: ""
+      packagerequires: []
+      packageconflicts: []
+      provides: []
+      hidden: false
+      annotations: {}
+      path: ""
+      description: ""
+      uri: []
+      license: ""
+      buildtimestamp: ""
+      labels: {}
+    value: true
+    hash:
+      buildhash: 4e9fffeb7fe98dfa62cfcd253b99c93b9f8a33db774b63ca95131d7d9aedc8d5
+      packagehash: 1d1f7c288884e952c476b699cc05d27dbd32e4ef85b3cc5dca224bc6d714f91d
+  package_dir: /repo
+  retrieve: []
+  outputpath: /home/runner/work/repository-index/repository-index/build
+  unpack: false
+  includes: []
+checksums:
+  sha256: 1243a01d3a2a90f66776c2b3d10307f6427f166bcc383444f6ef3ec7bec792f1
+sourceassertion: []
+compressiontype: gzip
+files:
+- etc/luet/repos.conf.d/mocaccino-micro.yml

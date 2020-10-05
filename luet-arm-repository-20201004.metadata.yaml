@@ -1,0 +1,63 @@
+path: /home/runner/work/repository-index/repository-index/build/luet-arm-repository-20201004.package.tar.gz
+dependencies: []
+compilespec:
+  steps:
+  - |
+    mkdir -p /repo/etc/luet/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+  env: []
+  prelude: []
+  image: quay.io/mocaccino/micro:master
+  seed: quay.io/mocaccino/micro:master
+  package:
+    id: 0
+    name: luet-arm
+    version: "20201004"
+    category: repository
+    useflags: []
+    state: ""
+    packagerequires: []
+    packageconflicts: []
+    provides: []
+    hidden: false
+    annotations: {}
+    path: ""
+    description: ""
+    uri: []
+    license: ""
+    buildtimestamp: 2020-10-05 12:47:53.395789701 +0000 UTC m=+142.852951162
+    labels: {}
+  sourceassertion:
+  - package:
+      id: 0
+      name: luet-arm
+      version: "20201004"
+      category: repository
+      useflags: []
+      state: ""
+      packagerequires: []
+      packageconflicts: []
+      provides: []
+      hidden: false
+      annotations: {}
+      path: ""
+      description: ""
+      uri: []
+      license: ""
+      buildtimestamp: ""
+      labels: {}
+    value: true
+    hash:
+      buildhash: 98d8177e272cfc0ae9d5584c2bd519d58df61c6e80f3de1d68d55c68a3b84427
+      packagehash: 0cae941cfdd33afddfcd907055b861c0e030eaa28ab9a471688740690be40526
+  package_dir: /repo
+  retrieve: []
+  outputpath: /home/runner/work/repository-index/repository-index/build
+  unpack: false
+  includes: []
+checksums:
+  sha256: ccaab0f374eabe36f54392d0c489b351ed089a249c661e423bbc719279682f2b
+sourceassertion: []
+compressiontype: gzip
+files:
+- etc/luet/repos.conf.d/luet-arm.yml

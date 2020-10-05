@@ -1,0 +1,63 @@
+path: /home/runner/work/repository-index/repository-index/build/livecd-repository-20200704.package.tar.gz
+dependencies: []
+compilespec:
+  steps:
+  - |-
+    mkdir -p /repo/etc/luet/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+  env: []
+  prelude: []
+  image: quay.io/mocaccino/micro:master
+  seed: quay.io/mocaccino/micro:master
+  package:
+    id: 0
+    name: livecd
+    version: "20200704"
+    category: repository
+    useflags: []
+    state: ""
+    packagerequires: []
+    packageconflicts: []
+    provides: []
+    hidden: false
+    annotations: {}
+    path: ""
+    description: ""
+    uri: []
+    license: ""
+    buildtimestamp: 2020-10-05 12:47:34.879776812 +0000 UTC m=+124.336938273
+    labels: {}
+  sourceassertion:
+  - package:
+      id: 0
+      name: livecd
+      version: "20200704"
+      category: repository
+      useflags: []
+      state: ""
+      packagerequires: []
+      packageconflicts: []
+      provides: []
+      hidden: false
+      annotations: {}
+      path: ""
+      description: ""
+      uri: []
+      license: ""
+      buildtimestamp: ""
+      labels: {}
+    value: true
+    hash:
+      buildhash: 42471c6414f37234f97d854237f661e35a05364f03a941ba7aef46a542d5042e
+      packagehash: 0916e04f45fcfb2bda4bb72703f7370af8c3e730e4eb3c8cfeb96c06e33dce6f
+  package_dir: /repo
+  retrieve: []
+  outputpath: /home/runner/work/repository-index/repository-index/build
+  unpack: false
+  includes: []
+checksums:
+  sha256: 24a2a985762962cf5f69e52ccdc050f3e13731280f6231d85bb83e248d4b4de3
+sourceassertion: []
+compressiontype: gzip
+files:
+- etc/luet/repos.conf.d/livecd.yml

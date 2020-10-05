@@ -1,0 +1,63 @@
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-repository-20201004.package.tar.gz
+dependencies: []
+compilespec:
+  steps:
+  - |-
+    mkdir -p /repo/etc/luet/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+  env: []
+  prelude: []
+  image: quay.io/mocaccino/micro:master
+  seed: quay.io/mocaccino/micro:master
+  package:
+    id: 0
+    name: mocaccino-desktop
+    version: "20201004"
+    category: repository
+    useflags: []
+    state: ""
+    packagerequires: []
+    packageconflicts: []
+    provides: []
+    hidden: false
+    annotations: {}
+    path: ""
+    description: ""
+    uri: []
+    license: ""
+    buildtimestamp: 2020-10-05 12:46:08.3347671 +0000 UTC m=+37.791928561
+    labels: {}
+  sourceassertion:
+  - package:
+      id: 0
+      name: mocaccino-desktop
+      version: "20201004"
+      category: repository
+      useflags: []
+      state: ""
+      packagerequires: []
+      packageconflicts: []
+      provides: []
+      hidden: false
+      annotations: {}
+      path: ""
+      description: ""
+      uri: []
+      license: ""
+      buildtimestamp: ""
+      labels: {}
+    value: true
+    hash:
+      buildhash: c11ebb7f85ecc306dca8e0072226a44577eacd9399f64c6481b26521c68db949
+      packagehash: 10d6d96c43aac3322b3d93342a0b56b870331b8341e64fa752628f162735ee0a
+  package_dir: /repo
+  retrieve: []
+  outputpath: /home/runner/work/repository-index/repository-index/build
+  unpack: false
+  includes: []
+checksums:
+  sha256: 8e4c1c6ec7ce4bbf8fb4e662352988f33c3bf1ec92dcf25dd81388f4418f479f
+sourceassertion: []
+compressiontype: gzip
+files:
+- etc/luet/repos.conf.d/mocaccino-desktop.yml

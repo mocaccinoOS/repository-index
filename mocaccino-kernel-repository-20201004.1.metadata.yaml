@@ -1,0 +1,63 @@
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-kernel-repository-20201004.1.package.tar.gz
+dependencies: []
+compilespec:
+  steps:
+  - |-
+    mkdir -p /repo/etc/luet/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+  env: []
+  prelude: []
+  image: quay.io/mocaccino/micro:master
+  seed: quay.io/mocaccino/micro:master
+  package:
+    id: 0
+    name: mocaccino-kernel
+    version: "20201004.1"
+    category: repository
+    useflags: []
+    state: ""
+    packagerequires: []
+    packageconflicts: []
+    provides: []
+    hidden: false
+    annotations: {}
+    path: ""
+    description: ""
+    uri: []
+    license: ""
+    buildtimestamp: 2020-10-05 12:47:17.339859747 +0000 UTC m=+106.797021208
+    labels: {}
+  sourceassertion:
+  - package:
+      id: 0
+      name: mocaccino-kernel
+      version: "20201004.1"
+      category: repository
+      useflags: []
+      state: ""
+      packagerequires: []
+      packageconflicts: []
+      provides: []
+      hidden: false
+      annotations: {}
+      path: ""
+      description: ""
+      uri: []
+      license: ""
+      buildtimestamp: ""
+      labels: {}
+    value: true
+    hash:
+      buildhash: 03cbcbf22b1613f06ae234d0c85a43b680ffc4e0cf0cf17bdc5e8517fd4524f8
+      packagehash: df11755e8e11b180f9bf15c3a6a128726f3683f63c2cb2ca22d65a7219d04485
+  package_dir: /repo
+  retrieve: []
+  outputpath: /home/runner/work/repository-index/repository-index/build
+  unpack: false
+  includes: []
+checksums:
+  sha256: 08b21488b2885efcd15888e6cbb9b1a6b5ef4a737e627a3d65c602fd01e11cbe
+sourceassertion: []
+compressiontype: gzip
+files:
+- etc/luet/repos.conf.d/mocaccino-kernel.yml

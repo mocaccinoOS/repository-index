@@ -1,0 +1,63 @@
+path: /home/runner/work/repository-index/repository-index/build/luet-repository-20200717.package.tar.gz
+dependencies: []
+compilespec:
+  steps:
+  - |-
+    mkdir -p /repo/etc/luet/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+  env: []
+  prelude: []
+  image: quay.io/mocaccino/micro:master
+  seed: quay.io/mocaccino/micro:master
+  package:
+    id: 0
+    name: luet
+    version: "20200717"
+    category: repository
+    useflags: []
+    state: ""
+    packagerequires: []
+    packageconflicts: []
+    provides: []
+    hidden: false
+    annotations: {}
+    path: ""
+    description: ""
+    uri: []
+    license: ""
+    buildtimestamp: 2020-10-05 12:45:49.670523665 +0000 UTC m=+19.127685126
+    labels: {}
+  sourceassertion:
+  - package:
+      id: 0
+      name: luet
+      version: "20200717"
+      category: repository
+      useflags: []
+      state: ""
+      packagerequires: []
+      packageconflicts: []
+      provides: []
+      hidden: false
+      annotations: {}
+      path: ""
+      description: ""
+      uri: []
+      license: ""
+      buildtimestamp: ""
+      labels: {}
+    value: true
+    hash:
+      buildhash: c9879083ceee36d3cf40969ba63b0668d6605c7ea00dff94954d885a82393dde
+      packagehash: 44567590037ca5545ab2ba909fa172f43453220e9d1c05f254989e315acea4ce
+  package_dir: /repo
+  retrieve: []
+  outputpath: /home/runner/work/repository-index/repository-index/build
+  unpack: false
+  includes: []
+checksums:
+  sha256: 9f71a7bcea9b597e3925df14b46daba313e840603633cf78aff9dca4309ae5ba
+sourceassertion: []
+compressiontype: gzip
+files:
+- etc/luet/repos.conf.d/luet.yml

@@ -1,0 +1,63 @@
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-micro-arm-repository-20201004.package.tar.gz
+dependencies: []
+compilespec:
+  steps:
+  - |
+    mkdir -p /repo/etc/luet/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+  env: []
+  prelude: []
+  image: quay.io/mocaccino/micro:master
+  seed: quay.io/mocaccino/micro:master
+  package:
+    id: 0
+    name: mocaccino-micro-arm
+    version: "20201004"
+    category: repository
+    useflags: []
+    state: ""
+    packagerequires: []
+    packageconflicts: []
+    provides: []
+    hidden: false
+    annotations: {}
+    path: ""
+    description: ""
+    uri: []
+    license: ""
+    buildtimestamp: 2020-10-05 12:46:42.61906222 +0000 UTC m=+72.076223681
+    labels: {}
+  sourceassertion:
+  - package:
+      id: 0
+      name: mocaccino-micro-arm
+      version: "20201004"
+      category: repository
+      useflags: []
+      state: ""
+      packagerequires: []
+      packageconflicts: []
+      provides: []
+      hidden: false
+      annotations: {}
+      path: ""
+      description: ""
+      uri: []
+      license: ""
+      buildtimestamp: ""
+      labels: {}
+    value: true
+    hash:
+      buildhash: 8bd27fb6db8d1acda3b05e9152a51f9856a360019763d108fd71b328791d97bf
+      packagehash: a76dd6f6c657742b6052687a62738c5e902da0c111fba92453d039577bd80d66
+  package_dir: /repo
+  retrieve: []
+  outputpath: /home/runner/work/repository-index/repository-index/build
+  unpack: false
+  includes: []
+checksums:
+  sha256: 0956cf6ed1409524999ee1d57c0b8705e79083f2c7784b604196ce5dc3788c8e
+sourceassertion: []
+compressiontype: gzip
+files:
+- etc/luet/repos.conf.d/mocaccino-micro-arm.yml
