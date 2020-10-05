@@ -18,5 +18,6 @@ repositories:
   cached: true
   priority: 1
   urls:
+  - "https://raw.githubusercontent.com/mocaccinoOS/repository-index/gh-pages"
   - "https://get.mocaccino.org/mocaccino-repository-index"
 ```
