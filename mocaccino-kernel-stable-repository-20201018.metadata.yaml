@@ -1,8 +1,8 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-micro-arm-repository-20201004.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-kernel-stable-repository-20201018.package.tar.gz
 dependencies: []
 compilespec:
   steps:
-  - |
+  - |-
     mkdir -p /repo/etc/luet/repos.conf.d/ && \
     mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
   env: []
@@ -11,8 +11,8 @@ compilespec:
   seed: quay.io/mocaccino/micro:master
   package:
     id: 0
-    name: mocaccino-micro-arm
-    version: "20201004"
+    name: mocaccino-kernel-stable
+    version: "20201018"
     category: repository
     useflags: []
     state: ""
@@ -25,13 +25,13 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2020-10-18 20:57:09.236508938 +0000 UTC m=+271.021956470
+    buildtimestamp: 2020-10-18 20:53:20.718115554 +0000 UTC m=+42.503563086
     labels: {}
   sourceassertion:
   - package:
       id: 0
-      name: mocaccino-micro-arm
-      version: "20201004"
+      name: mocaccino-kernel-stable
+      version: "20201018"
       category: repository
       useflags: []
       state: ""
@@ -48,16 +48,16 @@ compilespec:
       labels: {}
     value: true
     hash:
-      buildhash: 8bd27fb6db8d1acda3b05e9152a51f9856a360019763d108fd71b328791d97bf
-      packagehash: a76dd6f6c657742b6052687a62738c5e902da0c111fba92453d039577bd80d66
+      buildhash: e7b1493e540505207d43cabfff05a7d3104d769952f40ac594704ab9c8f7d167
+      packagehash: ab3a60adeb63b729df011c701229ba40872b38e3ebe962e0f2606c2c7e758516
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
   unpack: false
   includes: []
 checksums:
-  sha256: 0321c2244997a04f92ba523bbe2a72268fc85817da1ec800d5eba709211b8273
+  sha256: 063acba3a8ceff5ee76a8d884e3214426b0f94d9de655de617879fec40cbfed4
 sourceassertion: []
 compressiontype: gzip
 files:
-- etc/luet/repos.conf.d/mocaccino-micro-arm.yml
+- etc/luet/repos.conf.d/mocaccino-kernel-stable.yml

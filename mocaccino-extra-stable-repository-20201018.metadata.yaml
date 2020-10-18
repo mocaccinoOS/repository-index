@@ -1,8 +1,8 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-micro-arm-repository-20201004.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-extra-stable-repository-20201018.package.tar.gz
 dependencies: []
 compilespec:
   steps:
-  - |
+  - |-
     mkdir -p /repo/etc/luet/repos.conf.d/ && \
     mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
   env: []
@@ -11,8 +11,8 @@ compilespec:
   seed: quay.io/mocaccino/micro:master
   package:
     id: 0
-    name: mocaccino-micro-arm
-    version: "20201004"
+    name: mocaccino-extra-stable
+    version: "20201018"
     category: repository
     useflags: []
     state: ""
@@ -25,13 +25,13 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2020-10-18 20:57:09.236508938 +0000 UTC m=+271.021956470
+    buildtimestamp: 2020-10-18 20:56:51.084886109 +0000 UTC m=+252.870333641
     labels: {}
   sourceassertion:
   - package:
       id: 0
-      name: mocaccino-micro-arm
-      version: "20201004"
+      name: mocaccino-extra-stable
+      version: "20201018"
       category: repository
       useflags: []
       state: ""
@@ -48,16 +48,16 @@ compilespec:
       labels: {}
     value: true
     hash:
-      buildhash: 8bd27fb6db8d1acda3b05e9152a51f9856a360019763d108fd71b328791d97bf
-      packagehash: a76dd6f6c657742b6052687a62738c5e902da0c111fba92453d039577bd80d66
+      buildhash: 4512a278abae0d2c171d2bb8096d7bf32b6bb0af803c7433f963285d3c071e84
+      packagehash: c3cb39ca4d34e4a91f60c5149188f7c88eff33145aee2093ddef765624251853
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
   unpack: false
   includes: []
 checksums:
-  sha256: 0321c2244997a04f92ba523bbe2a72268fc85817da1ec800d5eba709211b8273
+  sha256: 312666eb559cebda17360e86838f273019fcbd741172bc51e01fdf020ab48418
 sourceassertion: []
 compressiontype: gzip
 files:
-- etc/luet/repos.conf.d/mocaccino-micro-arm.yml
+- etc/luet/repos.conf.d/mocaccino-extra-stable.yml

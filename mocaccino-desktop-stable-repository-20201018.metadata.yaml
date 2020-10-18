@@ -1,8 +1,8 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-micro-arm-repository-20201004.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-stable-repository-20201018.package.tar.gz
 dependencies: []
 compilespec:
   steps:
-  - |
+  - |-
     mkdir -p /repo/etc/luet/repos.conf.d/ && \
     mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
   env: []
@@ -11,8 +11,8 @@ compilespec:
   seed: quay.io/mocaccino/micro:master
   package:
     id: 0
-    name: mocaccino-micro-arm
-    version: "20201004"
+    name: mocaccino-desktop-stable
+    version: "20201018"
     category: repository
     useflags: []
     state: ""
@@ -25,13 +25,13 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2020-10-18 20:57:09.236508938 +0000 UTC m=+271.021956470
+    buildtimestamp: 2020-10-18 20:56:05.591670584 +0000 UTC m=+207.377118016
     labels: {}
   sourceassertion:
   - package:
       id: 0
-      name: mocaccino-micro-arm
-      version: "20201004"
+      name: mocaccino-desktop-stable
+      version: "20201018"
       category: repository
       useflags: []
       state: ""
@@ -48,16 +48,16 @@ compilespec:
       labels: {}
     value: true
     hash:
-      buildhash: 8bd27fb6db8d1acda3b05e9152a51f9856a360019763d108fd71b328791d97bf
-      packagehash: a76dd6f6c657742b6052687a62738c5e902da0c111fba92453d039577bd80d66
+      buildhash: d3bc684590419e99ed37c1b9b5fb988131f0496701607ccc18b4021920d677ee
+      packagehash: 0628f00c100d998c97dfe8d9b8889e68552f7a255b16c8fa0041585366676051
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
   unpack: false
   includes: []
 checksums:
-  sha256: 0321c2244997a04f92ba523bbe2a72268fc85817da1ec800d5eba709211b8273
+  sha256: 9d22bc7a6e59c8ca2aa4210f0f5774a5d2d9849039e152c2eef6ffe2b3b39ff0
 sourceassertion: []
 compressiontype: gzip
 files:
-- etc/luet/repos.conf.d/mocaccino-micro-arm.yml
+- etc/luet/repos.conf.d/mocaccino-desktop-stable.yml
