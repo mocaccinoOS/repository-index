@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-repository-20201004.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-portage-repository-20201028.package.tar.gz
 dependencies: []
 compilespec:
   steps:
@@ -11,8 +11,8 @@ compilespec:
   seed: quay.io/mocaccino/micro:master
   package:
     id: 0
-    name: mocaccino-desktop
-    version: "20201004"
+    name: mocaccino-portage
+    version: "20201028"
     category: repository
     useflags: []
     state: ""
@@ -25,13 +25,13 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2020-10-28 07:14:26.242158982 +0000 UTC m=+184.332804791
+    buildtimestamp: 2020-10-28 07:13:25.082260456 +0000 UTC m=+123.172906365
     labels: {}
   sourceassertion:
   - package:
       id: 0
-      name: mocaccino-desktop
-      version: "20201004"
+      name: mocaccino-portage
+      version: "20201028"
       category: repository
       useflags: []
       state: ""
@@ -48,16 +48,16 @@ compilespec:
       labels: {}
     value: true
     hash:
-      buildhash: c11ebb7f85ecc306dca8e0072226a44577eacd9399f64c6481b26521c68db949
-      packagehash: 10d6d96c43aac3322b3d93342a0b56b870331b8341e64fa752628f162735ee0a
+      buildhash: 11109ce4357e29505e008dc447c0f9166dd1752272db59fe0c3c1cca3ecf1b64
+      packagehash: a1146386a88df10fe9f7e9ec9032a6dcb534013568c938bd99473449f26018a4
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
   unpack: false
   includes: []
 checksums:
-  sha256: e537e1e180f0b6fed665e44138e1f620c5a71507f5c1e061b99fbc512aa44b2f
+  sha256: 30a3d0150d0374e9e3ccff7ba36af519a45ed70d9b546e50b534685153a55d7e
 sourceassertion: []
 compressiontype: gzip
 files:
-- etc/luet/repos.conf.d/mocaccino-desktop.yml
+- etc/luet/repos.conf.d/mocaccino-portage.yml
