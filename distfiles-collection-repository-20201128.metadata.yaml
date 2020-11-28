@@ -1,18 +1,18 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-kernel-repository-20201004.1.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/distfiles-collection-repository-20201128.package.tar.gz
 dependencies: []
 compilespec:
   steps:
-  - |-
+  - |
     mkdir -p /repo/etc/luet/repos.conf.d/ && \
-    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+    mv distfiles.yml /repo/etc/luet/repos.conf.d/
   env: []
   prelude: []
   image: quay.io/mocaccino/micro:master
   seed: quay.io/mocaccino/micro:master
   package:
     id: 0
-    name: mocaccino-kernel
-    version: "20201004.1"
+    name: distfiles-collection
+    version: "20201128"
     category: repository
     useflags: []
     state: ""
@@ -25,13 +25,13 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2020-11-28 20:36:30.481320281 +0000 UTC m=+173.093310493
+    buildtimestamp: 2020-11-28 20:34:30.497686828 +0000 UTC m=+53.109676940
     labels: {}
   sourceassertion:
   - package:
       id: 0
-      name: mocaccino-kernel
-      version: "20201004.1"
+      name: distfiles-collection
+      version: "20201128"
       category: repository
       useflags: []
       state: ""
@@ -48,8 +48,8 @@ compilespec:
       labels: {}
     value: true
     hash:
-      buildhash: 03cbcbf22b1613f06ae234d0c85a43b680ffc4e0cf0cf17bdc5e8517fd4524f8
-      packagehash: df11755e8e11b180f9bf15c3a6a128726f3683f63c2cb2ca22d65a7219d04485
+      buildhash: aa07ed07dc213a0a87709581e9ea8b68b7b75088d4cd56764b56ee28c5fa5304
+      packagehash: 6de0205782121934400a0790f4c1a1637fbc49e90258d54e9abe82408ebd7365
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -57,8 +57,8 @@ compilespec:
   includes: []
   excludes: []
 checksums:
-  sha256: f07fb660c6e45b17d8ab02d4ba03b73c82876949255f7c27407eff905f86f475
+  sha256: 464a4b799ad08c2acd247fb851a8638c562c6a2cc26019f0932c49589702ca48
 sourceassertion: []
 compressiontype: gzip
 files:
-- etc/luet/repos.conf.d/mocaccino-kernel.yml
+- etc/luet/repos.conf.d/distfiles.yml
