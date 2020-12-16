@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-musl-universe-stable-repository-20201018.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-os-commons-repository-20201216.package.tar.gz
 dependencies: []
 compilespec:
   steps:
@@ -11,8 +11,8 @@ compilespec:
   seed: quay.io/mocaccino/micro:master
   package:
     id: 0
-    name: mocaccino-musl-universe-stable
-    version: "20201018"
+    name: mocaccino-os-commons
+    version: "20201216"
     category: repository
     useflags: []
     state: ""
@@ -25,13 +25,13 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2020-12-16 22:52:31.525675119 +0000 UTC m=+73.386363998
+    buildtimestamp: 2020-12-16 22:52:19.551129186 +0000 UTC m=+61.411818065
     labels: {}
   sourceassertion:
   - package:
       id: 0
-      name: mocaccino-musl-universe-stable
-      version: "20201018"
+      name: mocaccino-os-commons
+      version: "20201216"
       category: repository
       useflags: []
       state: ""
@@ -48,8 +48,8 @@ compilespec:
       labels: {}
     value: true
     hash:
-      buildhash: 7506d12aad94dc9d73040a1b4e8c5e72f8537cec7b7b77c9ae7b7b0dcec6add0
-      packagehash: 91c91f4e989a353ec87154761d0132e657c283e66490a1ddb224ff359ec0e362
+      buildhash: 9dea13c4e25de9453f9b3dea4d0550bc7e648db1b50945a0e7a964b1b646c44f
+      packagehash: 91aa3f321bdfa8c3297f186b8c12c00ffc21770740c3aa61a0e8e8beb3c8c29d
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -57,8 +57,8 @@ compilespec:
   includes: []
   excludes: []
 checksums:
-  sha256: d4a7580abea223c939c097077fed9354cc30afc9c62c5847a78a3e4bcfb9d052
+  sha256: ae1fff5c8ab4762ba4942bcc4ac6a8abfa94226da755fe244e1d44fd2fe2e878
 sourceassertion: []
 compressiontype: gzip
 files:
-- etc/luet/repos.conf.d/mocaccino-musl-universe-stable.yml
+- etc/luet/repos.conf.d/mocaccino-os-commons.yml

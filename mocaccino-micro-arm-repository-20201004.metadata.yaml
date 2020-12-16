@@ -2,7 +2,7 @@ path: /home/runner/work/repository-index/repository-index/build/mocaccino-micro-
 dependencies: []
 compilespec:
   steps:
-  - |
+  - |-
     mkdir -p /repo/etc/luet/repos.conf.d/ && \
     mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
   env: []
@@ -25,7 +25,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2020-11-28 20:33:59.492878841 +0000 UTC m=+22.104869053
+    buildtimestamp: 2020-12-16 22:52:13.577595018 +0000 UTC m=+55.438283897
     labels: {}
   sourceassertion:
   - package:
@@ -57,7 +57,7 @@ compilespec:
   includes: []
   excludes: []
 checksums:
-  sha256: 8763bcbd8cc7616215afead7734ad5a51972243b1ab36c1a1cb495bffd12a06c
+  sha256: ed1381fe53fca3d522a6c17e9436673798b952ab13cd5d38b0e422e124915e3a
 sourceassertion: []
 compressiontype: gzip
 files:

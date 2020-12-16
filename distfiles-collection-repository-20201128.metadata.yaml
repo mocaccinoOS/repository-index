@@ -2,9 +2,9 @@ path: /home/runner/work/repository-index/repository-index/build/distfiles-collec
 dependencies: []
 compilespec:
   steps:
-  - |
+  - |-
     mkdir -p /repo/etc/luet/repos.conf.d/ && \
-    mv distfiles.yml /repo/etc/luet/repos.conf.d/
+    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
   env: []
   prelude: []
   image: quay.io/mocaccino/micro:master
@@ -25,7 +25,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2020-11-28 20:34:30.497686828 +0000 UTC m=+53.109676940
+    buildtimestamp: 2020-12-16 22:51:37.548699909 +0000 UTC m=+19.409388688
     labels: {}
   sourceassertion:
   - package:
@@ -57,8 +57,8 @@ compilespec:
   includes: []
   excludes: []
 checksums:
-  sha256: 464a4b799ad08c2acd247fb851a8638c562c6a2cc26019f0932c49589702ca48
+  sha256: 5f67f8ca31320b9cdc6faa972b47eaf7717014651f497fb99264a25f9ec259fa
 sourceassertion: []
 compressiontype: gzip
 files:
-- etc/luet/repos.conf.d/distfiles.yml
+- etc/luet/repos.conf.d/distfiles-collection.yml
