@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-musl-universe-stable-repository-20201018.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-musl-universe-stable-repository-20210101.package.tar.gz
 dependencies: []
 compilespec:
   steps:
@@ -12,7 +12,7 @@ compilespec:
   package:
     id: 0
     name: mocaccino-musl-universe-stable
-    version: "20201018"
+    version: "20210101"
     category: repository
     useflags: []
     state: ""
@@ -25,13 +25,13 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2020-12-16 22:52:31.525675119 +0000 UTC m=+73.386363998
+    buildtimestamp: 2021-01-01 22:22:26.914748173 +0000 UTC m=+105.804727841
     labels: {}
   sourceassertion:
   - package:
       id: 0
       name: mocaccino-musl-universe-stable
-      version: "20201018"
+      version: "20210101"
       category: repository
       useflags: []
       state: ""
@@ -48,8 +48,8 @@ compilespec:
       labels: {}
     value: true
     hash:
-      buildhash: 7506d12aad94dc9d73040a1b4e8c5e72f8537cec7b7b77c9ae7b7b0dcec6add0
-      packagehash: 91c91f4e989a353ec87154761d0132e657c283e66490a1ddb224ff359ec0e362
+      buildhash: 9717d16739a6f7169d7116b96717728b3c0db3c0603e97fd0d3832b9a572d78e
+      packagehash: 4fa36a7b54807e6c49d5063ff442bf59dd51a02c80a8e3e8ce78af82a33ab35c
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -57,7 +57,7 @@ compilespec:
   includes: []
   excludes: []
 checksums:
-  sha256: d4a7580abea223c939c097077fed9354cc30afc9c62c5847a78a3e4bcfb9d052
+  sha256: 340731d82746ce08f2f9d368a117dc7e7b2c6c16a84a166f7e33c3973c196fb7
 sourceassertion: []
 compressiontype: gzip
 files:
