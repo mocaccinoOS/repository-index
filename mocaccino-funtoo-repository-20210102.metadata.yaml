@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-portage-stable-repository-20201028.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-funtoo-repository-20210102.package.tar.gz
 dependencies: []
 compilespec:
   steps:
@@ -11,8 +11,8 @@ compilespec:
   seed: quay.io/mocaccino/micro:master
   package:
     id: 0
-    name: mocaccino-portage-stable
-    version: "20201028"
+    name: mocaccino-funtoo
+    version: "20210102"
     category: repository
     useflags: []
     state: ""
@@ -25,13 +25,13 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-01-02 16:46:50.500552875 +0000 UTC m=+90.886456638
+    buildtimestamp: 2021-01-02 16:45:38.495532596 +0000 UTC m=+18.881436459
     labels: {}
   sourceassertion:
   - package:
       id: 0
-      name: mocaccino-portage-stable
-      version: "20201028"
+      name: mocaccino-funtoo
+      version: "20210102"
       category: repository
       useflags: []
       state: ""
@@ -48,8 +48,8 @@ compilespec:
       labels: {}
     value: true
     hash:
-      buildhash: 2c4e483ea2d330714bf325144322c60857bd9082f784fb4fc8d0f0a8632e88b6
-      packagehash: 02f41c4354283bb25d1e03af53d894f362017b2b71cc45f91d22f8f8328e0d0a
+      buildhash: bae34161bc0abcf214af78b35250ddfa64dec12995eb232a3ab6667b1a8961ac
+      packagehash: ba9d346edf68d352e104bbc7b30e3d766ee7236ed97c6049f1859bb3791d9651
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -57,8 +57,8 @@ compilespec:
   includes: []
   excludes: []
 checksums:
-  sha256: 7966b973fd5644597da1843170755a0ca8d66f5fb845d407e9b1a77c93e0c12b
+  sha256: 9cafaee8814c3658b218ca32e9307b5a7865df8a82abe7a1642affcadcff3c40
 sourceassertion: []
 compressiontype: gzip
 files:
-- etc/luet/repos.conf.d/mocaccino-portage-stable.yml
+- etc/luet/repos.conf.d/mocaccino-funtoo.yml
