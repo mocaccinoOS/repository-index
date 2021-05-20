@@ -49,14 +49,7 @@ jobs:
       env:
         PREVIOUS: ${{ github.event.before }}
       run: |
-        make deps
-        git clone https://github.com/mudler/luet.git
-        cd luet
-        git checkout develop
-        make build && sudo cp -rfv luet /usr/bin/luet
-        cd ..
-        rm -rf luet
-        curl -LO https://storage.googleapis.com/container-diff/latest/container-diff-linux-amd64 && chmod +x container-diff-linux-amd64 && sudo mv container-diff-linux-amd64 /usr/local/bin/container-diff
+        curl https://get.mocaccino.org/luet/get_luet_root.sh | sudo sh
         make build-all create-repo
     - name: Update repository 🚀
       if: github.ref == 'refs/heads/master' && github.event_name == 'push'
