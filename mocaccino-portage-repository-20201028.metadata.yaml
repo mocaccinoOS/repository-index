@@ -25,8 +25,9 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-01-02 16:46:44.498569599 +0000 UTC m=+84.884473362
+    buildtimestamp: 2021-05-20 20:54:27.420933583 +0000 UTC m=+166.294583738
     labels: {}
+    treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
   - package:
       id: 0
@@ -46,19 +47,50 @@ compilespec:
       license: ""
       buildtimestamp: ""
       labels: {}
+      treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 11109ce4357e29505e008dc447c0f9166dd1752272db59fe0c3c1cca3ecf1b64
-      packagehash: a1146386a88df10fe9f7e9ec9032a6dcb534013568c938bd99473449f26018a4
+      buildhash: d43a6ed2b41d2fc1e2f474023091ffb9e4455c7802a6191dbd413fe7ab22545c
+      packagehash: 4866a727f7350fe7628dfbb9dfe6a2b9c2b995d4f96c7211f41eef66f8d52630
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
   unpack: false
   includes: []
   excludes: []
+  buildoptions:
+    pushimagerepository: mocaccinoos/rindex-amd64-cache
+    pullimagerepository:
+    - luet/cache
+    pullfirst: false
+    keepimg: false
+    push: false
+    concurrency: 0
+    compressiontype: ""
+    wait: false
+    onlydeps: false
+    nodeps: false
+    solveroptions:
+      options:
+        type: 0
+        concurrency: 0
+      type: ""
+      learnrate: 0
+      discount: 0
+      maxattempts: 0
+      implementation: 0
+    buildvaluesfile: []
+    buildvalues:
+    - {}
+    packagetargetonly: false
+    rebuild: false
+    backendargs: []
+    backendtype: ""
+  copy: []
 checksums:
-  sha256: 6dd598dfa067d6a2d84cd1e550a7e056a831d9eb0ce9138170cca2e0468a2228
+  sha256: ceaf0069dd0fcd7ecfeb129a5d293630a413dfba6857829868d9f02ca293bc1d
 sourceassertion: []
 compressiontype: gzip
 files:
 - etc/luet/repos.conf.d/mocaccino-portage.yml
+packagecacheimage: ""

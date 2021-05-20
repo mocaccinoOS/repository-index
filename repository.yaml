@@ -1,19 +1,26 @@
 description: Mocaccino repository index
-last_update: "1609606052"
-metapath: ""
+enable: true
+index: []
+last_update: "1621544156"
 name: mocaccino-repository-index
 priority: 1
 repo_files:
+  compilertree:
+    checksums:
+      sha256: f447d34c4caf8058ee0fddd2e98ecc9f29c4e2a8d10658dbaf589a0bd75b2ca3
+    compressiontype: gzip
+    filename: compilertree.tar.gz
   meta:
+    checksums:
+      sha256: 9659689acdf27b01224bc541dc0b47ebce2c4b55e88234e168ff633d55c8273f
     compressiontype: gzip
     filename: repository.meta.yaml.tar.gz
   tree:
     checksums:
-      sha256: dc4b653ee1b15719e38cf435bc148c6ac90846bb5a2944c248f96c6505c94155
+      sha256: c09d80c568813e499c4a56d037483a7ae3a3c85e95af5e1438cf3492d51cd0c0
     compressiontype: gzip
     filename: tree.tar.gz
 revision: 1
-treepath: ""
 type: http
 urls:
 - http://localhost:8000

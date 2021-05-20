@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-micro-arm-repository-20201004.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-stage3-repository-20210520.package.tar.gz
 dependencies: []
 compilespec:
   steps:
@@ -11,8 +11,8 @@ compilespec:
   seed: quay.io/mocaccino/micro:master
   package:
     id: 0
-    name: mocaccino-micro-arm
-    version: "20201004"
+    name: mocaccino-stage3
+    version: "20210520"
     category: repository
     useflags: []
     state: ""
@@ -25,14 +25,14 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-05-20 20:54:38.405103805 +0000 UTC m=+177.278753960
+    buildtimestamp: 2021-05-20 20:52:37.414756202 +0000 UTC m=+56.288406357
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
   - package:
       id: 0
-      name: mocaccino-micro-arm
-      version: "20201004"
+      name: mocaccino-stage3
+      version: "20210520"
       category: repository
       useflags: []
       state: ""
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 88869995291f45ababae55618e2f82e86c8bc692e251a2b54753cfd43f1c28ec
-      packagehash: 78cd9fb3e1772b7b973c190ee96d558cee446f759a96c1c3392d4b2cd767e6cc
+      buildhash: fa741c2be79a5a153f579f65aa0cbf05d85f05f80ffcdf019ffc2600c8bc60ea
+      packagehash: 3714feee3a6471e3fd5ac1429609549f4e79230e5bbbab1f2d78f8f431d2d6ea
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -88,9 +88,9 @@ compilespec:
     backendtype: ""
   copy: []
 checksums:
-  sha256: 09772315929cc3456240ce4a3ba1d8d83eb3548b7fa6f37ed743a0ae0e2a7305
+  sha256: 1b3aeed142e40c774e959b396137705da919e591ea1225ad8ad143dba9fb6f4b
 sourceassertion: []
 compressiontype: gzip
 files:
-- etc/luet/repos.conf.d/mocaccino-micro-arm.yml
+- etc/luet/repos.conf.d/mocaccino-stage3.yml
 packagecacheimage: ""

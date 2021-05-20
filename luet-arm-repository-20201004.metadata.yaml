@@ -25,8 +25,9 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-01-02 16:47:14.499438267 +0000 UTC m=+114.885342130
+    buildtimestamp: 2021-05-20 20:53:43.415889769 +0000 UTC m=+122.289539824
     labels: {}
+    treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
   - package:
       id: 0
@@ -46,19 +47,50 @@ compilespec:
       license: ""
       buildtimestamp: ""
       labels: {}
+      treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 98d8177e272cfc0ae9d5584c2bd519d58df61c6e80f3de1d68d55c68a3b84427
-      packagehash: 0cae941cfdd33afddfcd907055b861c0e030eaa28ab9a471688740690be40526
+      buildhash: 571c0c00d6ac37fe5ac0f91d503f23435712bd82e996b8667160071e14e26808
+      packagehash: 4a1f3c69da6a8f9a0679f5a1f37d8ff79306794948f8f81adee6acfa69054b8e
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
   unpack: false
   includes: []
   excludes: []
+  buildoptions:
+    pushimagerepository: mocaccinoos/rindex-amd64-cache
+    pullimagerepository:
+    - luet/cache
+    pullfirst: false
+    keepimg: false
+    push: false
+    concurrency: 0
+    compressiontype: ""
+    wait: false
+    onlydeps: false
+    nodeps: false
+    solveroptions:
+      options:
+        type: 0
+        concurrency: 0
+      type: ""
+      learnrate: 0
+      discount: 0
+      maxattempts: 0
+      implementation: 0
+    buildvaluesfile: []
+    buildvalues:
+    - {}
+    packagetargetonly: false
+    rebuild: false
+    backendargs: []
+    backendtype: ""
+  copy: []
 checksums:
-  sha256: 8951a8e779a37e337a6f698931eed975fb51e2540de175477abdf7c23e354ad1
+  sha256: 52bc3cf5bbe27ef6929f651850b17f412c560943140d673ee83ad885b4e83382
 sourceassertion: []
 compressiontype: gzip
 files:
 - etc/luet/repos.conf.d/luet-arm.yml
+packagecacheimage: ""
