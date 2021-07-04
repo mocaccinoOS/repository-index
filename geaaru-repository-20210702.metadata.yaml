@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-stage3-repository-20210520.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/geaaru-repository-20210702.package.tar.gz
 dependencies: []
 compilespec:
   steps:
@@ -11,8 +11,8 @@ compilespec:
   seed: quay.io/mocaccino/micro:master
   package:
     id: 0
-    name: mocaccino-stage3
-    version: "20210520"
+    name: geaaru
+    version: "20210702"
     category: repository
     useflags: []
     state: ""
@@ -25,14 +25,14 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-07-04 15:55:20.459284056 +0000 UTC m=+122.686053605
+    buildtimestamp: 2021-07-04 15:56:37.499939895 +0000 UTC m=+199.726709344
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
   - package:
       id: 0
-      name: mocaccino-stage3
-      version: "20210520"
+      name: geaaru
+      version: "20210702"
       category: repository
       useflags: []
       state: ""
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: da3bb13dc10d559a9aba00678be986bafcae1cde145674bfe8b3db30ce26bbdb
-      packagehash: be705c9f687f2f496a5f3bf583ba49a60e70556ef10d564aa6a1d28edd7c6d15
+      buildhash: 418554e83e0f1636feb6efb10aac6c835c29c0a98d531fe0556a18103cffd0b0
+      packagehash: 61bd8492cb2928c9867041ff888b71e08113fe983346ccdb18b2a94f52abe83a
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -89,9 +89,9 @@ compilespec:
   copy: []
   join: []
 checksums:
-  sha256: 8ad0c702b92547f72df170cf480bbdbfe9dea2801d2b7442bf11166c064c1879
+  sha256: cbc4fcbacc8aa3e490e61fd679cb35d8852dc03e366520955c8c3fd2c2e9a2f5
 sourceassertion: []
 compressiontype: gzip
 files:
-- etc/luet/repos.conf.d/mocaccino-stage3.yml
+- etc/luet/repos.conf.d/geaaru.yml
 packagecacheimage: ""

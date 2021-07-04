@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-stage3-repository-20210520.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/geaaru-stable-repository-20210702.package.tar.gz
 dependencies: []
 compilespec:
   steps:
@@ -11,8 +11,8 @@ compilespec:
   seed: quay.io/mocaccino/micro:master
   package:
     id: 0
-    name: mocaccino-stage3
-    version: "20210520"
+    name: geaaru-stable
+    version: "20210702"
     category: repository
     useflags: []
     state: ""
@@ -25,14 +25,14 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-07-04 15:55:20.459284056 +0000 UTC m=+122.686053605
+    buildtimestamp: 2021-07-04 15:55:09.396872905 +0000 UTC m=+111.623642454
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
   - package:
       id: 0
-      name: mocaccino-stage3
-      version: "20210520"
+      name: geaaru-stable
+      version: "20210702"
       category: repository
       useflags: []
       state: ""
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: da3bb13dc10d559a9aba00678be986bafcae1cde145674bfe8b3db30ce26bbdb
-      packagehash: be705c9f687f2f496a5f3bf583ba49a60e70556ef10d564aa6a1d28edd7c6d15
+      buildhash: 75fc805f1b9e78d2dc9b7f87de9415de30af50ed7814ad9c7731f7b665c0254e
+      packagehash: ec01298460e897e999a9374f7f2303d56d28d8512c867928e97b1c4bf5aa4179
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -89,9 +89,9 @@ compilespec:
   copy: []
   join: []
 checksums:
-  sha256: 8ad0c702b92547f72df170cf480bbdbfe9dea2801d2b7442bf11166c064c1879
+  sha256: 298155a2ae4185231772669a73c8295c6bdcd8d4eac611a84b739fd2a4ce7bb1
 sourceassertion: []
 compressiontype: gzip
 files:
-- etc/luet/repos.conf.d/mocaccino-stage3.yml
+- etc/luet/repos.conf.d/geaaru-stable.yml
 packagecacheimage: ""
