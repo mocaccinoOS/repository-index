@@ -25,7 +25,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-07-04 15:53:52.447740544 +0000 UTC m=+34.674510093
+    buildtimestamp: 2021-10-05 15:53:49.403811991 +0000 UTC m=+232.408381453
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 4625018fbfa2d2552bab17a772eff51a30339a1c6227b3d7402b98d81fb68e5a
-      packagehash: fa58a50715952bd93ee2df11576136773384f6406e461ca16b19fd70279abb6c
+      buildhash: 844af494a54b47e2bb127825d44875b5cd5c340305c256770d4215a33ebbd824
+      packagehash: 0e6b562642a6eec7494e4db4018fe4a1f3f8ed53976008661c6173773ec44329
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -70,15 +70,7 @@ compilespec:
     wait: false
     onlydeps: false
     nodeps: false
-    solveroptions:
-      options:
-        type: 0
-        concurrency: 0
-      type: ""
-      learnrate: 0
-      discount: 0
-      maxattempts: 0
-      implementation: 0
+    solveroptions: {}
     buildvaluesfile: []
     buildvalues:
     - {}
@@ -86,12 +78,33 @@ compilespec:
     rebuild: false
     backendargs: []
     backendtype: ""
+    templatesfolder: []
   copy: []
   join: []
+  requires_final_images: false
 checksums:
-  sha256: 25be235f0b9782d896a5a9137700b667702869b6d4d17df15e04f0771f9d2ede
+  sha256: 0848142f7e0b8cc7d797cd1aeb5d6e1d47b53042ab982e8d56fd752ebb3ecaf4
 sourceassertion: []
 compressiontype: gzip
 files:
 - etc/luet/repos.conf.d/mocaccino-os-commons.yml
 packagecacheimage: ""
+runtime:
+  id: 0
+  name: mocaccino-os-commons
+  version: "20201216"
+  category: repository
+  useflags: []
+  state: ""
+  packagerequires: []
+  packageconflicts: []
+  provides: []
+  hidden: false
+  annotations: {}
+  path: ""
+  description: ""
+  uri: []
+  license: ""
+  buildtimestamp: ""
+  labels: {}
+  treedir: ""

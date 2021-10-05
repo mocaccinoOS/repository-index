@@ -25,7 +25,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-07-04 15:54:47.41065064 +0000 UTC m=+89.637420089
+    buildtimestamp: 2021-10-05 15:50:53.404799282 +0000 UTC m=+56.409368744
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 2f95a907f4b4f572835d51f7c5d5374d8b4a76a5110d51fb4085e188f225466b
-      packagehash: d50f4e976dfbabd37578dd6b793544caade8eae6ff7e6e23359cbf8f6c778905
+      buildhash: 9ad44195619807b8e3852713186daea9fff4c23c4ead37e20f26b6bac0eb3829
+      packagehash: 20bab208e0c661edf0940ebbd87467b95b8e80a9dd1fb7477d7fc3125a618499
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -70,15 +70,7 @@ compilespec:
     wait: false
     onlydeps: false
     nodeps: false
-    solveroptions:
-      options:
-        type: 0
-        concurrency: 0
-      type: ""
-      learnrate: 0
-      discount: 0
-      maxattempts: 0
-      implementation: 0
+    solveroptions: {}
     buildvaluesfile: []
     buildvalues:
     - {}
@@ -86,12 +78,33 @@ compilespec:
     rebuild: false
     backendargs: []
     backendtype: ""
+    templatesfolder: []
   copy: []
   join: []
+  requires_final_images: false
 checksums:
-  sha256: ca32c368799efdc44c47e94f3f6fa49ceb105b06c33dca93ba68844e237cc232
+  sha256: 4a30ab0447c8ed2bb035ec7105e11eddec55d9b58eb66231aa36b919b1835195
 sourceassertion: []
 compressiontype: gzip
 files:
 - etc/luet/repos.conf.d/mocaccino-musl-universe-stable.yml
 packagecacheimage: ""
+runtime:
+  id: 0
+  name: mocaccino-musl-universe-stable
+  version: "20210101"
+  category: repository
+  useflags: []
+  state: ""
+  packagerequires: []
+  packageconflicts: []
+  provides: []
+  hidden: false
+  annotations: {}
+  path: ""
+  description: ""
+  uri: []
+  license: ""
+  buildtimestamp: ""
+  labels: {}
+  treedir: ""

@@ -25,7 +25,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-07-04 15:56:37.499939895 +0000 UTC m=+199.726709344
+    buildtimestamp: 2021-10-05 15:50:09.412855255 +0000 UTC m=+12.417424717
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 418554e83e0f1636feb6efb10aac6c835c29c0a98d531fe0556a18103cffd0b0
-      packagehash: 61bd8492cb2928c9867041ff888b71e08113fe983346ccdb18b2a94f52abe83a
+      buildhash: 35f36c518e1f9dc01011bfb7fb616163bb574f2946cba4af28a129518bf488d2
+      packagehash: 079b2aec65abdb5c5703feaef48fad23f60c6a2551fb8db210d46a09c8c5fa7e
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -70,15 +70,7 @@ compilespec:
     wait: false
     onlydeps: false
     nodeps: false
-    solveroptions:
-      options:
-        type: 0
-        concurrency: 0
-      type: ""
-      learnrate: 0
-      discount: 0
-      maxattempts: 0
-      implementation: 0
+    solveroptions: {}
     buildvaluesfile: []
     buildvalues:
     - {}
@@ -86,12 +78,33 @@ compilespec:
     rebuild: false
     backendargs: []
     backendtype: ""
+    templatesfolder: []
   copy: []
   join: []
+  requires_final_images: false
 checksums:
-  sha256: cbc4fcbacc8aa3e490e61fd679cb35d8852dc03e366520955c8c3fd2c2e9a2f5
+  sha256: ce40323eee3ab227ffecebd58d9f95855c827464278c987cc9f62e4946094d27
 sourceassertion: []
 compressiontype: gzip
 files:
 - etc/luet/repos.conf.d/geaaru.yml
 packagecacheimage: ""
+runtime:
+  id: 0
+  name: geaaru
+  version: "20210702"
+  category: repository
+  useflags: []
+  state: ""
+  packagerequires: []
+  packageconflicts: []
+  provides: []
+  hidden: false
+  annotations: {}
+  path: ""
+  description: ""
+  uri: []
+  license: ""
+  buildtimestamp: ""
+  labels: {}
+  treedir: ""

@@ -25,7 +25,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-07-04 15:54:03.407339746 +0000 UTC m=+45.634109295
+    buildtimestamp: 2021-10-05 15:50:31.409977163 +0000 UTC m=+34.414546525
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 32089c2827195e94d835c99f5d2c23e3f70eae46f87a8b9770e7859415c0e60d
-      packagehash: cc623a29f71524d644754f5b0463769589b4ed01a9b55a72e84b1625f16a6492
+      buildhash: 8cf653764a870c0f0f6b64c54459e3ec0889a325bc637450724a0f432fc5f5f1
+      packagehash: bdba9f81a2d03ecc0bd7355b42bbbaf064ab8654effc3e5a5c4d8da20a8019b3
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -70,15 +70,7 @@ compilespec:
     wait: false
     onlydeps: false
     nodeps: false
-    solveroptions:
-      options:
-        type: 0
-        concurrency: 0
-      type: ""
-      learnrate: 0
-      discount: 0
-      maxattempts: 0
-      implementation: 0
+    solveroptions: {}
     buildvaluesfile: []
     buildvalues:
     - {}
@@ -86,12 +78,33 @@ compilespec:
     rebuild: false
     backendargs: []
     backendtype: ""
+    templatesfolder: []
   copy: []
   join: []
+  requires_final_images: false
 checksums:
-  sha256: 46b6ae12d15ee4b69ca02abf60a2eda44d8670bef3632092e3efd027bedc9bcf
+  sha256: 58dcde55debd1283bc671e080b8c076f176b9092b8e5932ec879a79fd050f2e4
 sourceassertion: []
 compressiontype: gzip
 files:
 - etc/luet/repos.conf.d/distfiles-collection.yml
 packagecacheimage: ""
+runtime:
+  id: 0
+  name: distfiles-collection
+  version: "20201128"
+  category: repository
+  useflags: []
+  state: ""
+  packagerequires: []
+  packageconflicts: []
+  provides: []
+  hidden: false
+  annotations: {}
+  path: ""
+  description: ""
+  uri: []
+  license: ""
+  buildtimestamp: ""
+  labels: {}
+  treedir: ""

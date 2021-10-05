@@ -25,7 +25,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-07-04 15:55:09.396872905 +0000 UTC m=+111.623642454
+    buildtimestamp: 2021-10-05 15:52:10.407244312 +0000 UTC m=+133.411813774
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 75fc805f1b9e78d2dc9b7f87de9415de30af50ed7814ad9c7731f7b665c0254e
-      packagehash: ec01298460e897e999a9374f7f2303d56d28d8512c867928e97b1c4bf5aa4179
+      buildhash: 820e40dbad90a00428e1ecb6d1b0ce883c8dd363e43a62021067427c65b1f33f
+      packagehash: 2a75312baaa598b564387377423fac3dd6da7cd7e51d4558788fdffaaf6d8e9a
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -70,15 +70,7 @@ compilespec:
     wait: false
     onlydeps: false
     nodeps: false
-    solveroptions:
-      options:
-        type: 0
-        concurrency: 0
-      type: ""
-      learnrate: 0
-      discount: 0
-      maxattempts: 0
-      implementation: 0
+    solveroptions: {}
     buildvaluesfile: []
     buildvalues:
     - {}
@@ -86,12 +78,33 @@ compilespec:
     rebuild: false
     backendargs: []
     backendtype: ""
+    templatesfolder: []
   copy: []
   join: []
+  requires_final_images: false
 checksums:
-  sha256: 298155a2ae4185231772669a73c8295c6bdcd8d4eac611a84b739fd2a4ce7bb1
+  sha256: 6b6aca774280056fe1bdcae2c72cb494d1001f5e541495143f5dc9595376a75f
 sourceassertion: []
 compressiontype: gzip
 files:
 - etc/luet/repos.conf.d/geaaru-stable.yml
 packagecacheimage: ""
+runtime:
+  id: 0
+  name: geaaru-stable
+  version: "20210702"
+  category: repository
+  useflags: []
+  state: ""
+  packagerequires: []
+  packageconflicts: []
+  provides: []
+  hidden: false
+  annotations: {}
+  path: ""
+  description: ""
+  uri: []
+  license: ""
+  buildtimestamp: ""
+  labels: {}
+  treedir: ""

@@ -25,7 +25,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-07-04 15:55:31.462177251 +0000 UTC m=+133.688946800
+    buildtimestamp: 2021-10-05 15:52:43.417117202 +0000 UTC m=+166.421686664
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 91450323caff51bd5751a00fb5aa8e5e918e6d4b9fd79da91535c29ff0676482
-      packagehash: d62870d93ea7c8f21dee76e0f227b57b186a6512c72b14fb4d13b0d65ea14b98
+      buildhash: 8d1acc70893b3be4c25c171964cd6ed4c54ab9a7f1849ce351b7dbc6ae2eaa70
+      packagehash: f2bd37a0b10329a89642302054633ae8c433ca54e1e79787872f48f79b6cfbef
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -70,15 +70,7 @@ compilespec:
     wait: false
     onlydeps: false
     nodeps: false
-    solveroptions:
-      options:
-        type: 0
-        concurrency: 0
-      type: ""
-      learnrate: 0
-      discount: 0
-      maxattempts: 0
-      implementation: 0
+    solveroptions: {}
     buildvaluesfile: []
     buildvalues:
     - {}
@@ -86,12 +78,33 @@ compilespec:
     rebuild: false
     backendargs: []
     backendtype: ""
+    templatesfolder: []
   copy: []
   join: []
+  requires_final_images: false
 checksums:
-  sha256: 39a0d57605baaf6cb058f9637ccb10a7cde4acc610ce4204471d762fb813cfc0
+  sha256: f51daf7ada359b26497b775efd7195585e8be48f3a6147762d8a582bf8fc0d3f
 sourceassertion: []
 compressiontype: gzip
 files:
 - etc/luet/repos.conf.d/mocaccino-kernel-stable.yml
 packagecacheimage: ""
+runtime:
+  id: 0
+  name: mocaccino-kernel-stable
+  version: "20201018"
+  category: repository
+  useflags: []
+  state: ""
+  packagerequires: []
+  packageconflicts: []
+  provides: []
+  hidden: false
+  annotations: {}
+  path: ""
+  description: ""
+  uri: []
+  license: ""
+  buildtimestamp: ""
+  labels: {}
+  treedir: ""

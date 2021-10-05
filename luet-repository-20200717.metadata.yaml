@@ -25,7 +25,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-07-04 15:56:59.416388756 +0000 UTC m=+221.643158205
+    buildtimestamp: 2021-10-05 15:53:05.406750246 +0000 UTC m=+188.411319608
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 94563c5703d16393417ba9afd0f166141a654baad84b5262f2743748a2b19f98
-      packagehash: 9a1a99032ff7dbddabb7a758245001b1de5f37b3025fbd29879670f1988f22f3
+      buildhash: 3484db3747c1e817b0ef835e1b7f0f300f2597156bfc7f452ba9a62002ba996d
+      packagehash: 40dd2558149605fa338badfe7a452cf656bd83fd11dafadd4d7094e2033451e2
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -70,15 +70,7 @@ compilespec:
     wait: false
     onlydeps: false
     nodeps: false
-    solveroptions:
-      options:
-        type: 0
-        concurrency: 0
-      type: ""
-      learnrate: 0
-      discount: 0
-      maxattempts: 0
-      implementation: 0
+    solveroptions: {}
     buildvaluesfile: []
     buildvalues:
     - {}
@@ -86,12 +78,33 @@ compilespec:
     rebuild: false
     backendargs: []
     backendtype: ""
+    templatesfolder: []
   copy: []
   join: []
+  requires_final_images: false
 checksums:
-  sha256: aaebf6fdea045e249cf6441c9773c7fbf47dcb7a63d1f6635c7405d76814b443
+  sha256: 7c2930a998cb1b7b8e8f32bbd491e5681ee26fc963df53a965088bad80089612
 sourceassertion: []
 compressiontype: gzip
 files:
 - etc/luet/repos.conf.d/luet.yml
 packagecacheimage: ""
+runtime:
+  id: 0
+  name: luet
+  version: "20200717"
+  category: repository
+  useflags: []
+  state: ""
+  packagerequires: []
+  packageconflicts: []
+  provides: []
+  hidden: false
+  annotations: {}
+  path: ""
+  description: ""
+  uri: []
+  license: ""
+  buildtimestamp: ""
+  labels: {}
+  treedir: ""

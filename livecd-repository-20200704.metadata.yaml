@@ -25,7 +25,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-07-04 15:55:42.470238338 +0000 UTC m=+144.697007887
+    buildtimestamp: 2021-10-05 15:52:54.415473279 +0000 UTC m=+177.420042741
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 947b056d2de5fb0847f6e98000f28464b2f6353c339966771b22e296b1cfae8f
-      packagehash: 3844ca0e7110aa04b95149ad88945e5461ee39c5298467cd81427d837d9f1fe0
+      buildhash: 4bc948b1090ab7610ed11bf806e3c1a38f56f223d5a6cccd596443e57caf35f9
+      packagehash: 2a65a64f8e362ad205468cf4bb66e11fa2c4f3c2613d362a79c1e3f8e63d5e09
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -70,15 +70,7 @@ compilespec:
     wait: false
     onlydeps: false
     nodeps: false
-    solveroptions:
-      options:
-        type: 0
-        concurrency: 0
-      type: ""
-      learnrate: 0
-      discount: 0
-      maxattempts: 0
-      implementation: 0
+    solveroptions: {}
     buildvaluesfile: []
     buildvalues:
     - {}
@@ -86,12 +78,33 @@ compilespec:
     rebuild: false
     backendargs: []
     backendtype: ""
+    templatesfolder: []
   copy: []
   join: []
+  requires_final_images: false
 checksums:
-  sha256: 1900188e9dd3b34a23903c8d9741bc1079bac6654f18d36d95a18090e1da1af0
+  sha256: bac1bd07518f6cc929954f1df7e99654d00217439bd84107072057a9acbd5891
 sourceassertion: []
 compressiontype: gzip
 files:
 - etc/luet/repos.conf.d/livecd.yml
 packagecacheimage: ""
+runtime:
+  id: 0
+  name: livecd
+  version: "20200704"
+  category: repository
+  useflags: []
+  state: ""
+  packagerequires: []
+  packageconflicts: []
+  provides: []
+  hidden: false
+  annotations: {}
+  path: ""
+  description: ""
+  uri: []
+  license: ""
+  buildtimestamp: ""
+  labels: {}
+  treedir: ""
