@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-extra-repository-20201005.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-extra-stable-repository-20211006.package.tar.gz
 dependencies: []
 compilespec:
   steps:
@@ -11,8 +11,8 @@ compilespec:
   seed: quay.io/mocaccino/micro:master
   package:
     id: 0
-    name: mocaccino-extra
-    version: "20201005"
+    name: mocaccino-extra-stable
+    version: "20211006"
     category: repository
     useflags: []
     state: ""
@@ -25,14 +25,14 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-10-05 15:55:08.469748972 +0000 UTC m=+254.850055326
+    buildtimestamp: 2021-10-06 21:02:36.493971849 +0000 UTC m=+113.681202111
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
   - package:
       id: 0
-      name: mocaccino-extra
-      version: "20201005"
+      name: mocaccino-extra-stable
+      version: "20211006"
       category: repository
       useflags: []
       state: ""
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: b2ffa3586711fb5b9210e760dbec1fa71904d3a7da0c6426d0852251211abf69
-      packagehash: 32b5986c4ac1e5918afcb49cd4d6c713c4cf11ae8ede7a1daa844a6631f4dd72
+      buildhash: c2aad7953355900d189114f36ba3a8a069b18d7190f8afb12449329b73ba33d7
+      packagehash: bcdf686067be84c2763acf5fff52a04cdbd9d937fb050c18c498bf5c5594384d
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -83,16 +83,16 @@ compilespec:
   join: []
   requires_final_images: false
 checksums:
-  sha256: 866b6f92c26c9532b884a49ad245c19160fdeb0b98115195afa0bdfc02d48a75
+  sha256: f5bb83cb02f838367d0e68021dd17f6fe6d5be2cd86a9d69a1e26d3576e43ccb
 sourceassertion: []
 compressiontype: gzip
 files:
-- etc/luet/repos.conf.d/mocaccino-extra.yml
+- etc/luet/repos.conf.d/mocaccino-extra-stable.yml
 packagecacheimage: ""
 runtime:
   id: 0
-  name: mocaccino-extra
-  version: "20201005"
+  name: mocaccino-extra-stable
+  version: "20211006"
   category: repository
   useflags: []
   state: ""
