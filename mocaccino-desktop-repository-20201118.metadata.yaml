@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-repository-20201004.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-repository-20201118.package.tar.gz
 dependencies: []
 compilespec:
   steps:
@@ -12,7 +12,7 @@ compilespec:
   package:
     id: 0
     name: mocaccino-desktop
-    version: "20201004"
+    version: "20201118"
     category: repository
     useflags: []
     state: ""
@@ -25,14 +25,14 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-11-18 14:20:13.640880304 +0000 UTC m=+109.582778596
+    buildtimestamp: 2021-11-18 14:54:57.389915271 +0000 UTC m=+34.317223001
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
   - package:
       id: 0
       name: mocaccino-desktop
-      version: "20201004"
+      version: "20201118"
       category: repository
       useflags: []
       state: ""
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 190690c5e92b30e3c440a568d7198c915c63df90fa85e77e10b0c266a56907a2
-      packagehash: 69ba54e10096f3c44acdfda64409388f45af16c8941b953dbd90b441e2168e3e
+      buildhash: 95a1fd596f2655398b90125155dbefe04b9cf301118079b614372570e359143c
+      packagehash: e1bd4715418d35dc735088d7208c5743f52533185b2ba25a04ba35f80e00efdf
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -86,7 +86,7 @@ compilespec:
   copy: []
   requires_final_images: false
 checksums:
-  sha256: b14d0be730680d42e4f964d8f4c9d821ead1a010ccd759f71fe1fb3310f6ea41
+  sha256: 72420dada9ab16748c17426b404f35c166e3f1757b8836538b1023d1bc3f1a55
 sourceassertion: []
 compressiontype: gzip
 files:
@@ -95,7 +95,7 @@ packagecacheimage: ""
 runtime:
   id: 0
   name: mocaccino-desktop
-  version: "20201004"
+  version: "20201118"
   category: repository
   useflags: []
   state: ""
