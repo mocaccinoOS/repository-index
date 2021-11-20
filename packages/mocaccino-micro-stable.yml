@@ -1,8 +1,9 @@
 name: "mocaccino-micro-stable"
-description: "MocaccinoOS micro Repository (stable)"
-type: "http"
+description: "MocaccinoOS micro stable Repository"
+type: "docker"
 enable: true
 cached: true
 priority: 1
+reference: 20211120140355-repository.yaml
 urls:
-  - "https://get.mocaccino.org/mocaccino-micro-stable"
+  - quay.io/mocaccino/micro
