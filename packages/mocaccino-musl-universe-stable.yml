@@ -1,8 +1,9 @@
 name: "mocaccino-musl-universe-stable"
 description: "MocaccinoOS Musl Universe Repository (stable)"
-type: "http"
+type: "docker"
 enable: true
 cached: true
-priority: 2
+priority: 1
+reference: 20211121215037-repository.yaml
 urls:
-  - "https://get.mocaccino.org/mocaccino-musl-universe-stable"
+  - quay.io/mocaccino/musl-universe
