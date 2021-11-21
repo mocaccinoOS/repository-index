@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-musl-universe-repository-20201005.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-musl-universe-stable-repository-20211121.package.tar.gz
 dependencies: []
 compilespec:
   steps:
@@ -11,8 +11,8 @@ compilespec:
   seed: quay.io/mocaccino/micro:master
   package:
     id: 0
-    name: mocaccino-musl-universe
-    version: "20201005"
+    name: mocaccino-musl-universe-stable
+    version: "20211121"
     category: repository
     useflags: []
     state: ""
@@ -25,14 +25,14 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-11-20 14:51:05.51918245 +0000 UTC m=+35.283952185
+    buildtimestamp: 2021-11-21 22:38:28.680182901 +0000 UTC m=+241.502708393
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
   - package:
       id: 0
-      name: mocaccino-musl-universe
-      version: "20201005"
+      name: mocaccino-musl-universe-stable
+      version: "20211121"
       category: repository
       useflags: []
       state: ""
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 3ab42423d7681de828880bbe9c2663658fa1a38727d7ffb23fcc8b862a9dd43c
-      packagehash: 8e1caf4618e9430285c713fa0b9c1fc97b9cd59dff7540b9daf513e2101180ba
+      buildhash: 36f52efbc9cb3ce19ca082073389ce2277d8eb1aa647dcfb02f84b5eefbea055
+      packagehash: fd14a5748295b09d086440ff22e41d77febc13415dcd5cdf074e4990656345e4
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -86,16 +86,16 @@ compilespec:
   copy: []
   requires_final_images: false
 checksums:
-  sha256: 11fba7426e5adb97a0a8f099f4945ff15bf11b1b7ced8e75c9a6aa00816ff34d
+  sha256: bb139c7c72cd4f37b5c72c3d839af68bfda1b34a25a9954c4f0e9d0c086f2012
 sourceassertion: []
 compressiontype: gzip
 files:
-- etc/luet/repos.conf.d/mocaccino-musl-universe.yml
+- etc/luet/repos.conf.d/mocaccino-musl-universe-stable.yml
 packagecacheimage: ""
 runtime:
   id: 0
-  name: mocaccino-musl-universe
-  version: "20201005"
+  name: mocaccino-musl-universe-stable
+  version: "20211121"
   category: repository
   useflags: []
   state: ""
