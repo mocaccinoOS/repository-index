@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-repository-index-repository-20201005.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-kernel-stable-repository-20211120.package.tar.gz
 dependencies: []
 compilespec:
   steps:
@@ -11,8 +11,8 @@ compilespec:
   seed: quay.io/mocaccino/micro:master
   package:
     id: 0
-    name: mocaccino-repository-index
-    version: "20201005"
+    name: mocaccino-kernel-stable
+    version: "20211120"
     category: repository
     useflags: []
     state: ""
@@ -25,14 +25,14 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-11-21 22:34:52.78881619 +0000 UTC m=+25.611341682
+    buildtimestamp: 2021-11-21 22:44:53.548268836 +0000 UTC m=+123.514471627
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
   - package:
       id: 0
-      name: mocaccino-repository-index
-      version: "20201005"
+      name: mocaccino-kernel-stable
+      version: "20211120"
       category: repository
       useflags: []
       state: ""
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: a22c10721f6ebcdc0b02914ecf51357b1d35b38233702e1bef73ec1424e3e5ab
-      packagehash: 79a230a869be3aebfe1b7b8d167c928f18760d137fc0b9989418d92e2ef10541
+      buildhash: 54f0cadae6b99783a1b15197f8d3076645cf1349b8155be1be991779b51647fc
+      packagehash: f690b9f1e7387d66320a945e7976f92c8610e9794eea460cf90c8da2ee766f06
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -86,16 +86,16 @@ compilespec:
   copy: []
   requires_final_images: false
 checksums:
-  sha256: f2aa61777a7d199ebe2548709749447deaf7b77bc6a69e1c5296f2ef2a108a0c
+  sha256: 31decaf25603a611a8212919078faccda131542a96de5ee3f2829f08c744b44b
 sourceassertion: []
 compressiontype: gzip
 files:
-- etc/luet/repos.conf.d/mocaccino-repository-index.yml
+- etc/luet/repos.conf.d/mocaccino-kernel-stable.yml
 packagecacheimage: ""
 runtime:
   id: 0
-  name: mocaccino-repository-index
-  version: "20201005"
+  name: mocaccino-kernel-stable
+  version: "20211120"
   category: repository
   useflags: []
   state: ""
