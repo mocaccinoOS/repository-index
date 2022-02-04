@@ -1,0 +1,2 @@
+install:
+- mos config-update update --interactive=false -p /etc/luet/repos.conf.d || true
