@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-stable-repository-20211120.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-stable-repository-20220204.package.tar.gz
 dependencies: []
 compilespec:
   steps:
@@ -12,7 +12,7 @@ compilespec:
   package:
     id: 0
     name: mocaccino-desktop-stable
-    version: "20211120"
+    version: "20220204"
     category: repository
     useflags: []
     state: ""
@@ -25,14 +25,14 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2021-12-04 22:54:55.399767921 +0000 UTC m=+209.996471485
+    buildtimestamp: 2022-02-04 19:25:35.348777247 +0000 UTC m=+101.704698851
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
   - package:
       id: 0
       name: mocaccino-desktop-stable
-      version: "20211120"
+      version: "20220204"
       category: repository
       useflags: []
       state: ""
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: a18d0c173f6d94c4abd7dd9104ef1a77972c8d114a7bd61a6614f8380fe6872c
-      packagehash: 4b7c2abef963546fb152b3a93a313dfe9823a0cd4bf4121c8544a17dffd22972
+      buildhash: 396eb58177fce476f6888042ff30ea5c303058ad6792956615f4740928dcb3a7
+      packagehash: 86ffa4e936224e9a26846f837579c56c32eb5f794e767961337a207a7652df75
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -86,7 +86,7 @@ compilespec:
   copy: []
   requires_final_images: false
 checksums:
-  sha256: 30a4eace64eab3d54096f801c0044171d18c9ef298d3442f6b3d4d3b8a4bd43f
+  sha256: a8d161d00fcfe9dbbbc73e03d9d33d5cf2446a22f5d69c6ebf82af40a93f5432
 sourceassertion: []
 compressiontype: gzip
 files:
@@ -95,7 +95,7 @@ packagecacheimage: ""
 runtime:
   id: 0
   name: mocaccino-desktop-stable
-  version: "20211120"
+  version: "20220204"
   category: repository
   useflags: []
   state: ""
