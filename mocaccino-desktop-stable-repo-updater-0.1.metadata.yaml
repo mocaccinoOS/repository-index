@@ -5,7 +5,7 @@ compilespec:
   env: []
   prelude: []
   image: ""
-  seed: ""
+  seed: mocaccinoos/rindex-amd64-cache:01d04b340306982816caa1ea37709f0f27c44f5fc40f84f481d9f504f98a7848
   package:
     id: 0
     name: mocaccino-desktop-stable
@@ -13,24 +13,11 @@ compilespec:
     category: repo-updater
     useflags: []
     state: ""
-    packagerequires: []
-    packageconflicts: []
-    provides: []
-    hidden: false
-    annotations: {}
-    path: ""
-    description: ""
-    uri: []
-    license: ""
-    buildtimestamp: 2022-02-05 12:36:05.571962406 +0000 UTC m=+57.538109089
-    labels: {}
-    treedir: /home/runner/work/repository-index/repository-index/packages
-  sourceassertion:
-  - package:
-      id: 0
+    packagerequires:
+    - id: 0
       name: mocaccino-desktop-stable
-      version: "0.1"
-      category: repo-updater
+      version: '>=0'
+      category: repository
       useflags: []
       state: ""
       packagerequires: []
@@ -44,11 +31,93 @@ compilespec:
       license: ""
       buildtimestamp: ""
       labels: {}
+      treedir: ""
+    packageconflicts: []
+    provides: []
+    hidden: false
+    annotations: {}
+    path: ""
+    description: ""
+    uri: []
+    license: ""
+    buildtimestamp: 2022-02-05 13:55:00.021528983 +0000 UTC m=+55.259324673
+    labels: {}
+    treedir: /home/runner/work/repository-index/repository-index/packages
+  sourceassertion:
+  - package:
+      id: 0
+      name: mocaccino-desktop-stable
+      version: "20220205011736"
+      category: repository
+      useflags: []
+      state: ""
+      packagerequires: []
+      packageconflicts: []
+      provides: []
+      hidden: false
+      annotations: {}
+      path: ""
+      description: ""
+      uri: []
+      license: ""
+      buildtimestamp: ""
+      labels:
+        autobump.arch: amd64
+        autobump.hook: |
+          skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
+        autobump.prefix: prefix
+        autobump.revdeps: "true"
+        autobump.strategy: custom
+        autobump.string_replace: '{ "prefix": "" }'
+        autobump.version_hook: |
+          skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
+        package.version: 20220205011736-repository.yaml
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 6eacf999cd2257bc367aa196aaab92d9cfd83536d9b7642a369735a10eaf6099
-      packagehash: b838f2657010944ca89444bf64cd5a7a970dc00d5624071954d9edb24c22b5d6
+      buildhash: 08cd74274bae9fee11aa2f579f1425702c53861ac5e5c5d750a59cbbb030bb16
+      packagehash: 01d04b340306982816caa1ea37709f0f27c44f5fc40f84f481d9f504f98a7848
+  - package:
+      id: 0
+      name: mocaccino-desktop-stable
+      version: "0.1"
+      category: repo-updater
+      useflags: []
+      state: ""
+      packagerequires:
+      - id: 0
+        name: mocaccino-desktop-stable
+        version: '>=0'
+        category: repository
+        useflags: []
+        state: ""
+        packagerequires: []
+        packageconflicts: []
+        provides: []
+        hidden: false
+        annotations: {}
+        path: ""
+        description: ""
+        uri: []
+        license: ""
+        buildtimestamp: ""
+        labels: {}
+        treedir: ""
+      packageconflicts: []
+      provides: []
+      hidden: false
+      annotations: {}
+      path: ""
+      description: ""
+      uri: []
+      license: ""
+      buildtimestamp: ""
+      labels: {}
+      treedir: /home/runner/work/repository-index/repository-index/packages
+    value: true
+    hash:
+      buildhash: 01d04b340306982816caa1ea37709f0f27c44f5fc40f84f481d9f504f98a7848
+      packagehash: d194847bd27d66e11b3e2912e2636af6a13c7e36f528718503e3b7b69348d1df
   package_dir: ""
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build

@@ -28,7 +28,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-02-05 12:36:57.795732261 +0000 UTC m=+109.761878944
+    buildtimestamp: 2022-02-05 13:54:49.902461417 +0000 UTC m=+45.140257007
     labels:
       autobump.arch: amd64
       autobump.hook: |
@@ -41,40 +41,7 @@ compilespec:
         skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
       package.version: 20220205011736-repository.yaml
     treedir: /home/runner/work/repository-index/repository-index/packages
-  sourceassertion:
-  - package:
-      id: 0
-      name: mocaccino-desktop-stable
-      version: "20220205011736"
-      category: repository
-      useflags: []
-      state: ""
-      packagerequires: []
-      packageconflicts: []
-      provides: []
-      hidden: false
-      annotations: {}
-      path: ""
-      description: ""
-      uri: []
-      license: ""
-      buildtimestamp: ""
-      labels:
-        autobump.arch: amd64
-        autobump.hook: |
-          skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
-        autobump.prefix: prefix
-        autobump.revdeps: "true"
-        autobump.strategy: custom
-        autobump.string_replace: '{ "prefix": "" }'
-        autobump.version_hook: |
-          skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-        package.version: 20220205011736-repository.yaml
-      treedir: /home/runner/work/repository-index/repository-index/packages
-    value: true
-    hash:
-      buildhash: be2da972aa5b3fc71a638a651fe73f61697820e5063291e3cb373691ebaa9f5a
-      packagehash: 672d0c0d9a308834c072af40a51b71110755b4e5f6484a1f56d27a45b11e2f28
+  sourceassertion: []
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -82,8 +49,9 @@ compilespec:
   includes: []
   excludes: []
   buildoptions:
-    pushimagerepository: mocaccinoos/rindex-amd64-cache
+    pushimagerepository: ""
     pullimagerepository:
+    - luet/cache
     - luet/cache
     pullfirst: false
     keepimg: false
@@ -109,7 +77,7 @@ compilespec:
   copy: []
   requires_final_images: false
 checksums:
-  sha256: ec34e0d0712897ac88141ae5f00599f0f59295f3e23153f6cf808106a85c579e
+  sha256: 2f18d53a5d8d6a8a939ea1f1860fa98f3b3c92f3790e0c3c3de8aac6e73a4480
 sourceassertion: []
 compressiontype: gzip
 files:

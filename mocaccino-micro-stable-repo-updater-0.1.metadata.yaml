@@ -5,7 +5,7 @@ compilespec:
   env: []
   prelude: []
   image: ""
-  seed: ""
+  seed: mocaccinoos/rindex-amd64-cache:2b51de31f11d560ae4c56adcf2e1dcf41fb715bc554992ee3c61379140b6da9e
   package:
     id: 0
     name: mocaccino-micro-stable
@@ -13,24 +13,11 @@ compilespec:
     category: repo-updater
     useflags: []
     state: ""
-    packagerequires: []
-    packageconflicts: []
-    provides: []
-    hidden: false
-    annotations: {}
-    path: ""
-    description: ""
-    uri: []
-    license: ""
-    buildtimestamp: 2022-02-05 12:36:05.691983971 +0000 UTC m=+57.658130654
-    labels: {}
-    treedir: /home/runner/work/repository-index/repository-index/packages
-  sourceassertion:
-  - package:
-      id: 0
+    packagerequires:
+    - id: 0
       name: mocaccino-micro-stable
-      version: "0.1"
-      category: repo-updater
+      version: '>=0'
+      category: repository
       useflags: []
       state: ""
       packagerequires: []
@@ -44,11 +31,93 @@ compilespec:
       license: ""
       buildtimestamp: ""
       labels: {}
+      treedir: ""
+    packageconflicts: []
+    provides: []
+    hidden: false
+    annotations: {}
+    path: ""
+    description: ""
+    uri: []
+    license: ""
+    buildtimestamp: 2022-02-05 13:55:31.020218784 +0000 UTC m=+86.258014474
+    labels: {}
+    treedir: /home/runner/work/repository-index/repository-index/packages
+  sourceassertion:
+  - package:
+      id: 0
+      name: mocaccino-micro-stable
+      version: "20211120140355"
+      category: repository
+      useflags: []
+      state: ""
+      packagerequires: []
+      packageconflicts: []
+      provides: []
+      hidden: false
+      annotations: {}
+      path: ""
+      description: ""
+      uri: []
+      license: ""
+      buildtimestamp: ""
+      labels:
+        autobump.arch: amd64
+        autobump.hook: |
+          skopeo list-tags docker://quay.io/mocaccino/micro | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
+        autobump.prefix: prefix
+        autobump.revdeps: "true"
+        autobump.strategy: custom
+        autobump.string_replace: '{ "prefix": "" }'
+        autobump.version_hook: |
+          skopeo list-tags docker://quay.io/mocaccino/micro | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
+        package.version: 20211120140355-repository.yaml
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 7da9fbe904796c42a712dafc53896616a65829b0d0ec43921c6e2e0ccaceb61d
-      packagehash: 702a2f3a6f52d106c1f87300174e6b33f821c7c58ddfe7ac4fda97757cc35965
+      buildhash: c5ffed9d72dfdc96df5d773248233fdd721288a1a000777d39d2d8329dee7972
+      packagehash: 2b51de31f11d560ae4c56adcf2e1dcf41fb715bc554992ee3c61379140b6da9e
+  - package:
+      id: 0
+      name: mocaccino-micro-stable
+      version: "0.1"
+      category: repo-updater
+      useflags: []
+      state: ""
+      packagerequires:
+      - id: 0
+        name: mocaccino-micro-stable
+        version: '>=0'
+        category: repository
+        useflags: []
+        state: ""
+        packagerequires: []
+        packageconflicts: []
+        provides: []
+        hidden: false
+        annotations: {}
+        path: ""
+        description: ""
+        uri: []
+        license: ""
+        buildtimestamp: ""
+        labels: {}
+        treedir: ""
+      packageconflicts: []
+      provides: []
+      hidden: false
+      annotations: {}
+      path: ""
+      description: ""
+      uri: []
+      license: ""
+      buildtimestamp: ""
+      labels: {}
+      treedir: /home/runner/work/repository-index/repository-index/packages
+    value: true
+    hash:
+      buildhash: 2b51de31f11d560ae4c56adcf2e1dcf41fb715bc554992ee3c61379140b6da9e
+      packagehash: 11ddc78c56f851203f15ca6a33d9503be14eb5f95407ca55b2ddb46eaecef4e2
   package_dir: ""
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
