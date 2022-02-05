@@ -21,7 +21,6 @@ all: deps build
 deps:
 	@echo "Installing luet"
 	go get -u github.com/mudler/luet
-	go get -u github.com/MottainaiCI/mottainai-cli
 
 .PHONY: clean
 clean:
@@ -52,7 +51,7 @@ create-repo:
     --packages $(DESTINATION) \
     --name "mocaccino-repository-index" \
     --descr "Mocaccino repository index" \
-    --urls "http://localhost:8000" \
+    --urls "https://raw.githubusercontent.com/mocaccinoOS/repository-index/gh-pages" \
     --tree-compression gzip \
     --tree-filename tree.tar \
     --meta-compression gzip \

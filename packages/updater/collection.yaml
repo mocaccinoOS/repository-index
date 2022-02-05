@@ -2,15 +2,21 @@ packages:
 - &base
   category: "repo-updater"
   name: "mocaccino-desktop"
-  version: "20220205"
+  version: "0.1"
   requires:
   - category: "repository"
     name: "mocaccino-desktop"
     version: ">=0"
+  - category: "mocaccino"
+    name: "cli"
+    version: ">=0"
 - <<: *base
-  name: "mocaccino-desktop-stable"
-  version: "20220205"
+  name: "mocaccino-micro-stable"
+  version: "0.1"
   requires:
   - category: "repository"
-    name: "mocaccino-desktop-stable"
+    name: "mocaccino-micro-stable"
+    version: ">=0"
+  - category: "mocaccino"
+    name: "cli"
     version: ">=0"

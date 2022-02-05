@@ -1,7 +1,11 @@
-image: "quay.io/mocaccino/micro:master"
+image: "quay.io/mocaccino/extra:master"
 package_dir: /repo
 
 steps:
 - |
    mkdir -p /repo/etc/luet/repos.conf.d/ && \
    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+{{ if .Values.reference }}
+- LUET_NOLOCK=true luet install -yq utils/yq
+-  yq w -i /repo/etc/luet/repos.conf.d/${PACKAGE_NAME}.yml "reference" "{{ ( index .Values.labels "package.version" ) }}" --style double
+{{ end }}
