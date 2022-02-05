@@ -1,19 +1,16 @@
-path: /home/runner/work/repository-index/repository-index/build/geaaru-stable-repository-20210702.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-stable-repo-updater-20220205.package.tar.gz
 dependencies: []
 compilespec:
-  steps:
-  - |-
-    mkdir -p /repo/etc/luet/repos.conf.d/ && \
-    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+  steps: []
   env: []
   prelude: []
-  image: quay.io/mocaccino/micro:master
-  seed: quay.io/mocaccino/micro:master
+  image: ""
+  seed: ""
   package:
     id: 0
-    name: geaaru-stable
-    version: "20210702"
-    category: repository
+    name: mocaccino-desktop-stable
+    version: "20220205"
+    category: repo-updater
     useflags: []
     state: ""
     packagerequires: []
@@ -25,15 +22,15 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-02-04 23:43:38.371571865 +0000 UTC m=+222.385828826
+    buildtimestamp: 2022-02-05 10:00:38.570449159 +0000 UTC m=+99.947582188
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
   - package:
       id: 0
-      name: geaaru-stable
-      version: "20210702"
-      category: repository
+      name: mocaccino-desktop-stable
+      version: "20220205"
+      category: repo-updater
       useflags: []
       state: ""
       packagerequires: []
@@ -50,9 +47,9 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 4e8d92b81cc3d2d6d94894d56319a643ee0b08c2f36c3dc619f77f6896488dab
-      packagehash: 23388c100e2cb9ee4b9efaad2efe0d972dd11c3f12b72afa98ab6c9c9bd0211d
-  package_dir: /repo
+      buildhash: 2cfd88638f926ed86c754e7ad7ecc2fe7f67c96c50bac32c4037339b79032820
+      packagehash: aee1eeab2a7fce7ea4eccd5a725a66d5e9f10fe9d69ee2e9d878e846a77da361
+  package_dir: ""
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
   unpack: false
@@ -86,20 +83,37 @@ compilespec:
   copy: []
   requires_final_images: false
 checksums:
-  sha256: 1857ec06afa9bf986bff2e07ede2120e262b426c10c3870fabdca59612fdd510
+  sha256: 4ca545ee6d5db5c1170386eeb39b2ffe3bd46e5d4a73a9acbebc805f19607eb3
 sourceassertion: []
 compressiontype: gzip
-files:
-- etc/luet/repos.conf.d/geaaru-stable.yml
+files: []
 packagecacheimage: ""
 runtime:
   id: 0
-  name: geaaru-stable
-  version: "20210702"
-  category: repository
+  name: mocaccino-desktop-stable
+  version: "20220205"
+  category: repo-updater
   useflags: []
   state: ""
-  packagerequires: []
+  packagerequires:
+  - id: 0
+    name: mocaccino-desktop-stable
+    version: '>=0'
+    category: repository
+    useflags: []
+    state: ""
+    packagerequires: []
+    packageconflicts: []
+    provides: []
+    hidden: false
+    annotations: {}
+    path: ""
+    description: ""
+    uri: []
+    license: ""
+    buildtimestamp: ""
+    labels: {}
+    treedir: ""
   packageconflicts: []
   provides: []
   hidden: false
