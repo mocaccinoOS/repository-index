@@ -1,0 +1,16 @@
+packages:
+- &base
+  category: "repo-updater"
+  name: "mocaccino-desktop"
+  version: "20220205"
+  requires:
+  - category: "repository"
+    name: "mocaccino-desktop"
+    version: ">=0"
+- <<: *base
+  name: "mocaccino-desktop-stable"
+  version: "20220205"
+  requires:
+  - category: "repository"
+    name: "mocaccino-desktop-stable"
+    version: ">=0"
