@@ -63,3 +63,9 @@ serve-repo:
 
 validate:
 	$(LUET) tree validate --tree $(TREE) $(VALIDATE_OPTIONS)
+
+.PHONY: auto-bump
+auto-bump:
+	TREE_DIR=$(TREE) $(LUET) autobump-github
+
+autobump: auto-bump
