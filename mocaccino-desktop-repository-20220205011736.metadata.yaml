@@ -1,18 +1,18 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-stable-repository-20220205.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-repository-20220205011736.package.tar.gz
 dependencies: []
 compilespec:
   steps:
-  - |-
+  - |
     mkdir -p /repo/etc/luet/repos.conf.d/ && \
     mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
   env: []
   prelude: []
-  image: quay.io/mocaccino/micro:master
-  seed: quay.io/mocaccino/micro:master
+  image: quay.io/mocaccino/extra:master
+  seed: quay.io/mocaccino/extra:master
   package:
     id: 0
-    name: mocaccino-desktop-stable
-    version: "20220205"
+    name: mocaccino-desktop
+    version: "20220205011736"
     category: repository
     useflags: []
     state: ""
@@ -25,14 +25,14 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-02-05 10:14:45.405656532 +0000 UTC m=+155.283226850
+    buildtimestamp: 2022-02-05 10:54:35.36796262 +0000 UTC m=+12.524091808
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
   - package:
       id: 0
-      name: mocaccino-desktop-stable
-      version: "20220205"
+      name: mocaccino-desktop
+      version: "20220205011736"
       category: repository
       useflags: []
       state: ""
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 216a062bde49d1b5154f66b66db9a60e167b5369da1ea2b984d65aa9b7c2b18d
-      packagehash: 267e02b6f59f598b287f23df5959a33cfa8aa289b4b5a10b12288fda9518fe86
+      buildhash: 88971c02f3d71b39d0cc4ce5ecf4558b1e4855ed277f468624fc955f7f2d51d7
+      packagehash: 6f520915b77733695d1e8a7053d4e311450b3896b3a752f22b954343918d2708
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -86,16 +86,16 @@ compilespec:
   copy: []
   requires_final_images: false
 checksums:
-  sha256: 7bf5c106fa6ba807d271ed8f71784374d572c2d751afabfddaffcec571e7d0d0
+  sha256: 954c2459a5c0e332f0d2e916ad0d598b44abeed3201cb9c974e786d32c884906
 sourceassertion: []
 compressiontype: gzip
 files:
-- etc/luet/repos.conf.d/mocaccino-desktop-stable.yml
+- etc/luet/repos.conf.d/mocaccino-desktop.yml
 packagecacheimage: ""
 runtime:
   id: 0
-  name: mocaccino-desktop-stable
-  version: "20220205"
+  name: mocaccino-desktop
+  version: "20220205011736"
   category: repository
   useflags: []
   state: ""

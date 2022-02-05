@@ -2,13 +2,13 @@ path: /home/runner/work/repository-index/repository-index/build/livecd-repositor
 dependencies: []
 compilespec:
   steps:
-  - |-
+  - |
     mkdir -p /repo/etc/luet/repos.conf.d/ && \
     mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
   env: []
   prelude: []
-  image: quay.io/mocaccino/micro:master
-  seed: quay.io/mocaccino/micro:master
+  image: quay.io/mocaccino/extra:master
+  seed: quay.io/mocaccino/extra:master
   package:
     id: 0
     name: livecd
@@ -25,7 +25,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-02-05 10:12:33.392697962 +0000 UTC m=+23.270268280
+    buildtimestamp: 2022-02-05 10:56:32.363905297 +0000 UTC m=+129.520034385
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: c6dd474c37115aab58714885d42086037aca089bfdce8c918cc3e6fb9211d1a5
-      packagehash: 39a147921d9de7caaad50fb392220f463c28ba4cef901bd40d7422cfe2a8362d
+      buildhash: 97247373fdbd103bccde025abc1f1daf8a23b2ef6766b74a14574ee42e0e2bf9
+      packagehash: dbfecff84b21edb3e7f055a6b3684abbe75c2b99f857bd49db7505940087bddc
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -86,7 +86,7 @@ compilespec:
   copy: []
   requires_final_images: false
 checksums:
-  sha256: e79cc6e0a74eab5791521b201ec9c45ec1d7ca32d542bb7835a9a2729260c1b5
+  sha256: 3710a4585b164ad793f480ab18c67b63d431082a271e56bd607223ad2a5ed9fe
 sourceassertion: []
 compressiontype: gzip
 files:

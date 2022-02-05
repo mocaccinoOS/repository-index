@@ -1,25 +1,25 @@
 description: Mocaccino repository index
 enable: true
 index: []
-last_update: "1644056151"
+last_update: "1644058697"
 name: mocaccino-repository-index
 repo_files:
   compilertree:
     checksums:
-      sha256: 213acf44d2539e98aa255f8a9ce3535717f4b14f0317c0821cc2c47e19ef7fac
+      sha256: 8e8eb75e4034cc03a43cebcbdf220426502e3e98cdb3d2905c16c2fc758c957f
     compressiontype: gzip
     filename: compilertree.tar.gz
   meta:
     checksums:
-      sha256: 0666c751c39f77a0a3466be06199cb649f799ac78e9b4b1b0275adcd5ea192f4
+      sha256: 2992a00f4d8fe44215227619c76a41bef8f88b014431938edd2bb29db755cc5d
     compressiontype: gzip
     filename: repository.meta.yaml.tar.gz
   tree:
     checksums:
-      sha256: 6f8b819282c92b6294f1d7aae95524b463c3c3821ace0003b96f5506a626a40e
+      sha256: aa6e98c89eaeb755610ef9d4ffdecc3623d49c26d49afbe92caed9f5f3e9e6af
     compressiontype: gzip
     filename: tree.tar.gz
 revision: 1
 type: http
 urls:
-- http://localhost:8000
+- https://raw.githubusercontent.com/mocaccinoOS/repository-index/gh-pages

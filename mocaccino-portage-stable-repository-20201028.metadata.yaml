@@ -2,13 +2,13 @@ path: /home/runner/work/repository-index/repository-index/build/mocaccino-portag
 dependencies: []
 compilespec:
   steps:
-  - |-
+  - |
     mkdir -p /repo/etc/luet/repos.conf.d/ && \
     mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
   env: []
   prelude: []
-  image: quay.io/mocaccino/micro:master
-  seed: quay.io/mocaccino/micro:master
+  image: quay.io/mocaccino/extra:master
+  seed: quay.io/mocaccino/extra:master
   package:
     id: 0
     name: mocaccino-portage-stable
@@ -25,7 +25,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-02-05 10:12:22.376362124 +0000 UTC m=+12.253932442
+    buildtimestamp: 2022-02-05 10:56:10.366215094 +0000 UTC m=+107.522344282
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 7f538cc919c2ed4b8993138c976cf12cfc6017c12e326514e32760425021c396
-      packagehash: 324d4319f9c7b22d1a20d88461ec8fbff14907b78709879429b15970b4db1df8
+      buildhash: 522fde87b7ad9161df86c64d2c625dce2eff5503dabb3a575b52251634e51a5f
+      packagehash: 960882aaba0fa5f92e9f8b1aec6e778a1c0962ca224dcda225a356fedd69f91f
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -86,7 +86,7 @@ compilespec:
   copy: []
   requires_final_images: false
 checksums:
-  sha256: 869d8e87f0778388ed2d77f5ad0809ac0788eed4d013edf4f207c8bf7ed3bd09
+  sha256: c6f836a55747e91a149cae939ddf510ed38435712d614666de58a2d9e157b4ff
 sourceassertion: []
 compressiontype: gzip
 files:

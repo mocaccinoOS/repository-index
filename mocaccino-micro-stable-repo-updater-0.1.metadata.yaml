@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-repo-updater-20220205.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-micro-stable-repo-updater-0.1.package.tar.gz
 dependencies: []
 compilespec:
   steps: []
@@ -8,8 +8,8 @@ compilespec:
   seed: ""
   package:
     id: 0
-    name: mocaccino-desktop
-    version: "20220205"
+    name: mocaccino-micro-stable
+    version: "0.1"
     category: repo-updater
     useflags: []
     state: ""
@@ -22,14 +22,14 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-02-05 10:14:01.514085159 +0000 UTC m=+111.391655577
+    buildtimestamp: 2022-02-05 10:54:57.600268999 +0000 UTC m=+34.756398087
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
   - package:
       id: 0
-      name: mocaccino-desktop
-      version: "20220205"
+      name: mocaccino-micro-stable
+      version: "0.1"
       category: repo-updater
       useflags: []
       state: ""
@@ -47,8 +47,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 1bee8db71074deab4ef4a60f2c5b2a061e2059312fa0847237eae8e6a24eecc1
-      packagehash: 834156aa1aef2d30138a5c71e6c56cf14b70d535971a5dfa5a15f562f34e6476
+      buildhash: 1285b329b942fde4d43f2f1de5ca225b0c9b0afe0d519bff0ad5c58171c3eb58
+      packagehash: 24f24cb232163e96510ad7ed780105fdbdcb2a14d6a4b073d660e8bbad473b50
   package_dir: ""
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -90,16 +90,34 @@ files: []
 packagecacheimage: ""
 runtime:
   id: 0
-  name: mocaccino-desktop
-  version: "20220205"
+  name: mocaccino-micro-stable
+  version: "0.1"
   category: repo-updater
   useflags: []
   state: ""
   packagerequires:
   - id: 0
-    name: mocaccino-desktop
+    name: mocaccino-micro-stable
     version: '>=0'
     category: repository
+    useflags: []
+    state: ""
+    packagerequires: []
+    packageconflicts: []
+    provides: []
+    hidden: false
+    annotations: {}
+    path: ""
+    description: ""
+    uri: []
+    license: ""
+    buildtimestamp: ""
+    labels: {}
+    treedir: ""
+  - id: 0
+    name: cli
+    version: '>=0'
+    category: mocaccino
     useflags: []
     state: ""
     packagerequires: []

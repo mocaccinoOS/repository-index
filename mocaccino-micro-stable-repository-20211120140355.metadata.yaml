@@ -1,0 +1,146 @@
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-micro-stable-repository-20211120140355.package.tar.gz
+dependencies: []
+compilespec:
+  steps:
+  - |
+    mkdir -p /repo/etc/luet/repos.conf.d/ && \
+    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+  - LUET_NOLOCK=true luet install -yq utils/yq
+  - yq w -i /repo/etc/luet/repos.conf.d/${PACKAGE_NAME}.yml "reference" "20211120140355-repository.yaml"
+    --style double
+  env: []
+  prelude: []
+  image: quay.io/mocaccino/extra:master
+  seed: quay.io/mocaccino/extra:master
+  package:
+    id: 0
+    name: mocaccino-micro-stable
+    version: "20211120140355"
+    category: repository
+    useflags: []
+    state: ""
+    packagerequires: []
+    packageconflicts: []
+    provides: []
+    hidden: false
+    annotations: {}
+    path: ""
+    description: ""
+    uri: []
+    license: ""
+    buildtimestamp: 2022-02-05 10:55:37.633140303 +0000 UTC m=+74.789269491
+    labels:
+      autobump.arch: amd64
+      autobump.hook: |
+        skopeo list-tags docker://quay.io/mocaccino/micro | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
+      autobump.prefix: prefix
+      autobump.revdeps: "true"
+      autobump.strategy: custom
+      autobump.string_replace: '{ "prefix": "" }'
+      autobump.version_hook: |
+        skopeo list-tags docker://quay.io/mocaccino/micro | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
+      package.version: 20211120140355-repository.yaml
+    treedir: /home/runner/work/repository-index/repository-index/packages
+  sourceassertion:
+  - package:
+      id: 0
+      name: mocaccino-micro-stable
+      version: "20211120140355"
+      category: repository
+      useflags: []
+      state: ""
+      packagerequires: []
+      packageconflicts: []
+      provides: []
+      hidden: false
+      annotations: {}
+      path: ""
+      description: ""
+      uri: []
+      license: ""
+      buildtimestamp: ""
+      labels:
+        autobump.arch: amd64
+        autobump.hook: |
+          skopeo list-tags docker://quay.io/mocaccino/micro | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
+        autobump.prefix: prefix
+        autobump.revdeps: "true"
+        autobump.strategy: custom
+        autobump.string_replace: '{ "prefix": "" }'
+        autobump.version_hook: |
+          skopeo list-tags docker://quay.io/mocaccino/micro | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
+        package.version: 20211120140355-repository.yaml
+      treedir: /home/runner/work/repository-index/repository-index/packages
+    value: true
+    hash:
+      buildhash: 495f95038347767f94483f9be246f0a98ef12c1bbef0d65b541fd8c874f59cb9
+      packagehash: 4cffa6f438b9f363d7b13c718dbe245f85f3d1bb35a9f79cef5181d21208e796
+  package_dir: /repo
+  retrieve: []
+  outputpath: /home/runner/work/repository-index/repository-index/build
+  unpack: false
+  includes: []
+  excludes: []
+  buildoptions:
+    pushimagerepository: mocaccinoos/rindex-amd64-cache
+    pullimagerepository:
+    - luet/cache
+    pullfirst: false
+    keepimg: false
+    push: false
+    concurrency: 0
+    compressiontype: ""
+    wait: false
+    onlydeps: false
+    nodeps: false
+    solveroptions: {}
+    buildvaluesfile: []
+    buildvalues:
+    - {}
+    packagetargetonly: false
+    rebuild: false
+    backendargs: []
+    backendtype: ""
+    templatesfolder: []
+    pushfinalimages: false
+    pushfinalimagesforce: false
+    pushfinalimagesrepository: ""
+    context: null
+  copy: []
+  requires_final_images: false
+checksums:
+  sha256: e8fae78e19cfe0514b7b8a729ca6f2e5abe01140f71894c3db23d2c76a8af80b
+sourceassertion: []
+compressiontype: gzip
+files:
+- etc/luet/repos.conf.d/mocaccino-micro-stable.yml
+packagecacheimage: ""
+runtime:
+  id: 0
+  name: mocaccino-micro-stable
+  version: "20211120140355"
+  category: repository
+  useflags: []
+  state: ""
+  packagerequires: []
+  packageconflicts: []
+  provides: []
+  hidden: false
+  annotations: {}
+  path: ""
+  description: ""
+  uri: []
+  license: ""
+  buildtimestamp: ""
+  labels:
+    autobump.arch: amd64
+    autobump.hook: |
+      skopeo list-tags docker://quay.io/mocaccino/micro | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
+    autobump.prefix: prefix
+    autobump.revdeps: "true"
+    autobump.strategy: custom
+    autobump.string_replace: '{ "prefix": "" }'
+    autobump.version_hook: |
+      skopeo list-tags docker://quay.io/mocaccino/micro | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
+    package.version: 20211120140355-repository.yaml
+  treedir: ""

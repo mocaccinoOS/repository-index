@@ -2,13 +2,13 @@ path: /home/runner/work/repository-index/repository-index/build/mocaccino-stage3
 dependencies: []
 compilespec:
   steps:
-  - |-
+  - |
     mkdir -p /repo/etc/luet/repos.conf.d/ && \
     mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
   env: []
   prelude: []
-  image: quay.io/mocaccino/micro:master
-  seed: quay.io/mocaccino/micro:master
+  image: quay.io/mocaccino/extra:master
+  seed: quay.io/mocaccino/extra:master
   package:
     id: 0
     name: mocaccino-stage3
@@ -25,7 +25,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-02-05 10:15:29.368692146 +0000 UTC m=+199.246262464
+    buildtimestamp: 2022-02-05 10:56:21.363187439 +0000 UTC m=+118.519316527
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 00c40661b1c0231d3fe20703b71cb9a4f314360a5fb779b845d3c85d0e3a4e99
-      packagehash: 8b5eb570e97e8c7de5fd32c92796f96970b0205a1e89fcc84982491558c98fb2
+      buildhash: ef64bc47f98a23f1062a5034a234ad16cf1dbabdaad67deaf77f5ce5fee5f004
+      packagehash: c85ec191bb0c05076595c466b96f3d8600d80368e79efa3f2a39d6d6100b8ced
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -86,7 +86,7 @@ compilespec:
   copy: []
   requires_final_images: false
 checksums:
-  sha256: 95bba08259d661fd8ca0c18abb03e2a403ef4717025ceb9d8c3e9d358b011887
+  sha256: 483094b3e8175db42d539282e90108e20842ee42ad66792423262224830f7e82
 sourceassertion: []
 compressiontype: gzip
 files:

@@ -2,13 +2,13 @@ path: /home/runner/work/repository-index/repository-index/build/mocaccino-musl-u
 dependencies: []
 compilespec:
   steps:
-  - |-
+  - |
     mkdir -p /repo/etc/luet/repos.conf.d/ && \
     mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
   env: []
   prelude: []
-  image: quay.io/mocaccino/micro:master
-  seed: quay.io/mocaccino/micro:master
+  image: quay.io/mocaccino/extra:master
+  seed: quay.io/mocaccino/extra:master
   package:
     id: 0
     name: mocaccino-musl-universe-stable
@@ -25,7 +25,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-02-05 10:13:06.381101869 +0000 UTC m=+56.258672287
+    buildtimestamp: 2022-02-05 10:55:48.349234953 +0000 UTC m=+85.505364141
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 56ee398fec688f786e80b5332deb40329e8b64a894cbe5fa8ba4c0a2b4a8f847
-      packagehash: 8e6f94ce397eae9d50b3d43959aeec1811a8591174f29126cff13fc1e84c7ecd
+      buildhash: ae2cfad48aab808531eeb972675c9046b913e3cf62e4a8a93a708924624371eb
+      packagehash: cfa3865e9f2118191bb083f9e20e46f69eae72cb56972c2ab876acfe270c6aeb
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -86,7 +86,7 @@ compilespec:
   copy: []
   requires_final_images: false
 checksums:
-  sha256: a1bb3b49714f8b8f95e777fcd2a1fcde112a6c0111e22cb67ed8504f141ca6b6
+  sha256: b10dfe25fc1ec4614864fa435338c2398226ff71e065d2d67dd0452233edd160
 sourceassertion: []
 compressiontype: gzip
 files:

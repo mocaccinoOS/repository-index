@@ -2,13 +2,13 @@ path: /home/runner/work/repository-index/repository-index/build/luet-repository-
 dependencies: []
 compilespec:
   steps:
-  - |-
+  - |
     mkdir -p /repo/etc/luet/repos.conf.d/ && \
     mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
   env: []
   prelude: []
-  image: quay.io/mocaccino/micro:master
-  seed: quay.io/mocaccino/micro:master
+  image: quay.io/mocaccino/extra:master
+  seed: quay.io/mocaccino/extra:master
   package:
     id: 0
     name: luet
@@ -25,7 +25,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-02-05 10:13:17.407222053 +0000 UTC m=+67.284792371
+    buildtimestamp: 2022-02-05 10:57:44.378109979 +0000 UTC m=+201.534239067
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 26901fa971ee45c3121ea73db43d4c2797ee4694c63d1cee8aa20f838f521e5c
-      packagehash: 0e74d2af4396ace61474096ea25eae8eadb7ba991db710c15629130e53355ce3
+      buildhash: a241efc06929e3d28ea59413f717d02a7eb748434b3e2e482ccc3a795d0011fb
+      packagehash: d9d9b4fd72e1a7fecc92275c4b95cb6a4fb5f2012eb33d042f7eac55ba9e0c43
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -86,7 +86,7 @@ compilespec:
   copy: []
   requires_final_images: false
 checksums:
-  sha256: f415e9b73676fe14543d44deccc14eaaa6d8ca4491b026fcd3cab0c3c035d886
+  sha256: f5d07847b3785593d27705560422fc579f70d6de85a2fad9302ecc7dadcb43e7
 sourceassertion: []
 compressiontype: gzip
 files:

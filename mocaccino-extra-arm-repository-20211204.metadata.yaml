@@ -2,13 +2,13 @@ path: /home/runner/work/repository-index/repository-index/build/mocaccino-extra-
 dependencies: []
 compilespec:
   steps:
-  - |-
+  - |
     mkdir -p /repo/etc/luet/repos.conf.d/ && \
     mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
   env: []
   prelude: []
-  image: quay.io/mocaccino/micro:master
-  seed: quay.io/mocaccino/micro:master
+  image: quay.io/mocaccino/extra:master
+  seed: quay.io/mocaccino/extra:master
   package:
     id: 0
     name: mocaccino-extra-arm
@@ -25,7 +25,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-02-05 10:13:39.368309527 +0000 UTC m=+89.245880145
+    buildtimestamp: 2022-02-05 10:57:55.359742798 +0000 UTC m=+212.515871886
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
@@ -50,8 +50,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 5eb6a7638720fd3404aa1b301e1ef1fc4f93228b38ba96c967ff970964b2d38d
-      packagehash: 1dd3719cb4bcdf4a24d8b8d4f5ccd4de1a405e6c2ccbd498858b2043e902bdc3
+      buildhash: 17bfc5bfbf17555606fec8e1a278eca16bebccd7c183a0bd45689bd9b181279c
+      packagehash: 99e0ed26a099bc86febb661fadc2c20babe11ca7df19cef3fa3ac3524c278a86
   package_dir: /repo
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -86,7 +86,7 @@ compilespec:
   copy: []
   requires_final_images: false
 checksums:
-  sha256: 03b6a31f6bdc2ebe354c7309552fe33a3dd61277aaa3b7fe1c81267f1369ce3c
+  sha256: 2fc872cf8df3905622a2b1f12828189755ba0ccbe9206450a71180fd8d25081b
 sourceassertion: []
 compressiontype: gzip
 files:
