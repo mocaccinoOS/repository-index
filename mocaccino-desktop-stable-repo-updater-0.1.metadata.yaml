@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-repo-updater-0.1.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-stable-repo-updater-0.1.package.tar.gz
 dependencies: []
 compilespec:
   steps: []
@@ -8,7 +8,7 @@ compilespec:
   seed: ""
   package:
     id: 0
-    name: mocaccino-desktop
+    name: mocaccino-desktop-stable
     version: "0.1"
     category: repo-updater
     useflags: []
@@ -22,13 +22,13 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-02-05 10:54:57.481374883 +0000 UTC m=+34.637504071
+    buildtimestamp: 2022-02-05 11:03:24.736488269 +0000 UTC m=+218.415031098
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
   - package:
       id: 0
-      name: mocaccino-desktop
+      name: mocaccino-desktop-stable
       version: "0.1"
       category: repo-updater
       useflags: []
@@ -47,8 +47,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 64af24a538ba13407ecde58d65c72b52ca0dfbbf7852ee4c79d58c9dd74a50a4
-      packagehash: d1858f802f1addadee7f14adb48bc044cd0b4264c1421ddcb6126270c9f72a7b
+      buildhash: 6eacf999cd2257bc367aa196aaab92d9cfd83536d9b7642a369735a10eaf6099
+      packagehash: b838f2657010944ca89444bf64cd5a7a970dc00d5624071954d9edb24c22b5d6
   package_dir: ""
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
@@ -90,14 +90,14 @@ files: []
 packagecacheimage: ""
 runtime:
   id: 0
-  name: mocaccino-desktop
+  name: mocaccino-desktop-stable
   version: "0.1"
   category: repo-updater
   useflags: []
   state: ""
   packagerequires:
   - id: 0
-    name: mocaccino-desktop
+    name: mocaccino-desktop-stable
     version: '>=0'
     category: repository
     useflags: []
