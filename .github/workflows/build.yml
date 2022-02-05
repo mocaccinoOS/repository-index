@@ -1,5 +1,8 @@
 name: Build
 
+concurrency:
+  group: ci-${{ github.head_ref || github.ref }}-${{ github.repository }}
+
 on:
   push:
     branches: [ master, develop ]
