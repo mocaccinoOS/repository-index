@@ -5,7 +5,7 @@ compilespec:
   env: []
   prelude: []
   image: ""
-  seed: mocaccinoos/rindex-amd64-cache:01d04b340306982816caa1ea37709f0f27c44f5fc40f84f481d9f504f98a7848
+  seed: mocaccinoos/rindex-amd64-cache:3324f22fbcefdfc8a0ff804390a4d1dea15a1d9d4cfe9893cac1e3effa38cee2
   package:
     id: 0
     name: mocaccino-desktop-stable
@@ -40,7 +40,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-02-05 13:55:00.021528983 +0000 UTC m=+55.259324673
+    buildtimestamp: 2022-02-06 12:32:58.017058338 +0000 UTC m=+54.615094481
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
@@ -71,12 +71,12 @@ compilespec:
         autobump.string_replace: '{ "prefix": "" }'
         autobump.version_hook: |
           skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-        package.version: 20220205011736-repository.yaml
+        package.version: 20220204175357-repository.yaml
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 08cd74274bae9fee11aa2f579f1425702c53861ac5e5c5d750a59cbbb030bb16
-      packagehash: 01d04b340306982816caa1ea37709f0f27c44f5fc40f84f481d9f504f98a7848
+      buildhash: 57db5f38581c000164102f01cb7aafdd9d3255ed29fcd977ee5c809a3ccde206
+      packagehash: 3324f22fbcefdfc8a0ff804390a4d1dea15a1d9d4cfe9893cac1e3effa38cee2
   - package:
       id: 0
       name: mocaccino-desktop-stable
@@ -116,8 +116,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 01d04b340306982816caa1ea37709f0f27c44f5fc40f84f481d9f504f98a7848
-      packagehash: d194847bd27d66e11b3e2912e2636af6a13c7e36f528718503e3b7b69348d1df
+      buildhash: 3324f22fbcefdfc8a0ff804390a4d1dea15a1d9d4cfe9893cac1e3effa38cee2
+      packagehash: bdbf4cb97126eb35dd8c592c61a9672a325c0b94e1dbc7ced5a559379d089bef
   package_dir: ""
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
