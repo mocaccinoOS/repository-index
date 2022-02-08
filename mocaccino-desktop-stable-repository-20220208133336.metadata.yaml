@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-stable-repository-20220205011736.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-stable-repository-20220208133336.package.tar.gz
 dependencies: []
 compilespec:
   steps:
@@ -6,7 +6,7 @@ compilespec:
     mkdir -p /repo/etc/luet/repos.conf.d/ && \
     mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
   - LUET_NOLOCK=true luet install -yq utils/yq
-  - yq w -i /repo/etc/luet/repos.conf.d/${PACKAGE_NAME}.yml "reference" "20220204175357-repository.yaml"
+  - yq w -i /repo/etc/luet/repos.conf.d/${PACKAGE_NAME}.yml "reference" "20220208133336-repository.yaml"
     --style double
   env: []
   prelude: []
@@ -15,7 +15,7 @@ compilespec:
   package:
     id: 0
     name: mocaccino-desktop-stable
-    version: "20220205011736"
+    version: "20220208133336"
     category: repository
     useflags: []
     state: ""
@@ -28,7 +28,7 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-02-06 12:32:47.878269122 +0000 UTC m=+44.476305265
+    buildtimestamp: 2022-02-08 13:40:33.210891971 +0000 UTC m=+99.196025918
     labels:
       autobump.arch: amd64
       autobump.hook: |
@@ -39,7 +39,7 @@ compilespec:
       autobump.string_replace: '{ "prefix": "" }'
       autobump.version_hook: |
         skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-      package.version: 20220204175357-repository.yaml
+      package.version: 20220208133336-repository.yaml
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion: []
   package_dir: /repo
@@ -77,7 +77,7 @@ compilespec:
   copy: []
   requires_final_images: false
 checksums:
-  sha256: cd13436310fd0fe53c0d1948312cac4723ddb0fe85470377109d562ac70ad50e
+  sha256: 132800adeeaedffc7115f3374b7ba73d0da4589fd2fc38681a5e1ce23a03fac5
 sourceassertion: []
 compressiontype: gzip
 files:
@@ -86,7 +86,7 @@ packagecacheimage: ""
 runtime:
   id: 0
   name: mocaccino-desktop-stable
-  version: "20220205011736"
+  version: "20220208133336"
   category: repository
   useflags: []
   state: ""
@@ -110,5 +110,5 @@ runtime:
     autobump.string_replace: '{ "prefix": "" }'
     autobump.version_hook: |
       skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-    package.version: 20220204175357-repository.yaml
+    package.version: 20220208133336-repository.yaml
   treedir: ""
