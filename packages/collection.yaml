@@ -22,7 +22,6 @@ packages:
     version: "20220205011736"
   - category: "repository"
     name: "mocaccino-desktop-stable"
-    version: "20220206"
     reference: true
     labels:
       autobump.arch: "amd64"
@@ -34,8 +33,8 @@ packages:
         skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
       autobump.version_hook: |
         skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-      package.version: "20220204175357-repository.yaml"
-    version: "20220205011736"
+      package.version: "20220208133336-repository.yaml"
+    version: "20220208133336"
   - category: "repository"
     name: "mocaccino-extra"
     version: "20211023"
