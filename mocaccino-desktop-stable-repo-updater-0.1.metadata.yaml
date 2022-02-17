@@ -5,7 +5,7 @@ compilespec:
   env: []
   prelude: []
   image: ""
-  seed: mocaccinoos/rindex-amd64-cache:68e00e0d9ade0a4b133d715791d1b1ee2e3970a2f6892acc6f7da5785d8ca0d4
+  seed: mocaccinoos/rindex-amd64-cache:0cefb2c9eef63e20fe7edeb9d8eeed95994935f30e111dbd66341f730a30d137
   package:
     id: 0
     name: mocaccino-desktop-stable
@@ -40,14 +40,14 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-02-14 09:27:07.022795875 +0000 UTC m=+76.877467035
+    buildtimestamp: 2022-02-17 13:07:33.041649952 +0000 UTC m=+167.473186926
     labels: {}
     treedir: /home/runner/work/repository-index/repository-index/packages
   sourceassertion:
   - package:
       id: 0
       name: mocaccino-desktop-stable
-      version: "20220214073953"
+      version: "20220216191115"
       category: repository
       useflags: []
       state: ""
@@ -71,12 +71,12 @@ compilespec:
         autobump.string_replace: '{ "prefix": "" }'
         autobump.version_hook: |
           skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-        package.version: 20220214073953-repository.yaml
+        package.version: 20220216191115-repository.yaml
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: dd3ae7afccba28fcb151da3ae8ed990aec712de91e4fffdd345392df4b55e041
-      packagehash: 68e00e0d9ade0a4b133d715791d1b1ee2e3970a2f6892acc6f7da5785d8ca0d4
+      buildhash: 0aeb9af7f257731dfe55385c0a37bc17555f5b86517863e1da7ee6ab464c644f
+      packagehash: 0cefb2c9eef63e20fe7edeb9d8eeed95994935f30e111dbd66341f730a30d137
   - package:
       id: 0
       name: mocaccino-desktop-stable
@@ -116,8 +116,8 @@ compilespec:
       treedir: /home/runner/work/repository-index/repository-index/packages
     value: true
     hash:
-      buildhash: 68e00e0d9ade0a4b133d715791d1b1ee2e3970a2f6892acc6f7da5785d8ca0d4
-      packagehash: b3d8883b5c0829e26b2dce90bb6bf210f6b35366252293f9c50810f76d593fa2
+      buildhash: 0cefb2c9eef63e20fe7edeb9d8eeed95994935f30e111dbd66341f730a30d137
+      packagehash: 85ca17ac23802f31e8d6054d83191fcec388f915e00392ea3f840e3e64030de6
   package_dir: ""
   retrieve: []
   outputpath: /home/runner/work/repository-index/repository-index/build
