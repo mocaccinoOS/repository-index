@@ -1,22 +1,22 @@
 packages:
-- &base
-  category: "repo-updater"
-  name: "mocaccino-desktop-stable"
-  version: "0.1"
-  requires:
-  - category: "repository"
+  - &base
+    category: "repo-updater"
     name: "mocaccino-desktop-stable"
-    version: ">=0"
-  - category: "mocaccino"
-    name: "cli"
-    version: ">=0"
-- <<: *base
-  name: "mocaccino-micro-stable"
-  version: "0.1"
-  requires:
-  - category: "repository"
+    version: 0.1+1
+    requires:
+      - category: "repository"
+        name: "mocaccino-desktop-stable"
+        version: ">=0"
+      - category: "mocaccino"
+        name: "cli"
+        version: ">=0"
+  - !!merge <<: *base
     name: "mocaccino-micro-stable"
-    version: ">=0"
-  - category: "mocaccino"
-    name: "cli"
-    version: ">=0"
+    version: "0.1"
+    requires:
+      - category: "repository"
+        name: "mocaccino-micro-stable"
+        version: ">=0"
+      - category: "mocaccino"
+        name: "cli"
+        version: ">=0"
