@@ -1,15 +1,100 @@
 path: /home/runner/work/repository-index/repository-index/build/livecd-repository-20200704.package.tar.gz
 dependencies: []
 compilespec:
-  steps:
-  - |
-    mkdir -p /repo/etc/luet/repos.conf.d/ && \
-    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
-  env: []
-  prelude: []
-  image: quay.io/mocaccino/extra:master
-  seed: quay.io/mocaccino/extra:master
-  package:
+    steps:
+        - |
+          mkdir -p /repo/etc/luet/repos.conf.d/ && \
+          mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+    env: []
+    prelude: []
+    image: quay.io/mocaccino/extra:master
+    seed: quay.io/mocaccino/extra:master
+    package:
+        id: 0
+        name: livecd
+        version: "20200704"
+        category: repository
+        useflags: []
+        state: ""
+        packagerequires: []
+        packageconflicts: []
+        provides: []
+        hidden: false
+        annotations: {}
+        path: ""
+        description: ""
+        uri: []
+        license: ""
+        buildtimestamp: 2022-03-26 10:15:09.497650752 +0000 UTC m=+12.936048967
+        labels: {}
+        treedir: /home/runner/work/repository-index/repository-index/packages
+    sourceassertion:
+        - package:
+            id: 0
+            name: livecd
+            version: "20200704"
+            category: repository
+            useflags: []
+            state: ""
+            packagerequires: []
+            packageconflicts: []
+            provides: []
+            hidden: false
+            annotations: {}
+            path: ""
+            description: ""
+            uri: []
+            license: ""
+            buildtimestamp: ""
+            labels: {}
+            treedir: /home/runner/work/repository-index/repository-index/packages
+          value: true
+          hash:
+            buildhash: 08d60e0fe798e4eaa4eb29d819d4d1074c0e6668be3a8d438c9e773fd1192c29
+            packagehash: 2fe79376efcad40b2d79b8a0056a2f348686479e8dafbbd37f2ba50f1966463e
+    package_dir: /repo
+    retrieve: []
+    outputpath: /home/runner/work/repository-index/repository-index/build
+    unpack: false
+    includes: []
+    excludes: []
+    buildoptions:
+        pushimagerepository: mocaccinoos/rindex-amd64-cache
+        pullimagerepository:
+            - luet/cache
+        pullfirst: false
+        keepimg: false
+        push: false
+        concurrency: 0
+        compressiontype: ""
+        wait: false
+        onlydeps: false
+        nodeps: false
+        solveroptions: {}
+        buildvaluesfile: []
+        buildvalues:
+            - category: repository
+              name: livecd
+              version: "20200704"
+        packagetargetonly: false
+        rebuild: false
+        backendargs: []
+        backendtype: ""
+        templatesfolder: []
+        pushfinalimages: false
+        pushfinalimagesforce: false
+        pushfinalimagesrepository: ""
+        context: null
+    copy: []
+    requires_final_images: false
+checksums:
+    sha256: 3e0e69cb82519437f6bea89546cb17a9485d11f844ca8a294b060efbd85bff2a
+sourceassertion: []
+compressiontype: gzip
+files:
+    - etc/luet/repos.conf.d/livecd.yml
+packagecacheimage: ""
+runtime:
     id: 0
     name: livecd
     version: "20200704"
@@ -25,89 +110,6 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-03-20 12:44:28.572814586 +0000 UTC m=+111.731719084
+    buildtimestamp: ""
     labels: {}
-    treedir: /home/runner/work/repository-index/repository-index/packages
-  sourceassertion:
-  - package:
-      id: 0
-      name: livecd
-      version: "20200704"
-      category: repository
-      useflags: []
-      state: ""
-      packagerequires: []
-      packageconflicts: []
-      provides: []
-      hidden: false
-      annotations: {}
-      path: ""
-      description: ""
-      uri: []
-      license: ""
-      buildtimestamp: ""
-      labels: {}
-      treedir: /home/runner/work/repository-index/repository-index/packages
-    value: true
-    hash:
-      buildhash: 8593915bfe3e530ea6816bbbaead045361418a5e35e3a690c03644bb0317ac84
-      packagehash: e12d48f4208dba2fc80dadfe0a24bb8d9a9763eb4ab38115d3580abf75682513
-  package_dir: /repo
-  retrieve: []
-  outputpath: /home/runner/work/repository-index/repository-index/build
-  unpack: false
-  includes: []
-  excludes: []
-  buildoptions:
-    pushimagerepository: mocaccinoos/rindex-amd64-cache
-    pullimagerepository:
-    - luet/cache
-    pullfirst: false
-    keepimg: false
-    push: false
-    concurrency: 0
-    compressiontype: ""
-    wait: false
-    onlydeps: false
-    nodeps: false
-    solveroptions: {}
-    buildvaluesfile: []
-    buildvalues:
-    - {}
-    packagetargetonly: false
-    rebuild: false
-    backendargs: []
-    backendtype: ""
-    templatesfolder: []
-    pushfinalimages: false
-    pushfinalimagesforce: false
-    pushfinalimagesrepository: ""
-    context: null
-  copy: []
-  requires_final_images: false
-checksums:
-  sha256: f893601b4a0c8c0408825d121f3dd492c544de2188579b1d14a2c2585badcd65
-sourceassertion: []
-compressiontype: gzip
-files:
-- etc/luet/repos.conf.d/livecd.yml
-packagecacheimage: ""
-runtime:
-  id: 0
-  name: livecd
-  version: "20200704"
-  category: repository
-  useflags: []
-  state: ""
-  packagerequires: []
-  packageconflicts: []
-  provides: []
-  hidden: false
-  annotations: {}
-  path: ""
-  description: ""
-  uri: []
-  license: ""
-  buildtimestamp: ""
-  labels: {}
-  treedir: ""
+    treedir: ""

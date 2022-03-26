@@ -1,15 +1,100 @@
 path: /home/runner/work/repository-index/repository-index/build/luet-repository-20200717.package.tar.gz
 dependencies: []
 compilespec:
-  steps:
-  - |
-    mkdir -p /repo/etc/luet/repos.conf.d/ && \
-    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
-  env: []
-  prelude: []
-  image: quay.io/mocaccino/extra:master
-  seed: quay.io/mocaccino/extra:master
-  package:
+    steps:
+        - |
+          mkdir -p /repo/etc/luet/repos.conf.d/ && \
+          mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+    env: []
+    prelude: []
+    image: quay.io/mocaccino/extra:master
+    seed: quay.io/mocaccino/extra:master
+    package:
+        id: 0
+        name: luet
+        version: "20200717"
+        category: repository
+        useflags: []
+        state: ""
+        packagerequires: []
+        packageconflicts: []
+        provides: []
+        hidden: false
+        annotations: {}
+        path: ""
+        description: ""
+        uri: []
+        license: ""
+        buildtimestamp: 2022-03-26 10:15:20.498727868 +0000 UTC m=+23.937126183
+        labels: {}
+        treedir: /home/runner/work/repository-index/repository-index/packages
+    sourceassertion:
+        - package:
+            id: 0
+            name: luet
+            version: "20200717"
+            category: repository
+            useflags: []
+            state: ""
+            packagerequires: []
+            packageconflicts: []
+            provides: []
+            hidden: false
+            annotations: {}
+            path: ""
+            description: ""
+            uri: []
+            license: ""
+            buildtimestamp: ""
+            labels: {}
+            treedir: /home/runner/work/repository-index/repository-index/packages
+          value: true
+          hash:
+            buildhash: 8a13465fe4cc1b17e19c92ad6bef41a268adb2b3d5e67d7fb05bdd0fbcfd15ce
+            packagehash: a7fa380fcfcb27fa79ca3df7bcd4322c020515da965647d39a7c33a532fdad0c
+    package_dir: /repo
+    retrieve: []
+    outputpath: /home/runner/work/repository-index/repository-index/build
+    unpack: false
+    includes: []
+    excludes: []
+    buildoptions:
+        pushimagerepository: mocaccinoos/rindex-amd64-cache
+        pullimagerepository:
+            - luet/cache
+        pullfirst: false
+        keepimg: false
+        push: false
+        concurrency: 0
+        compressiontype: ""
+        wait: false
+        onlydeps: false
+        nodeps: false
+        solveroptions: {}
+        buildvaluesfile: []
+        buildvalues:
+            - category: repository
+              name: luet
+              version: "20200717"
+        packagetargetonly: false
+        rebuild: false
+        backendargs: []
+        backendtype: ""
+        templatesfolder: []
+        pushfinalimages: false
+        pushfinalimagesforce: false
+        pushfinalimagesrepository: ""
+        context: null
+    copy: []
+    requires_final_images: false
+checksums:
+    sha256: 1cd5b455ed49256a8da55dad76a6d47bb54be1ea10273a3f7be92eda80d385be
+sourceassertion: []
+compressiontype: gzip
+files:
+    - etc/luet/repos.conf.d/luet.yml
+packagecacheimage: ""
+runtime:
     id: 0
     name: luet
     version: "20200717"
@@ -25,89 +110,6 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-03-20 12:43:33.592675448 +0000 UTC m=+56.751579846
+    buildtimestamp: ""
     labels: {}
-    treedir: /home/runner/work/repository-index/repository-index/packages
-  sourceassertion:
-  - package:
-      id: 0
-      name: luet
-      version: "20200717"
-      category: repository
-      useflags: []
-      state: ""
-      packagerequires: []
-      packageconflicts: []
-      provides: []
-      hidden: false
-      annotations: {}
-      path: ""
-      description: ""
-      uri: []
-      license: ""
-      buildtimestamp: ""
-      labels: {}
-      treedir: /home/runner/work/repository-index/repository-index/packages
-    value: true
-    hash:
-      buildhash: 1aa09e0394d3d497551663f595336d572929e715e185d55d896e630a0aebf63f
-      packagehash: 33d9d8d577e7008c1830c69e13e91dc6fe92d7e303aca22729c501aa464a4c64
-  package_dir: /repo
-  retrieve: []
-  outputpath: /home/runner/work/repository-index/repository-index/build
-  unpack: false
-  includes: []
-  excludes: []
-  buildoptions:
-    pushimagerepository: mocaccinoos/rindex-amd64-cache
-    pullimagerepository:
-    - luet/cache
-    pullfirst: false
-    keepimg: false
-    push: false
-    concurrency: 0
-    compressiontype: ""
-    wait: false
-    onlydeps: false
-    nodeps: false
-    solveroptions: {}
-    buildvaluesfile: []
-    buildvalues:
-    - {}
-    packagetargetonly: false
-    rebuild: false
-    backendargs: []
-    backendtype: ""
-    templatesfolder: []
-    pushfinalimages: false
-    pushfinalimagesforce: false
-    pushfinalimagesrepository: ""
-    context: null
-  copy: []
-  requires_final_images: false
-checksums:
-  sha256: 342f4c3500b795e0c2c27ccc965f6c3b6006a948e5d54216712d47afef0ed5aa
-sourceassertion: []
-compressiontype: gzip
-files:
-- etc/luet/repos.conf.d/luet.yml
-packagecacheimage: ""
-runtime:
-  id: 0
-  name: luet
-  version: "20200717"
-  category: repository
-  useflags: []
-  state: ""
-  packagerequires: []
-  packageconflicts: []
-  provides: []
-  hidden: false
-  annotations: {}
-  path: ""
-  description: ""
-  uri: []
-  license: ""
-  buildtimestamp: ""
-  labels: {}
-  treedir: ""
+    treedir: ""

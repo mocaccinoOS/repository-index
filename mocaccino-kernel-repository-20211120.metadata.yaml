@@ -1,15 +1,100 @@
 path: /home/runner/work/repository-index/repository-index/build/mocaccino-kernel-repository-20211120.package.tar.gz
 dependencies: []
 compilespec:
-  steps:
-  - |
-    mkdir -p /repo/etc/luet/repos.conf.d/ && \
-    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
-  env: []
-  prelude: []
-  image: quay.io/mocaccino/extra:master
-  seed: quay.io/mocaccino/extra:master
-  package:
+    steps:
+        - |
+          mkdir -p /repo/etc/luet/repos.conf.d/ && \
+          mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+    env: []
+    prelude: []
+    image: quay.io/mocaccino/extra:master
+    seed: quay.io/mocaccino/extra:master
+    package:
+        id: 0
+        name: mocaccino-kernel
+        version: "20211120"
+        category: repository
+        useflags: []
+        state: ""
+        packagerequires: []
+        packageconflicts: []
+        provides: []
+        hidden: false
+        annotations: {}
+        path: ""
+        description: ""
+        uri: []
+        license: ""
+        buildtimestamp: 2022-03-26 10:18:53.519223366 +0000 UTC m=+236.957621681
+        labels: {}
+        treedir: /home/runner/work/repository-index/repository-index/packages
+    sourceassertion:
+        - package:
+            id: 0
+            name: mocaccino-kernel
+            version: "20211120"
+            category: repository
+            useflags: []
+            state: ""
+            packagerequires: []
+            packageconflicts: []
+            provides: []
+            hidden: false
+            annotations: {}
+            path: ""
+            description: ""
+            uri: []
+            license: ""
+            buildtimestamp: ""
+            labels: {}
+            treedir: /home/runner/work/repository-index/repository-index/packages
+          value: true
+          hash:
+            buildhash: b0d641dd642c1d085d61cfee25c9c570dea32edcf10a79e335fa430e8ab7ef4d
+            packagehash: cc2f02cbfd87473623dcea9b8521b048bfcfd605c819d106de27c0e7ec35e7a4
+    package_dir: /repo
+    retrieve: []
+    outputpath: /home/runner/work/repository-index/repository-index/build
+    unpack: false
+    includes: []
+    excludes: []
+    buildoptions:
+        pushimagerepository: mocaccinoos/rindex-amd64-cache
+        pullimagerepository:
+            - luet/cache
+        pullfirst: false
+        keepimg: false
+        push: false
+        concurrency: 0
+        compressiontype: ""
+        wait: false
+        onlydeps: false
+        nodeps: false
+        solveroptions: {}
+        buildvaluesfile: []
+        buildvalues:
+            - category: repository
+              name: mocaccino-kernel
+              version: "20211120"
+        packagetargetonly: false
+        rebuild: false
+        backendargs: []
+        backendtype: ""
+        templatesfolder: []
+        pushfinalimages: false
+        pushfinalimagesforce: false
+        pushfinalimagesrepository: ""
+        context: null
+    copy: []
+    requires_final_images: false
+checksums:
+    sha256: 10942d44c3683af16e27cc1dbccfe1d0f519470726101bfe3d54aa9845453ea3
+sourceassertion: []
+compressiontype: gzip
+files:
+    - etc/luet/repos.conf.d/mocaccino-kernel.yml
+packagecacheimage: ""
+runtime:
     id: 0
     name: mocaccino-kernel
     version: "20211120"
@@ -25,89 +110,6 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-03-20 12:45:51.586403592 +0000 UTC m=+194.745308090
+    buildtimestamp: ""
     labels: {}
-    treedir: /home/runner/work/repository-index/repository-index/packages
-  sourceassertion:
-  - package:
-      id: 0
-      name: mocaccino-kernel
-      version: "20211120"
-      category: repository
-      useflags: []
-      state: ""
-      packagerequires: []
-      packageconflicts: []
-      provides: []
-      hidden: false
-      annotations: {}
-      path: ""
-      description: ""
-      uri: []
-      license: ""
-      buildtimestamp: ""
-      labels: {}
-      treedir: /home/runner/work/repository-index/repository-index/packages
-    value: true
-    hash:
-      buildhash: 1106d08add00ead6c722f5ed258d54bc25b7598e664154b5370fdf3ca723524f
-      packagehash: fff118c88c737359fcdb7c50671a02a98c26a2943310d9928b3348d575509632
-  package_dir: /repo
-  retrieve: []
-  outputpath: /home/runner/work/repository-index/repository-index/build
-  unpack: false
-  includes: []
-  excludes: []
-  buildoptions:
-    pushimagerepository: mocaccinoos/rindex-amd64-cache
-    pullimagerepository:
-    - luet/cache
-    pullfirst: false
-    keepimg: false
-    push: false
-    concurrency: 0
-    compressiontype: ""
-    wait: false
-    onlydeps: false
-    nodeps: false
-    solveroptions: {}
-    buildvaluesfile: []
-    buildvalues:
-    - {}
-    packagetargetonly: false
-    rebuild: false
-    backendargs: []
-    backendtype: ""
-    templatesfolder: []
-    pushfinalimages: false
-    pushfinalimagesforce: false
-    pushfinalimagesrepository: ""
-    context: null
-  copy: []
-  requires_final_images: false
-checksums:
-  sha256: 1a33c5623c6a4ee6db76bef00e6967162df0c912458f3a947451fd8823b61ea9
-sourceassertion: []
-compressiontype: gzip
-files:
-- etc/luet/repos.conf.d/mocaccino-kernel.yml
-packagecacheimage: ""
-runtime:
-  id: 0
-  name: mocaccino-kernel
-  version: "20211120"
-  category: repository
-  useflags: []
-  state: ""
-  packagerequires: []
-  packageconflicts: []
-  provides: []
-  hidden: false
-  annotations: {}
-  path: ""
-  description: ""
-  uri: []
-  license: ""
-  buildtimestamp: ""
-  labels: {}
-  treedir: ""
+    treedir: ""

@@ -1,15 +1,100 @@
 path: /home/runner/work/repository-index/repository-index/build/mocaccino-extra-repository-20211023.package.tar.gz
 dependencies: []
 compilespec:
-  steps:
-  - |
-    mkdir -p /repo/etc/luet/repos.conf.d/ && \
-    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
-  env: []
-  prelude: []
-  image: quay.io/mocaccino/extra:master
-  seed: quay.io/mocaccino/extra:master
-  package:
+    steps:
+        - |
+          mkdir -p /repo/etc/luet/repos.conf.d/ && \
+          mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+    env: []
+    prelude: []
+    image: quay.io/mocaccino/extra:master
+    seed: quay.io/mocaccino/extra:master
+    package:
+        id: 0
+        name: mocaccino-extra
+        version: "20211023"
+        category: repository
+        useflags: []
+        state: ""
+        packagerequires: []
+        packageconflicts: []
+        provides: []
+        hidden: false
+        annotations: {}
+        path: ""
+        description: ""
+        uri: []
+        license: ""
+        buildtimestamp: 2022-03-26 10:19:15.508886591 +0000 UTC m=+258.947284806
+        labels: {}
+        treedir: /home/runner/work/repository-index/repository-index/packages
+    sourceassertion:
+        - package:
+            id: 0
+            name: mocaccino-extra
+            version: "20211023"
+            category: repository
+            useflags: []
+            state: ""
+            packagerequires: []
+            packageconflicts: []
+            provides: []
+            hidden: false
+            annotations: {}
+            path: ""
+            description: ""
+            uri: []
+            license: ""
+            buildtimestamp: ""
+            labels: {}
+            treedir: /home/runner/work/repository-index/repository-index/packages
+          value: true
+          hash:
+            buildhash: a120beb136080eb25a5b237ba92af5796a33260f5590805c7d06cb8ae8dfa33a
+            packagehash: 2a8c4e7067dc850da6f1c95a538d4bcdf96d45db9ec3a88ef70841c9c40ca412
+    package_dir: /repo
+    retrieve: []
+    outputpath: /home/runner/work/repository-index/repository-index/build
+    unpack: false
+    includes: []
+    excludes: []
+    buildoptions:
+        pushimagerepository: mocaccinoos/rindex-amd64-cache
+        pullimagerepository:
+            - luet/cache
+        pullfirst: false
+        keepimg: false
+        push: false
+        concurrency: 0
+        compressiontype: ""
+        wait: false
+        onlydeps: false
+        nodeps: false
+        solveroptions: {}
+        buildvaluesfile: []
+        buildvalues:
+            - category: repository
+              name: mocaccino-extra
+              version: "20211023"
+        packagetargetonly: false
+        rebuild: false
+        backendargs: []
+        backendtype: ""
+        templatesfolder: []
+        pushfinalimages: false
+        pushfinalimagesforce: false
+        pushfinalimagesrepository: ""
+        context: null
+    copy: []
+    requires_final_images: false
+checksums:
+    sha256: 8b41291180937df7834789b531644c5626325488df8d0d5a1d5bf876a81ac672
+sourceassertion: []
+compressiontype: gzip
+files:
+    - etc/luet/repos.conf.d/mocaccino-extra.yml
+packagecacheimage: ""
+runtime:
     id: 0
     name: mocaccino-extra
     version: "20211023"
@@ -25,89 +110,6 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-03-20 12:46:13.628438611 +0000 UTC m=+216.787343109
+    buildtimestamp: ""
     labels: {}
-    treedir: /home/runner/work/repository-index/repository-index/packages
-  sourceassertion:
-  - package:
-      id: 0
-      name: mocaccino-extra
-      version: "20211023"
-      category: repository
-      useflags: []
-      state: ""
-      packagerequires: []
-      packageconflicts: []
-      provides: []
-      hidden: false
-      annotations: {}
-      path: ""
-      description: ""
-      uri: []
-      license: ""
-      buildtimestamp: ""
-      labels: {}
-      treedir: /home/runner/work/repository-index/repository-index/packages
-    value: true
-    hash:
-      buildhash: b630def35a786d71cdd9a0e242bf8078e3eefac1a965af8a856c4d3003134403
-      packagehash: 1b1396f8067d4abc2b48954678246cfa5f63e47ffe4cd128f5cd35eed5c77162
-  package_dir: /repo
-  retrieve: []
-  outputpath: /home/runner/work/repository-index/repository-index/build
-  unpack: false
-  includes: []
-  excludes: []
-  buildoptions:
-    pushimagerepository: mocaccinoos/rindex-amd64-cache
-    pullimagerepository:
-    - luet/cache
-    pullfirst: false
-    keepimg: false
-    push: false
-    concurrency: 0
-    compressiontype: ""
-    wait: false
-    onlydeps: false
-    nodeps: false
-    solveroptions: {}
-    buildvaluesfile: []
-    buildvalues:
-    - {}
-    packagetargetonly: false
-    rebuild: false
-    backendargs: []
-    backendtype: ""
-    templatesfolder: []
-    pushfinalimages: false
-    pushfinalimagesforce: false
-    pushfinalimagesrepository: ""
-    context: null
-  copy: []
-  requires_final_images: false
-checksums:
-  sha256: 0396cf7b3737cde4f5a26bc5c32651f0152feca3905250e9e615203603c74809
-sourceassertion: []
-compressiontype: gzip
-files:
-- etc/luet/repos.conf.d/mocaccino-extra.yml
-packagecacheimage: ""
-runtime:
-  id: 0
-  name: mocaccino-extra
-  version: "20211023"
-  category: repository
-  useflags: []
-  state: ""
-  packagerequires: []
-  packageconflicts: []
-  provides: []
-  hidden: false
-  annotations: {}
-  path: ""
-  description: ""
-  uri: []
-  license: ""
-  buildtimestamp: ""
-  labels: {}
-  treedir: ""
+    treedir: ""

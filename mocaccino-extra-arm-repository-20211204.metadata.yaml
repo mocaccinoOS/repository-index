@@ -1,15 +1,100 @@
 path: /home/runner/work/repository-index/repository-index/build/mocaccino-extra-arm-repository-20211204.package.tar.gz
 dependencies: []
 compilespec:
-  steps:
-  - |
-    mkdir -p /repo/etc/luet/repos.conf.d/ && \
-    mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
-  env: []
-  prelude: []
-  image: quay.io/mocaccino/extra:master
-  seed: quay.io/mocaccino/extra:master
-  package:
+    steps:
+        - |
+          mkdir -p /repo/etc/luet/repos.conf.d/ && \
+          mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
+    env: []
+    prelude: []
+    image: quay.io/mocaccino/extra:master
+    seed: quay.io/mocaccino/extra:master
+    package:
+        id: 0
+        name: mocaccino-extra-arm
+        version: "20211204"
+        category: repository
+        useflags: []
+        state: ""
+        packagerequires: []
+        packageconflicts: []
+        provides: []
+        hidden: false
+        annotations: {}
+        path: ""
+        description: ""
+        uri: []
+        license: ""
+        buildtimestamp: 2022-03-26 10:17:28.46452802 +0000 UTC m=+151.902926235
+        labels: {}
+        treedir: /home/runner/work/repository-index/repository-index/packages
+    sourceassertion:
+        - package:
+            id: 0
+            name: mocaccino-extra-arm
+            version: "20211204"
+            category: repository
+            useflags: []
+            state: ""
+            packagerequires: []
+            packageconflicts: []
+            provides: []
+            hidden: false
+            annotations: {}
+            path: ""
+            description: ""
+            uri: []
+            license: ""
+            buildtimestamp: ""
+            labels: {}
+            treedir: /home/runner/work/repository-index/repository-index/packages
+          value: true
+          hash:
+            buildhash: 3d8f89410a8397abb1ac306b88f3597b8a25fc5245c2d89229fd20be7b16f41d
+            packagehash: fd3a77cbf9634f23013da809785b1d64a95e2a2aa449ac316a4b4ddffc17baf1
+    package_dir: /repo
+    retrieve: []
+    outputpath: /home/runner/work/repository-index/repository-index/build
+    unpack: false
+    includes: []
+    excludes: []
+    buildoptions:
+        pushimagerepository: mocaccinoos/rindex-amd64-cache
+        pullimagerepository:
+            - luet/cache
+        pullfirst: false
+        keepimg: false
+        push: false
+        concurrency: 0
+        compressiontype: ""
+        wait: false
+        onlydeps: false
+        nodeps: false
+        solveroptions: {}
+        buildvaluesfile: []
+        buildvalues:
+            - category: repository
+              name: mocaccino-extra-arm
+              version: "20211204"
+        packagetargetonly: false
+        rebuild: false
+        backendargs: []
+        backendtype: ""
+        templatesfolder: []
+        pushfinalimages: false
+        pushfinalimagesforce: false
+        pushfinalimagesrepository: ""
+        context: null
+    copy: []
+    requires_final_images: false
+checksums:
+    sha256: 909cc3596bc9607509df416e9eb6aba361ef410437458cdd443f1114a75c6596
+sourceassertion: []
+compressiontype: gzip
+files:
+    - etc/luet/repos.conf.d/mocaccino-extra-arm.yml
+packagecacheimage: ""
+runtime:
     id: 0
     name: mocaccino-extra-arm
     version: "20211204"
@@ -25,89 +110,6 @@ compilespec:
     description: ""
     uri: []
     license: ""
-    buildtimestamp: 2022-03-20 12:43:44.578156383 +0000 UTC m=+67.737060781
+    buildtimestamp: ""
     labels: {}
-    treedir: /home/runner/work/repository-index/repository-index/packages
-  sourceassertion:
-  - package:
-      id: 0
-      name: mocaccino-extra-arm
-      version: "20211204"
-      category: repository
-      useflags: []
-      state: ""
-      packagerequires: []
-      packageconflicts: []
-      provides: []
-      hidden: false
-      annotations: {}
-      path: ""
-      description: ""
-      uri: []
-      license: ""
-      buildtimestamp: ""
-      labels: {}
-      treedir: /home/runner/work/repository-index/repository-index/packages
-    value: true
-    hash:
-      buildhash: 48ad47d0ec6e8e263054603cfb4772b685c28b4d9549f10295902c6a50ff5534
-      packagehash: 5af4a203166d59525bf4794b7e1c0cc6df8466f38b658c6d38458875a7eebe52
-  package_dir: /repo
-  retrieve: []
-  outputpath: /home/runner/work/repository-index/repository-index/build
-  unpack: false
-  includes: []
-  excludes: []
-  buildoptions:
-    pushimagerepository: mocaccinoos/rindex-amd64-cache
-    pullimagerepository:
-    - luet/cache
-    pullfirst: false
-    keepimg: false
-    push: false
-    concurrency: 0
-    compressiontype: ""
-    wait: false
-    onlydeps: false
-    nodeps: false
-    solveroptions: {}
-    buildvaluesfile: []
-    buildvalues:
-    - {}
-    packagetargetonly: false
-    rebuild: false
-    backendargs: []
-    backendtype: ""
-    templatesfolder: []
-    pushfinalimages: false
-    pushfinalimagesforce: false
-    pushfinalimagesrepository: ""
-    context: null
-  copy: []
-  requires_final_images: false
-checksums:
-  sha256: 12cb16d5c0f6cc22b0279cefb56196defeba247ff83b2be15a21dec3d7148e11
-sourceassertion: []
-compressiontype: gzip
-files:
-- etc/luet/repos.conf.d/mocaccino-extra-arm.yml
-packagecacheimage: ""
-runtime:
-  id: 0
-  name: mocaccino-extra-arm
-  version: "20211204"
-  category: repository
-  useflags: []
-  state: ""
-  packagerequires: []
-  packageconflicts: []
-  provides: []
-  hidden: false
-  annotations: {}
-  path: ""
-  description: ""
-  uri: []
-  license: ""
-  buildtimestamp: ""
-  labels: {}
-  treedir: ""
+    treedir: ""
