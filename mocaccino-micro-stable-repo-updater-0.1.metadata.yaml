@@ -5,7 +5,7 @@ compilespec:
     env: []
     prelude: []
     image: ""
-    seed: mocaccinoos/rindex-amd64-cache:f96e3928028ca8ac0902c16386c7a80932496d2eaa64587c106bfaa04fade61f
+    seed: mocaccinoos/rindex-amd64-cache:c04a2ae4df70a011651d357f940378235b65e462859b2ea60dfd1f89cf9f8a3f
     package:
         id: 0
         name: mocaccino-micro-stable
@@ -40,7 +40,7 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2022-04-12 21:59:06.034336958 +0000 UTC m=+174.955764159
+        buildtimestamp: 2022-04-14 19:30:56.019590422 +0000 UTC m=+44.164192826
         labels: {}
         treedir: /home/runner/work/repository-index/repository-index/packages
     sourceassertion:
@@ -75,8 +75,8 @@ compilespec:
             treedir: /home/runner/work/repository-index/repository-index/packages
           value: true
           hash:
-            buildhash: f6a34eab6ec1238a804a35f49509bc1cf177593dd9ceed3dfde9943094fd251c
-            packagehash: f96e3928028ca8ac0902c16386c7a80932496d2eaa64587c106bfaa04fade61f
+            buildhash: a9c7e3502c68ab188e27b8b6caeeff0b5b9c348464acf76b9ab179863ed4ca34
+            packagehash: c04a2ae4df70a011651d357f940378235b65e462859b2ea60dfd1f89cf9f8a3f
         - package:
             id: 0
             name: mocaccino-micro-stable
@@ -116,8 +116,8 @@ compilespec:
             treedir: /home/runner/work/repository-index/repository-index/packages
           value: true
           hash:
-            buildhash: f96e3928028ca8ac0902c16386c7a80932496d2eaa64587c106bfaa04fade61f
-            packagehash: 3be0c4c4ee9b208f9165173b9dc19c4b9653e7479fd65ce445856081792ab600
+            buildhash: c04a2ae4df70a011651d357f940378235b65e462859b2ea60dfd1f89cf9f8a3f
+            packagehash: 9be40c551bfac065091ce5ada3bbdbadad33e38733addd08d5ff01f6e29dcdff
     package_dir: ""
     retrieve: []
     outputpath: /home/runner/work/repository-index/repository-index/build
@@ -156,7 +156,9 @@ compilespec:
         templatesfolder: []
         pushfinalimages: false
         pushfinalimagesforce: false
+        generatefinalimages: false
         pushfinalimagesrepository: ""
+        runtimedatabase: null
         context: null
     copy: []
     requires_final_images: false

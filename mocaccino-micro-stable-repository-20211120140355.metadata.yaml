@@ -27,7 +27,7 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2022-04-12 21:58:56.121566295 +0000 UTC m=+165.042993496
+        buildtimestamp: 2022-04-14 19:30:45.953763477 +0000 UTC m=+34.098365781
         labels:
             autobump.arch: amd64
             autobump.hook: |
@@ -85,12 +85,14 @@ compilespec:
         templatesfolder: []
         pushfinalimages: false
         pushfinalimagesforce: false
+        generatefinalimages: false
         pushfinalimagesrepository: ""
+        runtimedatabase: null
         context: null
     copy: []
     requires_final_images: false
 checksums:
-    sha256: 7f6d3b28e13888dbaea5d28f972dfa55f2bb1cc01ad0122a930ea3657102254a
+    sha256: e00b47a931c609c3813ca79d4eedfd12fccb1fa435e51609dd4f260ab90c672e
 sourceassertion: []
 compressiontype: gzip
 files:
