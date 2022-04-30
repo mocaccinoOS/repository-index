@@ -33,8 +33,8 @@ packages:
         skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
       autobump.version_hook: |
         skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-      package.version: "20220428142027-repository.yaml"
-    version: "20220428142027"
+      package.version: "20220430213254-repository.yaml"
+    version: "20220430213254"
   - category: "repository"
     name: "mocaccino-extra"
     version: "20211023"
