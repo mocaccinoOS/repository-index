@@ -25,9 +25,10 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2022-05-03 17:06:34.64398167 +0000 UTC m=+142.031030060
+        buildtimestamp: 2022-05-07 19:34:18.504861133 +0000 UTC m=+170.646432407
         labels: {}
         treedir: /home/runner/work/repository-index/repository-index/packages
+        origindockerfile: ""
     sourceassertion:
         - package:
             id: 0
@@ -48,10 +49,11 @@ compilespec:
             buildtimestamp: ""
             labels: {}
             treedir: /home/runner/work/repository-index/repository-index/packages
+            origindockerfile: ""
           value: true
           hash:
-            buildhash: f07dd9c4bd7e0786c2724a9329bbfa9100c5179a3f4211ae5cf1d17ce1a99f3b
-            packagehash: 6a1aa1c03a3c3b2edb55e665a9edec8b3f2b73c526c4fce1500b72b46cc6b13e
+            buildhash: 14cd078a83aec4a3fc826fd2187dceef87d5209ef20691caa58b5b07b65eb045
+            packagehash: 0e63752056289ecd8224f79bceb7f719608e646cfcfdb33e9ea44c01ae1341dd
     package_dir: /repo
     retrieve: []
     outputpath: /home/runner/work/repository-index/repository-index/build
@@ -90,7 +92,7 @@ compilespec:
     copy: []
     requires_final_images: false
 checksums:
-    sha256: 248883831f992f72aefc79226b2e84503c0c8d5239b783f2b641b075432d4842
+    sha256: d2915f727cdd0da32be8ae13e3f6e848d57093ced3907eae5359c1d405455c52
 sourceassertion: []
 compressiontype: gzip
 files:
@@ -115,3 +117,4 @@ runtime:
     buildtimestamp: ""
     labels: {}
     treedir: ""
+    origindockerfile: ""

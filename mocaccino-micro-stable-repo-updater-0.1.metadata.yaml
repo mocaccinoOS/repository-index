@@ -1,11 +1,10 @@
 path: /home/runner/work/repository-index/repository-index/build/mocaccino-micro-stable-repo-updater-0.1.package.tar.gz
 dependencies: []
 compilespec:
-    steps: []
     env: []
     prelude: []
     image: ""
-    seed: mocaccinoos/rindex-amd64-cache:b95dfd59e947ee3c4fab30b8948db2a5b8bb39f635cedc7925164050880ed622
+    seed: mocaccinoos/rindex-amd64-cache:646a10dbf4742489cf5b614ebe1e571ceaefca95b3d553538832cfaa46587cad
     package:
         id: 0
         name: mocaccino-micro-stable
@@ -32,6 +31,7 @@ compilespec:
               buildtimestamp: ""
               labels: {}
               treedir: ""
+              origindockerfile: ""
         packageconflicts: []
         provides: []
         hidden: false
@@ -40,9 +40,10 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2022-05-03 17:06:23.024855478 +0000 UTC m=+130.411903968
+        buildtimestamp: 2022-05-07 19:33:34.020674545 +0000 UTC m=+126.162245919
         labels: {}
         treedir: /home/runner/work/repository-index/repository-index/packages
+        origindockerfile: ""
     sourceassertion:
         - package:
             id: 0
@@ -73,10 +74,11 @@ compilespec:
                     skopeo list-tags docker://quay.io/mocaccino/micro | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
                 package.version: 20211120140355-repository.yaml
             treedir: /home/runner/work/repository-index/repository-index/packages
+            origindockerfile: ""
           value: true
           hash:
-            buildhash: 8897f81e4527234cc42003180d9d20cd3d44abeaac521602caa25fb7f6142ca1
-            packagehash: b95dfd59e947ee3c4fab30b8948db2a5b8bb39f635cedc7925164050880ed622
+            buildhash: d71688d615e92ce38a5dcd4efaffac06e710a4cbbb2a7e9d7b2bf2da5a3ef8c9
+            packagehash: 646a10dbf4742489cf5b614ebe1e571ceaefca95b3d553538832cfaa46587cad
         - package:
             id: 0
             name: mocaccino-micro-stable
@@ -103,6 +105,7 @@ compilespec:
                   buildtimestamp: ""
                   labels: {}
                   treedir: ""
+                  origindockerfile: ""
             packageconflicts: []
             provides: []
             hidden: false
@@ -114,10 +117,11 @@ compilespec:
             buildtimestamp: ""
             labels: {}
             treedir: /home/runner/work/repository-index/repository-index/packages
+            origindockerfile: ""
           value: true
           hash:
-            buildhash: b95dfd59e947ee3c4fab30b8948db2a5b8bb39f635cedc7925164050880ed622
-            packagehash: 74265e0b3807fe8387130aa07b0303280e0e70d6d887f12b122c4cee704116a6
+            buildhash: 646a10dbf4742489cf5b614ebe1e571ceaefca95b3d553538832cfaa46587cad
+            packagehash: e911b3c41277bb1d03dff8dff1af776919251d137e6734867e4ba38c65d63fdc
     package_dir: ""
     retrieve: []
     outputpath: /home/runner/work/repository-index/repository-index/build
@@ -163,7 +167,7 @@ compilespec:
     copy: []
     requires_final_images: false
 checksums:
-    sha256: 4ca545ee6d5db5c1170386eeb39b2ffe3bd46e5d4a73a9acbebc805f19607eb3
+    sha256: bd9ddc54bea929a22b334e73e026d4136e5b73f5cc29942896c72e4ece69b13d
 sourceassertion: []
 compressiontype: gzip
 files: []
@@ -194,6 +198,7 @@ runtime:
           buildtimestamp: ""
           labels: {}
           treedir: ""
+          origindockerfile: ""
         - id: 0
           name: cli
           version: '>=0'
@@ -212,6 +217,7 @@ runtime:
           buildtimestamp: ""
           labels: {}
           treedir: ""
+          origindockerfile: ""
     packageconflicts: []
     provides: []
     hidden: false
@@ -223,3 +229,4 @@ runtime:
     buildtimestamp: ""
     labels: {}
     treedir: ""
+    origindockerfile: ""

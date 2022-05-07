@@ -27,7 +27,7 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2022-05-03 17:06:12.957459321 +0000 UTC m=+120.344507711
+        buildtimestamp: 2022-05-07 19:33:23.883900805 +0000 UTC m=+116.025472179
         labels:
             autobump.arch: amd64
             autobump.hook: |
@@ -40,6 +40,7 @@ compilespec:
                 skopeo list-tags docker://quay.io/mocaccino/micro | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
             package.version: 20211120140355-repository.yaml
         treedir: /home/runner/work/repository-index/repository-index/packages
+        origindockerfile: ""
     sourceassertion: []
     package_dir: /repo
     retrieve: []
@@ -92,7 +93,7 @@ compilespec:
     copy: []
     requires_final_images: false
 checksums:
-    sha256: d74dc284312637a6a962488c711c59a3c1ea8021e0c450fbfd3702d44d02d086
+    sha256: 627cc7986ea05ff5062cd71bd9e1c93e053b7a81cc7a3eb796873b4d8b7d37c3
 sourceassertion: []
 compressiontype: gzip
 files:
@@ -127,3 +128,4 @@ runtime:
             skopeo list-tags docker://quay.io/mocaccino/micro | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
         package.version: 20211120140355-repository.yaml
     treedir: ""
+    origindockerfile: ""
