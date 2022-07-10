@@ -1,8 +1,5 @@
 packages:
   - category: "repository"
-    name: "mocaccino-community"
-    version: "20220508"
-  - category: "repository"
     name: "mocaccino-stage3"
     version: "20210520"
   - category: "repository"
@@ -83,3 +80,21 @@ packages:
   - category: "repository"
     name: "mocaccino-repository-index"
     version: "20211120"
+  - category: "repository"
+    name: "mocaccino-community"
+    version: "20220707101025"
+  - category: "repository"
+    name: "mocaccino-community-stable"
+    reference: true
+    labels:
+      autobump.arch: "amd64"
+      autobump.revdeps: "true"
+      autobump.string_replace: '{ "prefix": "" }'
+      autobump.strategy: "custom"
+      autobump.prefix: "prefix"
+      package.version: "20220707101025-repository.yaml"
+      autobump.hook: |
+        skopeo list-tags docker://quay.io/mocaccino/mocaccino-community | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
+      autobump.version_hook: |
+        skopeo list-tags docker://quay.io/mocaccino/mocaccino-community | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
+    version: "20220707101025"
