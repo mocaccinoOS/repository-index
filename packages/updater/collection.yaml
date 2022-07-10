@@ -20,3 +20,13 @@ packages:
       - category: "mocaccino"
         name: "cli"
         version: ">=0"
+  - !!merge <<: *base
+    name: "mocaccino-community-stable"
+    version: "0.1"
+    requires:
+      - category: "repository"
+        name: "mocaccino-community-stable"
+        version: ">=0"
+      - category: "mocaccino"
+        name: "cli"
+        version: ">=0"
