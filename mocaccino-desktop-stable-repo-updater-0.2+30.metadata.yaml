@@ -1,14 +1,14 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-stable-repo-updater-0.2+29.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-stable-repo-updater-0.2+30.package.tar.gz
 dependencies: []
 compilespec:
     env: []
     prelude: []
     image: ""
-    seed: mocaccinoos/rindex-amd64-cache:87e484238e9744e2c7b8cdf2db7d6ff95669c1c7667b9bfbb69409e58994e2e5
+    seed: mocaccinoos/rindex-amd64-cache:0d7b1b766e24b8f7564efa64f248e0e71e00071d68e5f3aaafc3f30058bb266f
     package:
         id: 0
         name: mocaccino-desktop-stable
-        version: 0.2+29
+        version: 0.2+30
         category: repo-updater
         useflags: []
         state: ""
@@ -40,7 +40,7 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2023-01-12 17:54:21.025944685 +0000 UTC m=+143.306048494
+        buildtimestamp: 2023-01-12 19:22:33.014771643 +0000 UTC m=+197.697222637
         labels: {}
         treedir: /home/runner/work/repository-index/repository-index/packages
         origindockerfile: ""
@@ -48,7 +48,7 @@ compilespec:
         - package:
             id: 0
             name: mocaccino-desktop-stable
-            version: "20230110195415"
+            version: "20230112134345"
             category: repository
             useflags: []
             state: ""
@@ -72,17 +72,17 @@ compilespec:
                 autobump.string_replace: '{ "prefix": "" }'
                 autobump.version_hook: |
                     skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-                package.version: 20230110195415-repository.yaml
+                package.version: 20230112134345-repository.yaml
             treedir: /home/runner/work/repository-index/repository-index/packages
             origindockerfile: ""
           value: true
           hash:
-            buildhash: d0fa9ef9ca58807568542bf19c68c69816bac82eeb203124a71baf03885a960a
-            packagehash: 87e484238e9744e2c7b8cdf2db7d6ff95669c1c7667b9bfbb69409e58994e2e5
+            buildhash: c65108f9a0d7f17f6d6a9a62dc47f06c975b4a3c0f20f634f1733f7324b52d81
+            packagehash: 0d7b1b766e24b8f7564efa64f248e0e71e00071d68e5f3aaafc3f30058bb266f
         - package:
             id: 0
             name: mocaccino-desktop-stable
-            version: 0.2+29
+            version: 0.2+30
             category: repo-updater
             useflags: []
             state: ""
@@ -120,8 +120,8 @@ compilespec:
             origindockerfile: ""
           value: true
           hash:
-            buildhash: 87e484238e9744e2c7b8cdf2db7d6ff95669c1c7667b9bfbb69409e58994e2e5
-            packagehash: cc2ed97a8ec8ffd29383d8ac4266336cd4f44c1c8ef328ea6a2ada826a831d6e
+            buildhash: 0d7b1b766e24b8f7564efa64f248e0e71e00071d68e5f3aaafc3f30058bb266f
+            packagehash: 1f2246d2a030b5cb3bb9c81d98e23c7ce5c5df8d5012f322bfb4689f7d2b2383
     package_dir: ""
     retrieve: []
     outputpath: /home/runner/work/repository-index/repository-index/build
@@ -152,7 +152,7 @@ compilespec:
                 - category: mocaccino
                   name: cli
                   version: '>=0'
-              version: 0.2+29
+              version: 0.2+30
         packagetargetonly: false
         rebuild: false
         backendargs: []
@@ -175,7 +175,7 @@ packagecacheimage: ""
 runtime:
     id: 0
     name: mocaccino-desktop-stable
-    version: 0.2+29
+    version: 0.2+30
     category: repo-updater
     useflags: []
     state: ""
