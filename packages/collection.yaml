@@ -82,7 +82,7 @@ packages:
     version: "20211120"
   - category: "repository"
     name: "mocaccino-community"
-    version: "20230303163646"
+    version: "20230310132424"
   - category: "repository"
     name: "mocaccino-community-stable"
     reference: true
@@ -92,9 +92,9 @@ packages:
       autobump.string_replace: '{ "prefix": "" }'
       autobump.strategy: "custom"
       autobump.prefix: "prefix"
-      package.version: "20230303163646-repository.yaml"
+      package.version: "20230310132424-repository.yaml"
       autobump.hook: |
         skopeo list-tags docker://quay.io/mocaccino/mocaccino-community | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
       autobump.version_hook: |
         skopeo list-tags docker://quay.io/mocaccino/mocaccino-community | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-    version: "20230303163646"
+    version: "20230310132424"
