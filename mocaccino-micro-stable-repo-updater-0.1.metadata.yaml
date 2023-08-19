@@ -4,7 +4,7 @@ compilespec:
     env: []
     prelude: []
     image: ""
-    seed: mocaccinoos/rindex-amd64-cache:4d35684320cee175d998dfb581baa36d5713db3af1aa707538edbc3bf5e13474
+    seed: mocaccinoos/rindex-amd64-cache:59d8051f732337c7d04281e935698aa3628509d93d3254b90b7525d69b0373fc
     package:
         id: 0
         name: mocaccino-micro-stable
@@ -40,7 +40,7 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2023-08-11 04:22:37.026858462 +0000 UTC m=+116.732562714
+        buildtimestamp: 2023-08-19 06:20:57.020265951 +0000 UTC m=+63.370917373
         labels: {}
         treedir: /home/runner/work/repository-index/repository-index/packages
         origindockerfile: ""
@@ -77,8 +77,8 @@ compilespec:
             origindockerfile: ""
           value: true
           hash:
-            buildhash: d0a9485c87f9fbf448a4fa2f39cd5acf68803d759d7b5d8948bdd0bc3e9d57df
-            packagehash: 4d35684320cee175d998dfb581baa36d5713db3af1aa707538edbc3bf5e13474
+            buildhash: 565375c75ddf30487afe43b4b5745c0d79085099105ae973009f405cd46c244e
+            packagehash: 59d8051f732337c7d04281e935698aa3628509d93d3254b90b7525d69b0373fc
         - package:
             id: 0
             name: mocaccino-micro-stable
@@ -120,8 +120,8 @@ compilespec:
             origindockerfile: ""
           value: true
           hash:
-            buildhash: 4d35684320cee175d998dfb581baa36d5713db3af1aa707538edbc3bf5e13474
-            packagehash: 3580f3c121736b3085fb329b0c380c97b480c956540aa6f6fb7eedc94ba58d6e
+            buildhash: 59d8051f732337c7d04281e935698aa3628509d93d3254b90b7525d69b0373fc
+            packagehash: 9fcd7e57caa1a99b54a59d68e0c8bbc788e9191c28a8e46a50992d325ad30d0f
     package_dir: ""
     retrieve: []
     outputpath: /home/runner/work/repository-index/repository-index/build
