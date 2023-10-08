@@ -2,7 +2,7 @@ packages:
   - &base
     category: "repo-updater"
     name: "mocaccino-desktop-stable"
-    version: "0.2+99"
+    version: "0.2+100"
     requires:
       - category: "repository"
         name: "mocaccino-desktop-stable"
@@ -22,7 +22,7 @@ packages:
         version: ">=0"
   - !!merge <<: *base
     name: "mocaccino-community-stable"
-    version: "0.3+52"
+    version: "0.3+53"
     requires:
       - category: "repository"
         name: "mocaccino-community-stable"
