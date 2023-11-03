@@ -30,8 +30,8 @@ packages:
         skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
       autobump.version_hook: |
         skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-      package.version: "20231027211930-repository.yaml"
-    version: "20231027211930"
+      package.version: "20231101162134-repository.yaml"
+    version: "20231101162134"
   - category: "repository"
     name: "mocaccino-extra"
     version: "20211023"
@@ -82,7 +82,7 @@ packages:
     version: "20211120"
   - category: "repository"
     name: "mocaccino-community"
-    version: "20231029200833"
+    version: "20231103093500"
   - category: "repository"
     name: "mocaccino-community-stable"
     reference: true
@@ -92,9 +92,9 @@ packages:
       autobump.string_replace: '{ "prefix": "" }'
       autobump.strategy: "custom"
       autobump.prefix: "prefix"
-      package.version: "20231029200833-repository.yaml"
+      package.version: "20231103093500-repository.yaml"
       autobump.hook: |
         skopeo list-tags docker://quay.io/mocaccino/mocaccino-community | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
       autobump.version_hook: |
         skopeo list-tags docker://quay.io/mocaccino/mocaccino-community | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-    version: "20231029200833"
+    version: "20231103093500"
