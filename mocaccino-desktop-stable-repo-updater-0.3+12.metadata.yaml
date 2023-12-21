@@ -1,14 +1,14 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-stable-repo-updater-0.3+11.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-stable-repo-updater-0.3+12.package.tar.gz
 dependencies: []
 compilespec:
     env: []
     prelude: []
     image: ""
-    seed: mocaccinoos/rindex-amd64-cache:669b93a5aab4f3cae21e436d1ffd992f229862043c484792e049a90de41d13ef
+    seed: mocaccinoos/rindex-amd64-cache:bc41cb33ce17cebae8b002e4b3cfeca87c47f930a643184963922785e704f3b2
     package:
         id: 0
         name: mocaccino-desktop-stable
-        version: 0.3+11
+        version: 0.3+12
         category: repo-updater
         useflags: []
         state: ""
@@ -40,7 +40,7 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2023-12-17 05:49:49.026271254 +0000 UTC m=+27.915905595
+        buildtimestamp: 2023-12-21 10:43:05.02968862 +0000 UTC m=+58.944780728
         labels: {}
         treedir: /home/runner/work/repository-index/repository-index/packages
         origindockerfile: ""
@@ -77,12 +77,12 @@ compilespec:
             origindockerfile: ""
           value: true
           hash:
-            buildhash: 57503a018c51edd560305d2cfec63d97e86abb03827ab2e184a5dae00440e9ff
-            packagehash: 669b93a5aab4f3cae21e436d1ffd992f229862043c484792e049a90de41d13ef
+            buildhash: 7a0599f286f3a6a34ad962bd859d90b5bad3ef62d28f4a97bc1fdff2912866e1
+            packagehash: bc41cb33ce17cebae8b002e4b3cfeca87c47f930a643184963922785e704f3b2
         - package:
             id: 0
             name: mocaccino-desktop-stable
-            version: 0.3+11
+            version: 0.3+12
             category: repo-updater
             useflags: []
             state: ""
@@ -120,8 +120,8 @@ compilespec:
             origindockerfile: ""
           value: true
           hash:
-            buildhash: 669b93a5aab4f3cae21e436d1ffd992f229862043c484792e049a90de41d13ef
-            packagehash: a3272f4ed5c74defefe4facec2bcb732352e09ce9b851f9fc0eb8cbb0ec8ff88
+            buildhash: bc41cb33ce17cebae8b002e4b3cfeca87c47f930a643184963922785e704f3b2
+            packagehash: 1df90f311aaf0557dd8fd31c842e3ab108f0d2695edfdf10e208274823ea3233
     package_dir: ""
     retrieve: []
     outputpath: /home/runner/work/repository-index/repository-index/build
@@ -152,7 +152,7 @@ compilespec:
                 - category: mocaccino
                   name: cli
                   version: '>=0'
-              version: 0.3+11
+              version: 0.3+12
         packagetargetonly: false
         rebuild: false
         backendargs: []
@@ -175,7 +175,7 @@ packagecacheimage: ""
 runtime:
     id: 0
     name: mocaccino-desktop-stable
-    version: 0.3+11
+    version: 0.3+12
     category: repo-updater
     useflags: []
     state: ""

@@ -4,7 +4,7 @@ compilespec:
     env: []
     prelude: []
     image: ""
-    seed: mocaccinoos/rindex-amd64-cache:ef025adb1b5b6021c1f596af97d1e2237b2582611d7c7c872f35bf779c06c644
+    seed: mocaccinoos/rindex-amd64-cache:20d3bc316ef14e4b99cf6fef630a507638ae626a89579e90f4411178bc21d15c
     package:
         id: 0
         name: mocaccino-micro-stable
@@ -40,7 +40,7 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2023-12-17 05:50:12.027913528 +0000 UTC m=+50.917547889
+        buildtimestamp: 2023-12-21 10:43:21.029988382 +0000 UTC m=+74.945080490
         labels: {}
         treedir: /home/runner/work/repository-index/repository-index/packages
         origindockerfile: ""
@@ -48,7 +48,7 @@ compilespec:
         - package:
             id: 0
             name: mocaccino-micro-stable
-            version: "20211120140355"
+            version: "20231219003255"
             category: repository
             useflags: []
             state: ""
@@ -72,13 +72,13 @@ compilespec:
                 autobump.string_replace: '{ "prefix": "" }'
                 autobump.version_hook: |
                     skopeo list-tags docker://quay.io/mocaccino/micro | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-                package.version: 20211120140355-repository.yaml
+                package.version: 20231219003255-repository.yaml
             treedir: /home/runner/work/repository-index/repository-index/packages
             origindockerfile: ""
           value: true
           hash:
-            buildhash: da710ef0ab23dc9ff437e6920d9d7920a3ae507e43cc40b8b8808c92b61bc8a7
-            packagehash: ef025adb1b5b6021c1f596af97d1e2237b2582611d7c7c872f35bf779c06c644
+            buildhash: 9e412a04a2320c0a5b52dd83f6ab24baff5d56db74796d7ef0903daee18a8b8f
+            packagehash: 20d3bc316ef14e4b99cf6fef630a507638ae626a89579e90f4411178bc21d15c
         - package:
             id: 0
             name: mocaccino-micro-stable
@@ -120,8 +120,8 @@ compilespec:
             origindockerfile: ""
           value: true
           hash:
-            buildhash: ef025adb1b5b6021c1f596af97d1e2237b2582611d7c7c872f35bf779c06c644
-            packagehash: 13917c9d27267d35c58dc6babfabfb8c85124dcf86aa093d32d8176c1acd405a
+            buildhash: 20d3bc316ef14e4b99cf6fef630a507638ae626a89579e90f4411178bc21d15c
+            packagehash: 5c58ad2f893e766ac4065e5c0b540c5cb987a544bb2e03d6231cf30d804b123a
     package_dir: ""
     retrieve: []
     outputpath: /home/runner/work/repository-index/repository-index/build
