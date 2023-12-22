@@ -92,9 +92,9 @@ packages:
       autobump.string_replace: '{ "prefix": "" }'
       autobump.strategy: "custom"
       autobump.prefix: "prefix"
-      package.version: "20231221234338-repository.yaml"
+      package.version: "20231222141717-repository.yaml"
       autobump.hook: |
         skopeo list-tags docker://quay.io/mocaccino/mocaccino-community | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
       autobump.version_hook: |
         skopeo list-tags docker://quay.io/mocaccino/mocaccino-community | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-    version: "20231221234338"
+    version: "20231222141717"
