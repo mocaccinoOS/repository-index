@@ -1,14 +1,14 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-community-stable-repo-updater-0.3+89.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-community-stable-repo-updater-0.3+90.package.tar.gz
 dependencies: []
 compilespec:
     env: []
     prelude: []
     image: ""
-    seed: mocaccinoos/rindex-amd64-cache:c4bda2be17a42d8d050ea3b251eca04b96ae93753777393404de15b60a4b3422
+    seed: mocaccinoos/rindex-amd64-cache:35d591da8d12a2952c6ebe253a4fdb97fc33a81268b714d10ba62696be97eb36
     package:
         id: 0
         name: mocaccino-community-stable
-        version: 0.3+89
+        version: 0.3+90
         category: repo-updater
         useflags: []
         state: ""
@@ -40,7 +40,7 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2024-01-23 20:52:39.027918419 +0000 UTC m=+36.103109106
+        buildtimestamp: 2024-01-24 06:15:46.027576264 +0000 UTC m=+70.154851175
         labels: {}
         treedir: /home/runner/work/repository-index/repository-index/packages
         origindockerfile: ""
@@ -48,7 +48,7 @@ compilespec:
         - package:
             id: 0
             name: mocaccino-community-stable
-            version: "20240121155739"
+            version: "20240124032203"
             category: repository
             useflags: []
             state: ""
@@ -72,17 +72,17 @@ compilespec:
                 autobump.string_replace: '{ "prefix": "" }'
                 autobump.version_hook: |
                     skopeo list-tags docker://quay.io/mocaccino/mocaccino-community | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-                package.version: 20240121155739-repository.yaml
+                package.version: 20240124032203-repository.yaml
             treedir: /home/runner/work/repository-index/repository-index/packages
             origindockerfile: ""
           value: true
           hash:
-            buildhash: fdcde7c7e794bfc391176a20cc58138c361eff379bc2e667ff4f37c98355b218
-            packagehash: c4bda2be17a42d8d050ea3b251eca04b96ae93753777393404de15b60a4b3422
+            buildhash: 9a3589e91c327b659c603d3b7d0d18a78809c324b926f1ae88c04eef0be4690b
+            packagehash: 35d591da8d12a2952c6ebe253a4fdb97fc33a81268b714d10ba62696be97eb36
         - package:
             id: 0
             name: mocaccino-community-stable
-            version: 0.3+89
+            version: 0.3+90
             category: repo-updater
             useflags: []
             state: ""
@@ -120,8 +120,8 @@ compilespec:
             origindockerfile: ""
           value: true
           hash:
-            buildhash: c4bda2be17a42d8d050ea3b251eca04b96ae93753777393404de15b60a4b3422
-            packagehash: 9b049de9c486776279b03f6924482dc64ff106ff65598129f76a3300c20aad34
+            buildhash: 35d591da8d12a2952c6ebe253a4fdb97fc33a81268b714d10ba62696be97eb36
+            packagehash: 825ee80257b05e564b8f86406628d0a3ad1b1cbd66e365ce56d3d35110a74b21
     package_dir: ""
     retrieve: []
     outputpath: /home/runner/work/repository-index/repository-index/build
@@ -152,7 +152,7 @@ compilespec:
                 - category: mocaccino
                   name: cli
                   version: '>=0'
-              version: 0.3+89
+              version: 0.3+90
         packagetargetonly: false
         rebuild: false
         backendargs: []
@@ -175,7 +175,7 @@ packagecacheimage: ""
 runtime:
     id: 0
     name: mocaccino-community-stable
-    version: 0.3+89
+    version: 0.3+90
     category: repo-updater
     useflags: []
     state: ""
