@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-repository-20240602124217.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-repository-20240611133211.package.tar.gz
 dependencies: []
 compilespec:
     steps:
@@ -12,7 +12,7 @@ compilespec:
     package:
         id: 0
         name: mocaccino-desktop
-        version: "20240602124217"
+        version: "20240611133211"
         category: repository
         useflags: []
         state: ""
@@ -25,7 +25,7 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2024-06-06 05:30:02.444891926 +0000 UTC m=+28.022965432
+        buildtimestamp: 2024-06-11 18:43:45.410290106 +0000 UTC m=+18.715841235
         labels: {}
         treedir: /home/runner/work/repository-index/repository-index/packages
         origindockerfile: ""
@@ -33,7 +33,7 @@ compilespec:
         - package:
             id: 0
             name: mocaccino-desktop
-            version: "20240602124217"
+            version: "20240611133211"
             category: repository
             useflags: []
             state: ""
@@ -52,8 +52,8 @@ compilespec:
             origindockerfile: ""
           value: true
           hash:
-            buildhash: a49ec1246f222ee69ed42b4a54def5c47e989f4a294b41ad6fa61f3116663aa3
-            packagehash: 5d525610b0750eebecce7e1fcb86c71c766b96fcd31f294bb5ddafad2347c9e9
+            buildhash: 72c9740de93376ead019c550ff09b33f80b92108f035f40a222f47eda34fa656
+            packagehash: 89050e6a42aa2bcbcf6a7daef3e996481df3ebd425cd1dab7263c491f95323b5
     package_dir: /repo
     retrieve: []
     outputpath: /home/runner/work/repository-index/repository-index/build
@@ -77,7 +77,7 @@ compilespec:
         buildvalues:
             - category: repository
               name: mocaccino-desktop
-              version: "20240602124217"
+              version: "20240611133211"
         packagetargetonly: false
         rebuild: false
         backendargs: []
@@ -92,7 +92,7 @@ compilespec:
     copy: []
     requires_final_images: false
 checksums:
-    sha256: 2dd2064f4ba70f99028fa9556668b814591b47373f7537d4079b015eed738f2e
+    sha256: 9f5a5055bc9b59b75c21379597579a25f3a940814bd45a26bc639d24ab594b38
 sourceassertion: []
 compressiontype: gzip
 files:
@@ -101,7 +101,7 @@ packagecacheimage: ""
 runtime:
     id: 0
     name: mocaccino-desktop
-    version: "20240602124217"
+    version: "20240611133211"
     category: repository
     useflags: []
     state: ""
