@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-community-repository-20240616113718.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-community-repository-20240616135003.package.tar.gz
 dependencies: []
 compilespec:
     steps:
@@ -12,7 +12,7 @@ compilespec:
     package:
         id: 0
         name: mocaccino-community
-        version: "20240616113718"
+        version: "20240616135003"
         category: repository
         useflags: []
         state: ""
@@ -25,7 +25,7 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2024-06-16 12:10:20.412931978 +0000 UTC m=+18.528539641
+        buildtimestamp: 2024-06-16 13:53:39.442776634 +0000 UTC m=+57.447911770
         labels: {}
         treedir: /home/runner/work/repository-index/repository-index/packages
         origindockerfile: ""
@@ -33,7 +33,7 @@ compilespec:
         - package:
             id: 0
             name: mocaccino-community
-            version: "20240616113718"
+            version: "20240616135003"
             category: repository
             useflags: []
             state: ""
@@ -52,8 +52,8 @@ compilespec:
             origindockerfile: ""
           value: true
           hash:
-            buildhash: d191004bc9bca696e65d584bfa38bfde7b5de7b780d4d2ba370fbd3767cc00eb
-            packagehash: 5e8ae55f6c5076f6c87a96d738c75c425c0af9f946272b6ae7a31e4b3dc39a4b
+            buildhash: 67c79c7c5c2b023ff0f0fe765f5dfb8efc8951881539cb12f865217393f9568b
+            packagehash: 7944a1ecd73f8e1a3d646f5eb67bb05ce852c2d6f3cbb408f77e86b3f56a3734
     package_dir: /repo
     retrieve: []
     outputpath: /home/runner/work/repository-index/repository-index/build
@@ -77,7 +77,7 @@ compilespec:
         buildvalues:
             - category: repository
               name: mocaccino-community
-              version: "20240616113718"
+              version: "20240616135003"
         packagetargetonly: false
         rebuild: false
         backendargs: []
@@ -92,7 +92,7 @@ compilespec:
     copy: []
     requires_final_images: false
 checksums:
-    sha256: af977b5304d9298e7062b3d5c472723300cebd6754344113de75d4f058253940
+    sha256: c279a2117810b83c4de5effe15e566c6e34ff08b920b0e4712ff3a10897a5802
 sourceassertion: []
 compressiontype: gzip
 files:
@@ -101,7 +101,7 @@ packagecacheimage: ""
 runtime:
     id: 0
     name: mocaccino-community
-    version: "20240616113718"
+    version: "20240616135003"
     category: repository
     useflags: []
     state: ""
