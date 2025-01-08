@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-community-stable-repository-20241227174120.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-stable-repository-20250106185539.package.tar.gz
 dependencies: []
 compilespec:
     steps:
@@ -6,15 +6,15 @@ compilespec:
           mkdir -p /repo/etc/luet/repos.conf.d/ && \
           mv ${PACKAGE_NAME}.yml /repo/etc/luet/repos.conf.d/
         - LUET_NOLOCK=true luet install -yq utils/yq
-        - yq w -i /repo/etc/luet/repos.conf.d/${PACKAGE_NAME}.yml "reference" "20241227174120-repository.yaml" --style double
+        - yq w -i /repo/etc/luet/repos.conf.d/${PACKAGE_NAME}.yml "reference" "20250106185539-repository.yaml" --style double
     env: []
     prelude: []
     image: quay.io/mocaccino/extra:master
     seed: quay.io/mocaccino/extra:master
     package:
         id: 0
-        name: mocaccino-community-stable
-        version: "20241227174120"
+        name: mocaccino-desktop-stable
+        version: "20250106185539"
         category: repository
         useflags: []
         state: ""
@@ -27,18 +27,18 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2024-12-28 00:22:13.626068299 +0000 UTC m=+36.802584996
+        buildtimestamp: 2025-01-08 11:25:49.633350634 +0000 UTC m=+48.203233294
         labels:
             autobump.arch: amd64
             autobump.hook: |
-                skopeo list-tags docker://quay.io/mocaccino/mocaccino-community | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
+                skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
             autobump.prefix: prefix
             autobump.revdeps: "true"
             autobump.strategy: custom
             autobump.string_replace: '{ "prefix": "" }'
             autobump.version_hook: |
-                skopeo list-tags docker://quay.io/mocaccino/mocaccino-community | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-            package.version: 20241227174120-repository.yaml
+                skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
+            package.version: 20250106185539-repository.yaml
         treedir: /home/runner/work/repository-index/repository-index/packages
         origindockerfile: ""
     sourceassertion: []
@@ -68,17 +68,17 @@ compilespec:
               labels:
                 autobump.arch: amd64
                 autobump.hook: |
-                    skopeo list-tags docker://quay.io/mocaccino/mocaccino-community | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
+                    skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
                 autobump.prefix: prefix
                 autobump.revdeps: "true"
                 autobump.strategy: custom
                 autobump.string_replace: '{ "prefix": "" }'
                 autobump.version_hook: |
-                    skopeo list-tags docker://quay.io/mocaccino/mocaccino-community | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-                package.version: 20241227174120-repository.yaml
-              name: mocaccino-community-stable
+                    skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
+                package.version: 20250106185539-repository.yaml
+              name: mocaccino-desktop-stable
               reference: true
-              version: "20241227174120"
+              version: "20250106185539"
         packagetargetonly: false
         rebuild: false
         backendargs: []
@@ -93,16 +93,16 @@ compilespec:
     copy: []
     requires_final_images: false
 checksums:
-    sha256: fc85ec8f3ff21f4aa045ee226fab4799441931adba2b8488aaa35e096e5c6fe5
+    sha256: f06a3b67650f9e54c337cc94bc01d54dfc0bf796be144510a2e5bf9116a113dc
 sourceassertion: []
 compressiontype: gzip
 files:
-    - etc/luet/repos.conf.d/mocaccino-community-stable.yml
+    - etc/luet/repos.conf.d/mocaccino-desktop-stable.yml
 packagecacheimage: ""
 runtime:
     id: 0
-    name: mocaccino-community-stable
-    version: "20241227174120"
+    name: mocaccino-desktop-stable
+    version: "20250106185539"
     category: repository
     useflags: []
     state: ""
@@ -119,13 +119,13 @@ runtime:
     labels:
         autobump.arch: amd64
         autobump.hook: |
-            skopeo list-tags docker://quay.io/mocaccino/mocaccino-community | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
+            skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
         autobump.prefix: prefix
         autobump.revdeps: "true"
         autobump.strategy: custom
         autobump.string_replace: '{ "prefix": "" }'
         autobump.version_hook: |
-            skopeo list-tags docker://quay.io/mocaccino/mocaccino-community | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-        package.version: 20241227174120-repository.yaml
+            skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
+        package.version: 20250106185539-repository.yaml
     treedir: ""
     origindockerfile: ""
