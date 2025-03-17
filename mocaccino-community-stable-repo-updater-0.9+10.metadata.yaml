@@ -1,14 +1,14 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-community-stable-repo-updater-0.9+9.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-community-stable-repo-updater-0.9+10.package.tar.gz
 dependencies: []
 compilespec:
     env: []
     prelude: []
     image: ""
-    seed: mocaccinoos/rindex-amd64-cache:e077106f08526a1b1d6e2edebb5652d9328779a745f9288fa9f06aa8f3012a71
+    seed: mocaccinoos/rindex-amd64-cache:8066dad2847474a1e821ee365daa6fe85661928935d56d2e17a3fe384bd3e390
     package:
         id: 0
         name: mocaccino-community-stable
-        version: 0.9+9
+        version: 0.9+10
         category: repo-updater
         useflags: []
         state: ""
@@ -40,7 +40,7 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2025-02-24 18:41:22.044799939 +0000 UTC m=+92.116486245
+        buildtimestamp: 2025-03-17 21:26:42.039637111 +0000 UTC m=+109.361377887
         labels: {}
         treedir: /home/runner/work/repository-index/repository-index/packages
         origindockerfile: ""
@@ -77,12 +77,12 @@ compilespec:
             origindockerfile: ""
           value: true
           hash:
-            buildhash: c0db2872d20b491548dafdef64797b3287154d2e6af9a0353d97e608e4b0618e
-            packagehash: e077106f08526a1b1d6e2edebb5652d9328779a745f9288fa9f06aa8f3012a71
+            buildhash: 83b12daf311b35d82d11c1fda85865236d665512a11ad8a42eb06c426ca02922
+            packagehash: 8066dad2847474a1e821ee365daa6fe85661928935d56d2e17a3fe384bd3e390
         - package:
             id: 0
             name: mocaccino-community-stable
-            version: 0.9+9
+            version: 0.9+10
             category: repo-updater
             useflags: []
             state: ""
@@ -120,8 +120,8 @@ compilespec:
             origindockerfile: ""
           value: true
           hash:
-            buildhash: e077106f08526a1b1d6e2edebb5652d9328779a745f9288fa9f06aa8f3012a71
-            packagehash: 3726912c929e2520c5e5dc68dea56ed6a2190f077fc56fc2480a321253ba3bf8
+            buildhash: 8066dad2847474a1e821ee365daa6fe85661928935d56d2e17a3fe384bd3e390
+            packagehash: bf4346a4dc2195c211cadb0fe817309f7e4a08cb856a83f7e96c1590b1f74bff
     package_dir: ""
     retrieve: []
     outputpath: /home/runner/work/repository-index/repository-index/build
@@ -152,7 +152,7 @@ compilespec:
                 - category: mocaccino
                   name: cli
                   version: '>=0'
-              version: 0.9+9
+              version: 0.9+10
         packagetargetonly: false
         rebuild: false
         backendargs: []
@@ -175,7 +175,7 @@ packagecacheimage: ""
 runtime:
     id: 0
     name: mocaccino-community-stable
-    version: 0.9+9
+    version: 0.9+10
     category: repo-updater
     useflags: []
     state: ""
