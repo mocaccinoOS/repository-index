@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-extra-arm-repository-20211204.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-community-repository-20250623064105.package.tar.gz
 dependencies: []
 compilespec:
     steps:
@@ -11,8 +11,8 @@ compilespec:
     seed: quay.io/mocaccino/extra:master
     package:
         id: 0
-        name: mocaccino-extra-arm
-        version: "20211204"
+        name: mocaccino-community
+        version: "20250623064105"
         category: repository
         useflags: []
         state: ""
@@ -25,15 +25,15 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2025-06-23 07:24:00.327370764 +0000 UTC m=+64.017030364
+        buildtimestamp: 2025-06-23 07:23:10.340960814 +0000 UTC m=+14.030620414
         labels: {}
         treedir: /home/runner/work/repository-index/repository-index/packages
         origindockerfile: ""
     sourceassertion:
         - package:
             id: 0
-            name: mocaccino-extra-arm
-            version: "20211204"
+            name: mocaccino-community
+            version: "20250623064105"
             category: repository
             useflags: []
             state: ""
@@ -52,8 +52,8 @@ compilespec:
             origindockerfile: ""
           value: true
           hash:
-            buildhash: 227d12655564398708a9cdde3c56459ed4609760dc34168591d1796afa15922c
-            packagehash: fd46a8e11d72889082c0c7ed461af91cee8bc160001a371b807447b2b03c00dd
+            buildhash: c34f1a247b02716b46a726992985dac196a0601b889356cee2a1a5db84784e07
+            packagehash: fea6276b1fa31dd3582c72c1678b7111c5e54645a5d674b709a03dd153045a54
     package_dir: /repo
     retrieve: []
     outputpath: /home/runner/work/repository-index/repository-index/build
@@ -76,8 +76,8 @@ compilespec:
         buildvaluesfile: []
         buildvalues:
             - category: repository
-              name: mocaccino-extra-arm
-              version: "20211204"
+              name: mocaccino-community
+              version: "20250623064105"
         packagetargetonly: false
         rebuild: false
         backendargs: []
@@ -92,16 +92,16 @@ compilespec:
     copy: []
     requires_final_images: false
 checksums:
-    sha256: 809281c5522f0e96fdb2b9039cc74c96ed1d6ab0c02fcebcd292286f7abdcbee
+    sha256: df4a071de71a8b01f84d9a6b2ebf65bb6b7dc1f424d5649b121f2a7b7eba3fda
 sourceassertion: []
 compressiontype: gzip
 files:
-    - etc/luet/repos.conf.d/mocaccino-extra-arm.yml
+    - etc/luet/repos.conf.d/mocaccino-community.yml
 packagecacheimage: ""
 runtime:
     id: 0
-    name: mocaccino-extra-arm
-    version: "20211204"
+    name: mocaccino-community
+    version: "20250623064105"
     category: repository
     useflags: []
     state: ""

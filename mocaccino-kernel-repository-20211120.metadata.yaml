@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-extra-arm-repository-20211204.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-kernel-repository-20211120.package.tar.gz
 dependencies: []
 compilespec:
     steps:
@@ -11,8 +11,8 @@ compilespec:
     seed: quay.io/mocaccino/extra:master
     package:
         id: 0
-        name: mocaccino-extra-arm
-        version: "20211204"
+        name: mocaccino-kernel
+        version: "20211120"
         category: repository
         useflags: []
         state: ""
@@ -25,15 +25,15 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2025-06-23 07:24:00.327370764 +0000 UTC m=+64.017030364
+        buildtimestamp: 2025-06-23 07:24:04.337150092 +0000 UTC m=+68.026809683
         labels: {}
         treedir: /home/runner/work/repository-index/repository-index/packages
         origindockerfile: ""
     sourceassertion:
         - package:
             id: 0
-            name: mocaccino-extra-arm
-            version: "20211204"
+            name: mocaccino-kernel
+            version: "20211120"
             category: repository
             useflags: []
             state: ""
@@ -52,8 +52,8 @@ compilespec:
             origindockerfile: ""
           value: true
           hash:
-            buildhash: 227d12655564398708a9cdde3c56459ed4609760dc34168591d1796afa15922c
-            packagehash: fd46a8e11d72889082c0c7ed461af91cee8bc160001a371b807447b2b03c00dd
+            buildhash: 20ab8ff3f74abfbd3e5d9cec352103f34ab97507468b9259046972d8ea019ed8
+            packagehash: 088970ec23159f21bfc3644a1f5c8789c4ad6c1f2e7bafe18bb6dbec5baa170e
     package_dir: /repo
     retrieve: []
     outputpath: /home/runner/work/repository-index/repository-index/build
@@ -76,8 +76,8 @@ compilespec:
         buildvaluesfile: []
         buildvalues:
             - category: repository
-              name: mocaccino-extra-arm
-              version: "20211204"
+              name: mocaccino-kernel
+              version: "20211120"
         packagetargetonly: false
         rebuild: false
         backendargs: []
@@ -92,16 +92,16 @@ compilespec:
     copy: []
     requires_final_images: false
 checksums:
-    sha256: 809281c5522f0e96fdb2b9039cc74c96ed1d6ab0c02fcebcd292286f7abdcbee
+    sha256: 5f131ea81a82a8c813487741b56439d51343b6972202c223c4dd58e27999c233
 sourceassertion: []
 compressiontype: gzip
 files:
-    - etc/luet/repos.conf.d/mocaccino-extra-arm.yml
+    - etc/luet/repos.conf.d/mocaccino-kernel.yml
 packagecacheimage: ""
 runtime:
     id: 0
-    name: mocaccino-extra-arm
-    version: "20211204"
+    name: mocaccino-kernel
+    version: "20211120"
     category: repository
     useflags: []
     state: ""
