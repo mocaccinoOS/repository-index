@@ -4,7 +4,7 @@ compilespec:
     env: []
     prelude: []
     image: ""
-    seed: mocaccinoos/rindex-amd64-cache:884ddced1088484c17ec3b0243701eb9d49514d0dde9519c697678e0e8fe8381
+    seed: mocaccinoos/rindex-amd64-cache:2552c99372ad2a3c6bcb604f8040eea3a03a0f79c0da3b85e892285fd85791ce
     package:
         id: 0
         name: mocaccino-desktop-stable
@@ -40,7 +40,7 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2025-09-14 22:08:09.04205514 +0000 UTC m=+78.291319459
+        buildtimestamp: 2025-09-18 18:29:07.033553351 +0000 UTC m=+42.502717666
         labels: {}
         treedir: /home/runner/work/repository-index/repository-index/packages
         origindockerfile: ""
@@ -48,7 +48,7 @@ compilespec:
         - package:
             id: 0
             name: mocaccino-desktop-stable
-            version: "20250914215653"
+            version: "20250918141515"
             category: repository
             useflags: []
             state: ""
@@ -72,13 +72,13 @@ compilespec:
                 autobump.string_replace: '{ "prefix": "" }'
                 autobump.version_hook: |
                     skopeo list-tags docker://quay.io/mocaccino/desktop | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-                package.version: 20250914215653-repository.yaml
+                package.version: 20250918141515-repository.yaml
             treedir: /home/runner/work/repository-index/repository-index/packages
             origindockerfile: ""
           value: true
           hash:
-            buildhash: 4d4eba2f5a5226464ced4cd542413a24abbc4047b956b06fe2fbc28d2485dbd1
-            packagehash: 884ddced1088484c17ec3b0243701eb9d49514d0dde9519c697678e0e8fe8381
+            buildhash: 625c98c8e2b5d558a71f08a65db0ec8992102b0a4ad380b8aa0c178c56b1823b
+            packagehash: 2552c99372ad2a3c6bcb604f8040eea3a03a0f79c0da3b85e892285fd85791ce
         - package:
             id: 0
             name: mocaccino-desktop-stable
@@ -120,8 +120,8 @@ compilespec:
             origindockerfile: ""
           value: true
           hash:
-            buildhash: 884ddced1088484c17ec3b0243701eb9d49514d0dde9519c697678e0e8fe8381
-            packagehash: 22af569bb0594eaa9a61e6d3b625eb60263620e1f54b88fe0fe472e9f0358ab2
+            buildhash: 2552c99372ad2a3c6bcb604f8040eea3a03a0f79c0da3b85e892285fd85791ce
+            packagehash: 66a4134d51e287dceb85e418f441aff390bb985360a42f82454e13a2a7ded4c3
     package_dir: ""
     retrieve: []
     outputpath: /home/runner/work/repository-index/repository-index/build
