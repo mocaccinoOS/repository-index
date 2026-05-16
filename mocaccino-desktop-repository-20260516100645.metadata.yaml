@@ -1,4 +1,4 @@
-path: /home/runner/work/repository-index/repository-index/build/mocaccino-community-repository-20260505042232.package.tar.gz
+path: /home/runner/work/repository-index/repository-index/build/mocaccino-desktop-repository-20260516100645.package.tar.gz
 dependencies: []
 compilespec:
     steps:
@@ -11,8 +11,8 @@ compilespec:
     seed: quay.io/mocaccino/extra:master
     package:
         id: 0
-        name: mocaccino-community
-        version: "20260505042232"
+        name: mocaccino-desktop
+        version: "20260516100645"
         category: repository
         useflags: []
         state: ""
@@ -25,15 +25,15 @@ compilespec:
         description: ""
         uri: []
         license: ""
-        buildtimestamp: 2026-05-05 11:48:51.261408454 +0000 UTC m=+17.384177843
+        buildtimestamp: 2026-05-16 11:34:58.307438591 +0000 UTC m=+36.856138004
         labels: {}
         treedir: /home/runner/work/repository-index/repository-index/packages
         origindockerfile: ""
     sourceassertion:
         - package:
             id: 0
-            name: mocaccino-community
-            version: "20260505042232"
+            name: mocaccino-desktop
+            version: "20260516100645"
             category: repository
             useflags: []
             state: ""
@@ -52,8 +52,8 @@ compilespec:
             origindockerfile: ""
           value: true
           hash:
-            buildhash: 396ac37b1c2934f72d07cddce21e8dc41e23dbdc830371a98807be7b4b9d0834
-            packagehash: 452aec630c48daa72d874a882861a7ddf611b1693faee6c26001f6c7175a5cba
+            buildhash: 7da421c1ae5d7e221f7ce59000d673cc85b792cf642c2ab0c5809c0489bc98a3
+            packagehash: ef0456e269ee653bd2becdaef684f57ecd11bb5c15c950eeea5bc2432c387bb6
     package_dir: /repo
     retrieve: []
     outputpath: /home/runner/work/repository-index/repository-index/build
@@ -76,8 +76,8 @@ compilespec:
         buildvaluesfile: []
         buildvalues:
             - category: repository
-              name: mocaccino-community
-              version: "20260505042232"
+              name: mocaccino-desktop
+              version: "20260516100645"
         packagetargetonly: false
         rebuild: false
         backendargs: []
@@ -92,16 +92,16 @@ compilespec:
     copy: []
     requires_final_images: false
 checksums:
-    sha256: 5ed5c09b8f5f62a6fc4c557aaa6245344144582a019ead6ca685468ffd77d11f
+    sha256: 9719c45d8983adabece24d10f93b59710d340f83e65a4d4d3d75551ca1526510
 sourceassertion: []
 compressiontype: gzip
 files:
-    - etc/luet/repos.conf.d/mocaccino-community.yml
+    - etc/luet/repos.conf.d/mocaccino-desktop.yml
 packagecacheimage: ""
 runtime:
     id: 0
-    name: mocaccino-community
-    version: "20260505042232"
+    name: mocaccino-desktop
+    version: "20260516100645"
     category: repository
     useflags: []
     state: ""
