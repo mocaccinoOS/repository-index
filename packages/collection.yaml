@@ -50,12 +50,12 @@ packages:
       autobump.string_replace: '{ "prefix": "" }'
       autobump.strategy: "custom"
       autobump.prefix: "prefix"
-      package.version: "20211120140355-repository.yaml"
+      package.version: "20220226194705-repository.yaml"
       autobump.hook: |
         skopeo list-tags docker://quay.io/mocaccino/micro | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]'
       autobump.version_hook: |
         skopeo list-tags docker://quay.io/mocaccino/micro | jq -rc '.Tags | map(select(. | contains("-repository.yaml"))) | sort | .[-1]' | sed "s/-repository.yaml//g"
-    version: "20211120140355"
+    version: "20220226194705"
   - category: "repository"
     name: "mocaccino-micro"
     version: "20211120"
